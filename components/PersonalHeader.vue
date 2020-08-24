@@ -114,19 +114,14 @@ export default {
   data() {
     return {
       images: [
-        "https://i.imgur.com/PfaL9wP.jpg",
-        "https://i.imgur.com/86Be8nA.png",
-        "https://i.imgur.com/jlu6jwf.jpg",
-        "https://i.imgur.com/oO5abXP.jpg",
-        "https://i.imgur.com/o4mBUq7.jpg",
-        "https://i.imgur.com/8piwqqp.jpg",
-        "https://i.imgur.com/o5zs6x4.jpg",
-        "https://i.imgur.com/CFqCqxw.png",
-        "https://i.imgur.com/HWFTcVA.jpg",
-        "https://i.imgur.com/0Dym5bt.png",
-        "https://i.imgur.com/1k8By32.png",
-        "https://i.imgur.com/3fnDbHr.jpg",
+        "https://i.imgur.com/2knteJY.jpg",
+        "https://i.imgur.com/uIY2t68.jpg",
+        "https://i.imgur.com/Mo2BSC6.jpg",
         "https://i.imgur.com/PAsyPjn.png",
+        "https://i.imgur.com/qpw5KQ1.png",
+        "https://i.imgur.com/xeeqfEG.jpg",
+        "https://i.imgur.com/CuYYwqN.jpg",
+        "https://i.imgur.com/em5XN5m.png",
       ],
     };
   },

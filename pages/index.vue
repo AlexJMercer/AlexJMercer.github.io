@@ -1,11 +1,9 @@
 <template>
   <div>
     <PersonalHeader />
-
+    <About />
     <KnowledgeAreas />
-
     <Projects />
-    <!-- <LastProjects /> -->
   </div>
 </template>
 
@@ -14,14 +12,14 @@
 import PersonalHeader from "~/components/PersonalHeader.vue";
 import KnowledgeAreas from "~/components/KnowledgeAreas.vue";
 import Projects from "~/components/Projects.vue";
-// import LastProjects from "~/components/LastProjects.vue";
+import About from "~/components/About.vue";
 
 export default {
   components: {
     PersonalHeader,
     KnowledgeAreas,
     Projects,
-    // LastProjects,
+    About,
   },
 };
 </script>

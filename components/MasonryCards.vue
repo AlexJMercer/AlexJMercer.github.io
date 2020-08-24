@@ -26,7 +26,7 @@
               {{ post.attributes.title }}
             </span>
           </h4>
-          <span :class="post.attributes.isPublished ? 'mb-3' : 'mb-1'">
+          <span class="mb-3">
             <span class="badge badge-warning">
               {{ dateFormat(post) }}
             </span>
@@ -64,7 +64,9 @@
             >
           </div>
           <div v-else>
-            <span class="stretched-link" title="Post em atualização"></span>
+            <button class="btn btn-secondary btn-sm btn-block" disabled>
+              Post em atualização
+            </button>
           </div>
         </div>
       </div>

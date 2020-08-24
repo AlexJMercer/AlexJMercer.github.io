@@ -17,21 +17,15 @@
           />
         </nuxt-link>
       </b-navbar-brand>
-      <b-nav-text class="text-dark"></b-nav-text>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <router-link class="nav-item" to="/projects">
-            <span class="marker marker-dark marker-link nav-link">
-              Projetos
+          <b-nav-text>
+            <span class="marker marker-dark marker-link">
+              <strong>Em atualização</strong>
             </span>
-          </router-link>
-          <router-link class="nav-item" to="/about">
-            <span class="marker marker-dark marker-link nav-link">
-              Sobre mim
-            </span>
-          </router-link>
+          </b-nav-text>
         </b-navbar-nav>
       </b-collapse>
     </div>

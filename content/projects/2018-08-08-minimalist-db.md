@@ -1,5 +1,5 @@
 ---
-title: Hope
+title: Dragon Ball Minimalist
 date: "2018-08-08"
 category: "Design"
 type: "Pessoal"

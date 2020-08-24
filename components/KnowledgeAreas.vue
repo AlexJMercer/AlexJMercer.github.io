@@ -3,7 +3,7 @@
     <section class="container-fluid">
       <div class="container p-lg-0 pb-2">
         <div class="px-lg-4 px-1">
-          <h2 class="my-3 pt-4"><strong>Conhecimento</strong></h2>
+          <h2 class="my-3"><strong>Conhecimento</strong></h2>
           <div class="text-size pb-4">
             <p>
               Durante os últimos anos venho estudando e praticando a utilização

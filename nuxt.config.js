@@ -95,10 +95,12 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
+
   build: {
     transpile: ["masonry-layout", "vue-lazyload"],
     extend(config, ctx) {

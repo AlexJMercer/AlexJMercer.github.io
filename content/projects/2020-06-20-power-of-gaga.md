@@ -1,18 +1,18 @@
 ---
-title: 'The Power of Lady Gaga'
-date: '2020-06-20'
-category: 'Design'
-type: 'Pessoal'
+title: "The Power of Lady Gaga"
+date: "2020-06-20"
+category: "Design"
+type: "Pessoal"
 tags:
   - Edição digital
   - Arte
   - Poster
 cover: https://i.imgur.com/PfaL9wP.jpg
-coverAlt: ''
-imgorientation: 'image-top'
+coverAlt: ""
+imgorientation: "image-top"
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-fontStyle: 'monospace'
-isPublished: true
+fontStyle: "monospace"
+isPublished: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus ante augue, quis fermentum diam varius eu. Ut hendrerit erat a lectus facilisis, eu consequat eros accumsan. Etiam et sagittis magna. Pellentesque eu tempus turpis, id auctor est. Aenean pharetra varius justo, eget viverra massa ornare eget. Sed hendrerit tristique nunc quis rutrum. Nunc ut iaculis eros.

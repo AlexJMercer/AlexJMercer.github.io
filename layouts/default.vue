@@ -26,3 +26,10 @@ export default {
 <style>
 @import "~/assets/style/css/ultimate.css";
 </style>
+
+<style lang="scss">
+body {
+  font-family: "Roboto Mono", "Fira Code", "Roboto", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+</style>

@@ -116,16 +116,6 @@
               </li>
             </ul>
           </div>
-          <div class="col-6 col-md">
-            <h5>
-              <span class="marker marker-light marker-link">Sobre</span>
-            </h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <nuxt-link class="text-light" to="/about">Sobre mim</nuxt-link>
-              </li>
-            </ul>
-          </div>
         </div>
       </footer>
     </div>

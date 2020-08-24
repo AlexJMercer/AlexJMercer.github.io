@@ -1,10 +1,10 @@
 <template>
-  <section class="container-fluid my-4">
+  <section class="container-fluid mt-4 mb-5">
     <div v-lazy-container="{ selector: 'img' }">
       <div
         class="col-lg-10 col-md-12 col-12 offset-lg-1 offset-md-0 offset-0 px-0"
       >
-        <h2 class="mb-3"><strong>Meus projetos</strong></h2>
+        <h2 class="pt-2 mb-3"><strong>Meus projetos</strong></h2>
         <div
           class="card card-raised rounded-lg bg-dark text-white neon-shadow-red mt-3 mb-5"
         >
@@ -31,11 +31,11 @@
                   </span>
                 </p>
 
-                <div class="">
+                <!-- <div class="">
                   <span class="badge badge-warning badge-tag">
-                    Última atualização: Jan 20
+                    Última atualização: Ago
                   </span>
-                </div>
+                </div> -->
               </div>
               <nuxt-link
                 to="/projects"

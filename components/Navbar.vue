@@ -18,16 +18,13 @@
         </nuxt-link>
       </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto">
-          <b-nav-text>
-            <span class="marker marker-dark marker-link">
-              <strong>Em atualização</strong>
-            </span>
-          </b-nav-text>
-        </b-navbar-nav>
-      </b-collapse>
+      <b-navbar-nav class="ml-auto">
+        <b-nav-text>
+          <span class="marker marker-dark marker-link">
+            <strong>Em atualização</strong>
+          </span>
+        </b-nav-text>
+      </b-navbar-nav>
     </div>
   </b-navbar>
 </template>

@@ -54,9 +54,7 @@
       </div>
     </div>
     <div v-if="post.orientation === 'landscape'">
-      <div
-        class="header-content header-h-full d-md-inline-flex shadow-image mb-4"
-      >
+      <div class="header-content header-h-full d-md-inline-flex mb-4">
         <div class="header-info header-h-full">
           <div class="h-100 d-flex flex-column justify-content-end">
             <h1 class="blog-title">

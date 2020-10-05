@@ -121,7 +121,6 @@ export default {
         "https://i.imgur.com/qpw5KQ1.png",
         "https://i.imgur.com/xeeqfEG.jpg",
         "https://i.imgur.com/CuYYwqN.jpg",
-        "https://i.imgur.com/em5XN5m.png",
       ],
     };
   },

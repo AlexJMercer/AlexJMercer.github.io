@@ -1,128 +1,139 @@
 <template>
-  <div class="container-fluid bg-dark text-light">
-    <div class="container">
-      <footer class="py-3 pt-md-4">
-        <div class="row">
-          <div class="col-12 col-md">
+  <footer class="footer">
+    <div
+      class="container"
+      :class="isDarkTheme ? 'text-light' : 'text-dark bg-light text-dark'"
+    >
+      <div class="">
+        <div
+          class="border-bottom mb-3"
+          :class="isDarkTheme ? 'border-light' : 'border-dark'"
+        >
+          <template v-if="isDarkTheme">
             <img
-              class="img-fluid brand mb-2"
-              src="~/assets/images/logo-light.png"
-              alt="Ultimate Mercer Logo"
-              width="65"
+              src="~/assets/images/ultimate-logo-light.svg"
+              width="100"
+              class="mx-auto d-block my-3"
+              alt=""
             />
-            <small class="d-block mb-3 text-muted">&copy;2020</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>
-              <span class="marker marker-light marker-link">Redes sociais</span>
-            </h5>
-            <ul class="list-unstyled">
-              <li class="">
-                <a
-                  href="mailto:juliancunha2010@hotmail.com"
-                  class="text-light"
-                  target="_blank"
-                  rel="noopener"
-                  title="E-mail"
-                >
-                  <font-awesome-icon :icon="['fas', 'envelope']" size="lg" />
-                  E-mail
-                </a>
-              </li>
-              <li>
-                <a
-                  class="text-light"
-                  href="https://github.com/UltimateMercer"
-                  target="_blank"
-                  rel="noopener"
-                  title="Acessar github"
-                >
-                  <font-awesome-icon :icon="['fab', 'github']" size="lg" />
-                  Github
-                </a>
-              </li>
-              <li>
-                <a
-                  class="text-light"
-                  href="https://www.facebook.com/UltimateMercer"
-                  target="_blank"
-                  rel="noopener"
-                  title="Facebook"
-                >
-                  <font-awesome-icon :icon="['fab', 'facebook-f']" size="lg" />
+          </template>
+          <template v-else>
+            <img
+              src="~/assets/images/ultimate-logo-dark.svg"
+              width="100"
+              class="mx-auto d-block my-3"
+              alt=""
+            />
+          </template>
+        </div>
 
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/ultimatemercer/"
-                  class="text-light mb-2"
-                  target="_blank"
-                  rel="noopener"
-                  title="Instagram"
-                >
-                  <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/UltimateMercer"
-                  class="text-light"
-                  target="_blank"
-                  rel="noopener"
-                  title="LinkedIn"
-                >
-                  <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" />
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.behance.net/ultimatemercer"
-                  class="text-light"
-                  target="_blank"
-                  rel="noopener"
-                  title="Behance"
-                >
-                  <font-awesome-icon :icon="['fab', 'behance']" size="lg" />
-                  Behance
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://medium.com/@ultimatemercer"
-                  class="text-light"
-                  target="_blank"
-                  rel="noopener"
-                  title="Medium"
-                >
-                  <font-awesome-icon :icon="['fab', 'medium-m']" size="lg" />
-                  Medium
-                </a>
-              </li>
-            </ul>
+        <div class="d-md-flex">
+          <div class="py-3">
+            <p class="me-lg-5" style="font-size: 1.25rem">
+              Se gostou do que viu, fique a vontade para entrar em contato
+              através das minhas redes sociais!
+            </p>
+            <p class="me-lg-5" style="font-size: 1.25rem">
+              Um abraço e até mais!!
+            </p>
           </div>
-          <div class="col-6 col-md">
-            <h5>
-              <span class="marker marker-light marker-link">Projetos</span>
-            </h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <nuxt-link class="text-light" to="/projects"
-                  >Meus projetos</nuxt-link
-                >
-              </li>
-            </ul>
+          <div class="">
+            <h3>
+              <strong>Contatos</strong>
+            </h3>
+            <div class="pb-4">
+              <a
+                class="badge badge-tag rounded-pill my-1 text-light"
+                href="mailto:juliancunha2010@hotmail.com"
+                target="_blank"
+                rel="noopener"
+                title="Acessar e-mail"
+                :class="isDarkTheme ? 'text-dark bg-light' : 'bg-dark'"
+              >
+                <font-awesome-icon :icon="['fas', 'envelope']" size="lg" />
+                E-mail
+              </a>
+              <a
+                class="badge badge-tag rounded-pill my-1 text-light"
+                href="https://github.com/UltimateMercer"
+                target="_blank"
+                rel="noopener"
+                title="Acessar github"
+                :class="isDarkTheme ? 'text-dark bg-light' : 'bg-dark'"
+              >
+                <font-awesome-icon :icon="['fab', 'github']" size="lg" />
+                Github
+              </a>
+              <a
+                class="badge badge-tag rounded-pill my-1 text-light"
+                href="https://www.facebook.com/UltimateMercer"
+                target="_blank"
+                rel="noopener"
+                title="Acessar facebook"
+                :class="isDarkTheme ? 'text-dark bg-light' : 'bg-dark'"
+              >
+                <font-awesome-icon :icon="['fab', 'facebook-f']" size="lg" />
+                Facebook
+              </a>
+              <a
+                class="badge badge-tag rounded-pill my-1 text-light"
+                href="https://www.instagram.com/ultimatemercer/"
+                target="_blank"
+                rel="noopener"
+                title="Acessar instagram"
+                :class="isDarkTheme ? 'text-dark bg-light' : 'bg-dark'"
+              >
+                <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />
+                Instagram
+              </a>
+              <a
+                class="badge badge-tag rounded-pill my-1 text-light"
+                href="https://github.com/UltimateMercer"
+                target="_blank"
+                rel="noopener"
+                title="Linkedin"
+                :class="isDarkTheme ? 'text-dark bg-light' : 'bg-dark'"
+              >
+                <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" />
+                Linkedin
+              </a>
+              <a
+                class="badge badge-tag rounded-pill my-1 text-light"
+                href="https://www.behance.net/ultimatemercer"
+                target="_blank"
+                rel="noopener"
+                title="Behance"
+                :class="isDarkTheme ? 'text-dark bg-light' : 'bg-dark'"
+              >
+                <font-awesome-icon :icon="['fab', 'behance']" size="lg" />
+                Behance
+              </a>
+              <a
+                class="badge badge-tag rounded-pill my-1 text-light"
+                href="https://medium.com/@ultimatemercer"
+                target="_blank"
+                rel="noopener"
+                title="Medium"
+                :class="isDarkTheme ? 'text-dark bg-light' : 'bg-dark'"
+              >
+                <font-awesome-icon :icon="['fab', 'medium-m']" size="lg" />
+                Medium
+              </a>
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
-  </div>
+  </footer>
 </template>
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: "Footer",
+
+  computed: {
+    ...mapGetters(["isDarkTheme"]),
+  },
 };
 </script>

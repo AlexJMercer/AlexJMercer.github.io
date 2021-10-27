@@ -1,16 +1,16 @@
 <template>
-  <div class="">
+  <LayoutContent>
     <template v-if="isDarkTheme">
       <img
         src="~/assets/images/ultimate-logo-light.svg"
-        width="150"
+        width="175"
         style="margin: 0 auto 1.25rem; display: block; padding: 1.25rem"
       />
     </template>
     <template v-else>
       <img
         src="~/assets/images/ultimate-logo-dark.svg"
-        width="150"
+        width="175"
         style="margin: 0 auto 1.25rem; display: block; padding: 1.25rem"
       />
     </template>
@@ -35,9 +35,7 @@
             />
             <div class="about-header-info">
               <h1>
-                <strong>
-                  <em> Oi! Eu sou o Julian Silva da Cunha </em>
-                </strong>
+                <strong> Oi! Eu sou o Julian</strong>
               </h1>
               <h4
                 style="
@@ -46,11 +44,9 @@
                   margin-bottom: 1.25rem;
                 "
               >
-                <em>
-                  Sou formado em Tecnologia em Sistemas para Internet no IFSul,
-                  e atualmente estou cursando o 6º semestre do Design Digital na
-                  UFPel e moro em Pelotas/RS.
-                </em>
+                Sou formado em Tecnologia em Sistemas para Internet no IFSul, e
+                atualmente estou cursando o 6º semestre do Design Digital na
+                UFPel e moro em Pelotas/RS.
               </h4>
             </div>
           </div>
@@ -88,12 +84,12 @@
           </p>
 
           <h1 class="mb-4">
-            <em> Mas se quiser pode me chamar também de Ultimate Mercer </em>
+            Mas se quiser pode me chamar também de Ultimate Mercer
           </h1>
         </div>
       </div>
     </div>
-  </div>
+  </LayoutContent>
 </template>
 
 <script>

@@ -11,7 +11,8 @@ tags:
   - Edição digital
 featured: false
 type: "normal"
-headerLayout: "portrait-left-full"
+layout: "two-column"
+headerLayout: "fullpage"
 fontType: ""
 isPublished: true
 isLocal: true

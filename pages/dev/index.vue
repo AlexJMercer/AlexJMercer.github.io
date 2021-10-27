@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <LayoutContent>
     <div class="bg-dark">
       <div class="d-block mx-auto mb-4">
         <div class="d-flex">
@@ -34,7 +34,7 @@
         em geral.
       </p>
       <div class="">
-        <div class="" v-for="(project, i) in projects" :key="i">
+        <div v-for="(project, i) in projects" :key="i" class="">
           <div
             class="card card-raised card-horizontal hover-card mb-4"
             :class="[
@@ -78,7 +78,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </LayoutContent>
 </template>
 <script>
 import { mapGetters } from "vuex";

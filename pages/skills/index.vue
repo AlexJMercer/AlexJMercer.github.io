@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <LayoutContent>
     <div class="skills-header">
       <img
         src="~/assets/images/ultimate-logo-light.svg"
@@ -139,7 +139,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </LayoutContent>
 </template>
 <script>
 import { mapGetters } from "vuex";

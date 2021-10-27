@@ -1,15 +1,8 @@
 <template>
   <main class="main-layout">
-    <Sidebar :channels="menu" />
+    <!-- <Sidebar :channels="menu" /> -->
     <div id="grid" class="grid">
-      <div
-        class="Nav-bar"
-        :class="
-          !isDarkTheme
-            ? 'text-dark bg-light border-bottom border-dark'
-            : 'border-bottom border-light'
-        "
-      >
+      <div class="Nav-bar" :class="!isDarkTheme ? 'text-dark bg-light' : ''">
         <div class="d-flex align-middle py-2 px-4">
           <nuxt-link
             to="/"
@@ -133,6 +126,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "IBM Plex Sans Condensed", "Roboto Mono", consolas, monospace !important;
+  font-family: "JetBrains Mono", "IBM Plex Sans Condensed", consolas, monospace !important;
 }
 </style>

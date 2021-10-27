@@ -12,10 +12,7 @@
         "
       >
         <template v-if="article.type === 'stories'">
-          <div
-            class="nuxt-content"
-            :class="article.type === 'stories' ? 'mono-font' : ''"
-          >
+          <div class="nuxt-content mono-font">
             <p class="mb-2">{{ article.abstract }}</p>
             <hr
               v-if="article.toc.length < 2"
@@ -24,10 +21,7 @@
           </div>
         </template>
         <template v-if="article.type === 'stories' && article.toc.length >= 2">
-          <div
-            class="nuxt-content"
-            :class="article.type === 'stories' ? 'mono-font' : ''"
-          >
+          <div class="nuxt-content mono-font">
             <nav
               class="border py-3 px-md-4 px-3 my-4 rounded"
               :class="isDarkTheme ? 'border-light' : 'border-dark'"
@@ -49,10 +43,8 @@
         </template>
         <nuxt-content
           :document="article"
-          :class="[
-            article.type === 'stories' ? 'mono-font' : '',
-            !isDarkTheme ? 'light-theme' : '',
-          ]"
+          class="mono-font"
+          :class="[!isDarkTheme ? 'light-theme' : '']"
         />
 
         <template v-if="article.gallery">

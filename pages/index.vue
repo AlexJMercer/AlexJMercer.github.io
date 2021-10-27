@@ -18,16 +18,12 @@
       <h1
         :class="isDarkTheme ? 'cyber-underline-light' : 'cyber-underline-dark'"
       >
-        <strong>
-          <em> Oi! Eu sou o Julian Silva da Cunha </em>
-        </strong>
+        Oi! Eu sou o Julian Silva da Cunha
       </h1>
       <h2 style="font-size: 1.25rem; line-height: 1.5; margin-bottom: 1.5rem">
-        <em>
-          Sou formado em Tecnologia em Sistemas para Internet no IFSul, e
-          atualmente estou cursando o 6º semestre do Design Digital na UFPel,
-          tenho 26 anos e moro em Pelotas/RS.
-        </em>
+        Sou formado em Tecnologia em Sistemas para Internet no IFSul, e
+        atualmente estou cursando o 6º semestre do Design Digital na UFPel,
+        tenho 26 anos e moro em Pelotas/RS.
       </h2>
       <div class="pb-4">
         <a
@@ -39,7 +35,6 @@
           :class="isDarkTheme ? 'bg-light text-dark' : 'bg-dark text-light'"
         >
           <font-awesome-icon :icon="['fas', 'envelope']" size="lg" />
-          E-mail
         </a>
         <a
           class="badge badge-tag rounded-pill my-1"
@@ -50,7 +45,6 @@
           :class="isDarkTheme ? 'bg-light text-dark' : 'bg-dark text-light'"
         >
           <font-awesome-icon :icon="['fab', 'github']" size="lg" />
-          Github
         </a>
         <a
           class="badge badge-tag rounded-pill my-1"
@@ -61,7 +55,6 @@
           :class="isDarkTheme ? 'bg-light text-dark' : 'bg-dark text-light'"
         >
           <font-awesome-icon :icon="['fab', 'facebook-f']" size="lg" />
-          Facebook
         </a>
         <a
           class="badge badge-tag rounded-pill my-1"
@@ -72,7 +65,6 @@
           :class="isDarkTheme ? 'bg-light text-dark' : 'bg-dark text-light'"
         >
           <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />
-          Instagram
         </a>
         <a
           class="badge badge-tag rounded-pill my-1"
@@ -83,7 +75,6 @@
           :class="isDarkTheme ? 'bg-light text-dark' : 'bg-dark text-light'"
         >
           <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" />
-          Linkedin
         </a>
         <a
           class="badge badge-tag rounded-pill my-1"
@@ -94,7 +85,6 @@
           :class="isDarkTheme ? 'bg-light text-dark' : 'bg-dark text-light'"
         >
           <font-awesome-icon :icon="['fab', 'behance']" size="lg" />
-          Behance
         </a>
         <a
           class="badge badge-tag rounded-pill my-1"
@@ -105,7 +95,6 @@
           :class="isDarkTheme ? 'bg-light text-dark' : 'bg-dark text-light'"
         >
           <font-awesome-icon :icon="['fab', 'medium-m']" size="lg" />
-          Medium
         </a>
       </div>
     </div>

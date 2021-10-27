@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <LayoutContent>
     <div style="background-color: #1779ff">
       <img
         src="~/assets/images/ultimate-logo-light.svg"
@@ -28,7 +28,7 @@
           >
             <img
               :src="project.cover ? project.cover : project.imageHeader"
-              class="card-background-image card-img-border"
+              class="card-background-image-featured card-img-border"
               alt="..."
             />
 
@@ -67,14 +67,14 @@
         </li>
       </div> -->
     </div>
-  </div>
+  </LayoutContent>
 </template>
 <script>
 import { mapGetters } from "vuex";
 
 export default {
   async asyncData({ $content, params }) {
-    const projects = await $content("pro", params.slug)
+    const projects = await $content("art", params.slug)
       .sortBy("createdDate", "desc")
       .fetch();
     return {

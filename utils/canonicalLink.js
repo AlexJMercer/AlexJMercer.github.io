@@ -2,6 +2,8 @@ export const createCanonical = (data) => [
   {
     hid: "canonical",
     rel: "canonical",
-    href: "https://ultimatemercer.com" + "/" + data ? data : "",
+    href: data
+      ? `https://ultimatemercer.com/${data}`
+      : "https://ultimatemercer.com",
   },
 ];

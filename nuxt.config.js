@@ -1,5 +1,5 @@
 import { createSEOMeta } from "./utils/seo.js";
-// import seoImage from "./static/ultimate-seo.jpg";
+import { createCanonical } from "./utils/canonicalLink.js";
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -11,16 +11,19 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "format-detection", content: "telephone=no" },
       ...createSEOMeta({
         title: "Ultimate Mercer",
         description:
           "Oi! Eu sou o Julian , mas se quiser pode me chamar de Ultimate Mercer!",
-        image: "ultimatemercer.github.io/static/ultimate-seo.jpg",
-        url: "ultimatemercer.github.io",
+        image: "/ultimate-seo.jpg",
+        url: "ultimatemercer.com",
       }),
     ],
     link: [
+      ...createCanonical(),
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com" },
       {
         rel: "stylesheet",
@@ -32,7 +35,7 @@ export default {
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap",
       },
       {
         rel: "stylesheet",
@@ -40,22 +43,17 @@ export default {
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,350;0,500;0,700;1,350;1,500;1,700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,350;0,500;0,700;1,350;1,500;1,700&display=swap",
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,350;0,500;0,700;1,350;1,500;1,700&display=swap",
       },
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["~/assets/scss/blklight.scss"],
-
-  loading: {
-    color: "#ffff00",
-    height: "8px",
-  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ["~/plugins/vue-lazyload"],
@@ -90,14 +88,12 @@ export default {
     },
   },
 
-  // Content module configuration (https://go.nuxtjs.dev/config-content)
+  // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
+    fullTextSearchFields: ["title", "category", "channel"],
     markdown: {
       prism: {
-        // theme: "prism-themes/themes/prism-xonokai.css",
-        // theme: "prism-themes/themes/prism-synthwave84.css",
-        theme: "prism-themes/themes/prism-dracula.css",
-        // theme: "prism-themes/themes/prism-shades-of-purple.css",
+        theme: "prism-themes/themes/prism-a11y-dark.css",
       },
     },
   },
@@ -123,6 +119,7 @@ export default {
         "faWindowClose",
         "faChevronRight",
         "faChevronLeft",
+        "faSearch",
       ],
       regular: ["faSun", "faMoon", "faWindowClose"],
       brands: [

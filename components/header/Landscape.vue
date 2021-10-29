@@ -6,12 +6,7 @@
       <img
         v-lazy="article.imageHeader"
         class="header-landscape-img"
-        :class="[
-          colorFilterRandom,
-          isDarkTheme
-            ? 'border-bottom border-light'
-            : 'border-bottom border-dark',
-        ]"
+        :class="[colorFilterRandom]"
       />
     </picture>
     <!-- <div

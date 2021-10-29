@@ -1,77 +1,40 @@
 <template>
-  <main class="main-layout">
-    <!-- <Sidebar :channels="menu" /> -->
-    <div id="grid" class="grid">
-      <div class="Nav-bar" :class="!isDarkTheme ? 'text-dark bg-light' : ''">
-        <div class="d-flex align-middle py-2 px-4">
-          <nuxt-link
-            to="/"
-            class="d-inline-block d-sm-none d-md-none d-xl-none d-xxl-none me-3"
-          >
-            <template v-if="isDarkTheme">
-              <img
-                src="../assets/images/ultimate-logo-light.svg"
-                title="Ultimate Mercer"
-                width="50"
-                class="mx-auto d-block"
-              />
-            </template>
-            <template v-else>
-              <img
-                src="../assets/images/ultimate-logo-dark.svg"
-                title="Ultimate Mercer"
-                width="50"
-                class="mx-auto d-block"
-              />
-            </template>
-          </nuxt-link>
-          <button
-            type="button"
-            class="btn d-inline-block d-sm-none d-md-none d-xl-none d-xxl-none"
-            :class="isDarkTheme ? 'btn-outline-light' : 'btn-outline-dark'"
-            @click.prevent="sidebarSwitch"
-          >
-            <font-awesome-icon :icon="['fas', 'bars']" size="lg" />
-          </button>
-          <div class="ms-auto">
-            <button
-              class="btn ml-auto"
-              :class="isDarkTheme ? 'btn-outline-light' : 'btn-outline-dark'"
-              @click.prevent="darkTheme"
-            >
-              <font-awesome-icon :icon="['fas', 'adjust']" size="lg" />
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="content" :class="!isDarkTheme ? 'text-dark bg-light' : ''">
-        <Nuxt />
-        <template v-if="$route.name !== 'index'">
-          <Footer />
-        </template>
-        <ColorFilters />
-      </div>
-    </div>
+  <main
+    v-lazy:background-image="setImage"
+    class="background-home view-anchor"
+    :class="!isDarkTheme ? 'text-dark bg-light' : ''"
+  >
+    <div class="mask texture-mask-4"></div>
+    <Nuxt />
+    <ColorFilters />
   </main>
 </template>
 <script>
 import { mapMutations, mapGetters } from "vuex";
 
-import dataMenu from "~/assets/data/menu.json";
-
 export default {
   data() {
     return {
-      menu: dataMenu,
-      isDark: true,
+      data: [],
+      images: [
+        "https://i.imgur.com/p7kPVCN.jpg",
+        "https://i.imgur.com/YFUEbBx.jpg",
+        "https://i.imgur.com/Qw6LuRE.jpg",
+        "https://i.imgur.com/KMN1KQ5.jpg",
+      ],
     };
+  },
+
+  async fetch() {
+    this.data = await this.$content("channels").fetch();
   },
 
   computed: {
     ...mapGetters(["isDarkTheme", "isSidebarOpen"]),
-
-    showChannels() {
-      return console.log(this.channels);
+    setImage() {
+      const img = this.images;
+      const randomImg = Math.floor(Math.random() * img.length);
+      return img[randomImg];
     },
   },
 
@@ -80,22 +43,22 @@ export default {
       darkTheme: "darkTheme",
       sidebarSwitch: "sidebarSwitch",
     }),
-
-    lightMode() {
-      this.isDark = !this.isDark;
-      console.log(this.isDark);
-    },
   },
 };
 </script>
 <style lang="scss">
-.grid {
+.bar-test {
+  display: flex;
+  max-width: 100%;
+}
+
+.main-grid {
   flex: 1;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: 60px auto;
   grid-template-areas:
-    "NavBar NavBar NavBar"
+    "Toolbar Toolbar Toolbar"
     "Content Content Content "
     "Content Content Content "
     "Content Content Content "
@@ -103,29 +66,29 @@ export default {
   height: 100vh;
 }
 
-.Nav-bar {
-  grid-area: NavBar;
-  z-index: 1000;
+.head-toolbar {
+  grid-area: Toolbar;
+  z-index: 50;
 }
 
 .content {
   grid-area: Content;
   max-width: 100%;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
   grid-area: Footer;
   max-width: 100%;
-  padding: 0.5rem 1rem 1rem;
+  padding: 1rem 1.5rem 1rem;
+  margin-top: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "JetBrains Mono", "IBM Plex Sans Condensed", consolas, monospace !important;
+.background-home {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

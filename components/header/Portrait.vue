@@ -3,9 +3,6 @@
     <div
       :class="[
         isRight ? 'header-portrait-column-right' : 'header-portrait-column',
-        isDarkTheme
-          ? 'border-end border-bottom border-light'
-          : 'border-end border-bottom border-dark',
       ]"
     >
       <div

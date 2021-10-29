@@ -8,10 +8,7 @@
           <img
             v-lazy="article.imageHeader"
             class="header-basic-container-image"
-            :class="[
-              colorFilterRandom,
-              isDarkTheme ? 'border border-light' : 'border border-dark',
-            ]"
+            :class="[colorFilterRandom]"
           />
         </div>
       </picture>

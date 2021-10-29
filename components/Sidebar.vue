@@ -1,25 +1,26 @@
 <template>
-  <div id="sidebarNew" class="" :class="[switchSidebar]">
+  <div
+    id="sidebar"
+    class=""
+    :class="[switchSidebar, isDarkTheme ? 'bg-darkest' : 'bg-dark']"
+  >
     <div class="brand-header">
-      <ServerButton isHome />
+      <ChannelButton is-home />
       <button
         type="button"
-        class="btn btn-uv close"
+        class="btn btn-dark close"
         @click.prevent="sidebarSwitch"
       >
         <font-awesome-icon :icon="['fas', 'chevron-left']" size="2x" />
       </button>
     </div>
 
-    <!-- <button class="btn btn-uv btn-circle-xl" @click.prevent="darkTheme">
-      <font-awesome-icon :icon="['fas', 'adjust']" />
-    </button> -->
-    <!-- <ServerButton v-for="servers in 18" :key="servers.id" /> -->
-    <!-- <div class="separator"></div> -->
-
     <div v-for="(channel, i) in channels" :key="i">
-      <ServerButton :channel="channel" />
+      <ChannelButton :channel="channel" />
     </div>
+
+    <!-- <ChannelButton v-for="servers in 18" :key="servers.id" /> -->
+    <!-- <div class="separator"></div> -->
   </div>
 </template>
 <script>
@@ -32,18 +33,13 @@ export default {
       default: null,
     },
   },
+
   data() {
     return {
       windowWidth: 0,
     };
   },
 
-  // async fetch() {
-  //   const channels = await this.$content("channels").fetch();
-  //   return {
-  //     channels,
-  //   };
-  // },
   computed: {
     ...mapGetters(["isDarkTheme", "isSidebarOpen"]),
     switchSidebar() {
@@ -64,7 +60,9 @@ export default {
       return sidebarClass;
     },
   },
+
   created() {},
+
   mounted() {
     window.addEventListener("resize", this.getWidth);
     this.getWidth();
@@ -87,7 +85,7 @@ export default {
 };
 </script>
 <style lang="scss">
-#sidebarNew {
+#sidebar {
   border-right: 1px solid #121212;
   width: 80px;
   padding: 0 0.25rem;
@@ -97,7 +95,8 @@ export default {
   align-items: center;
   z-index: 1001;
   // background-color: #0d40e9;
-  background-color: #f85b1a;
+  //background-color: #f85b1a;
+  background-color: #000000;
   height: 100vh;
   overflow-y: scroll;
   box-shadow: 0px 0px 8px 0px rgba(18, 18, 18, 0.75);
@@ -113,7 +112,9 @@ export default {
     position: sticky;
     top: 0;
     z-index: 1020;
-    background-color: #f85b1a;
+    //background-color: #f85b1a;
+    background-color: #000000;
+
     padding: 0.5rem 0.75rem 0.5rem;
 
     .close {
@@ -134,7 +135,7 @@ export default {
 }
 
 @media screen and (max-width: 576px) {
-  #sidebarNew {
+  #sidebar {
     position: absolute;
     width: 100%;
     padding: 0 2rem 0.5rem;

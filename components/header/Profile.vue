@@ -22,7 +22,9 @@
         <h1 class="article-title">
           <em>
             <span class="text-light bg-dark p-1">
-              {{ article.title }}
+              <i class="marker-line">
+                {{ article.title }}
+              </i>
             </span>
           </em>
         </h1>

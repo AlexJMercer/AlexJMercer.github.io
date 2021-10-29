@@ -47,6 +47,6 @@ export const createSEOMeta = (data) => [
   {
     hid: "twitter:url",
     name: "twitter:url",
-    content: "ultimatemercer.com" + "/" + data.url,
+    content: "ultimatemercer.com",
   },
 ];

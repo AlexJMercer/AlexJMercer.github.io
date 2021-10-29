@@ -1,5 +1,4 @@
 export const createSEOMeta = (data) => [
-  { property: "og:site_name", content: "ultimatemercer.com" },
   {
     hid: "og:title",
     property: "og:title",

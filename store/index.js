@@ -1,5 +1,5 @@
 export const state = () => ({
-  isDark: loadState("darkTheme") || false,
+  isDark: loadState("darkTheme") || true,
   isOpen: loadSidebarState("sidebarSwitch") || false,
 });
 
@@ -29,7 +29,7 @@ function loadState(key) {
   try {
     return JSON.parse(window.localStorage.getItem(key));
   } catch (err) {
-    return false;
+    return true;
   }
 }
 

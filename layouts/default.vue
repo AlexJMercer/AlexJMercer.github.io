@@ -1,16 +1,22 @@
 <template>
-  <main
-    v-lazy:background-image="setImage"
-    class="background-home view-anchor"
-    :class="!isDarkTheme ? 'text-dark bg-light' : ''"
-  >
-    <div class="mask texture-mask-4"></div>
-    <Nuxt />
-    <ColorFilters />
+  <main class="main-layout" :class="isDarkTheme ? 'bg-light' : 'bg-dark'">
+    <div class="main-grid">
+      <Toolbar />
+      <div class="content" :class="isDarkTheme ? 'text-dark' : ''">
+        <Nuxt />
+        <template v-if="$route.name !== 'index'">
+          <Footer />
+        </template>
+        <ColorFilters />
+      </div>
+    </div>
+
+    <!-- <div class="mask texture-mask-4"></div> -->
   </main>
 </template>
 <script>
 import { mapMutations, mapGetters } from "vuex";
+import Toolbar from "~/components/Toolbar.vue";
 
 export default {
   data() {
@@ -24,11 +30,9 @@ export default {
       ],
     };
   },
-
-  async fetch() {
-    this.data = await this.$content("channels").fetch();
-  },
-
+  // async fetch() {
+  //   this.data = await this.$content("channels").fetch();
+  // },
   computed: {
     ...mapGetters(["isDarkTheme", "isSidebarOpen"]),
     setImage() {
@@ -37,13 +41,13 @@ export default {
       return img[randomImg];
     },
   },
-
   methods: {
     ...mapMutations({
       darkTheme: "darkTheme",
       sidebarSwitch: "sidebarSwitch",
     }),
   },
+  components: { Toolbar },
 };
 </script>
 <style lang="scss">
@@ -64,6 +68,8 @@ export default {
     "Content Content Content "
     "Footer Footer Footer ";
   height: 100vh;
+  /* background-image: url("assets/mask-overlays/13-extra.png");
+  background-attachment: fixed; */
 }
 
 .head-toolbar {
@@ -90,5 +96,10 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.main-layout {
+  /* background-image: url("assets/mask-overlays/13-extra.png");
+  background-attachment: fixed; */
 }
 </style>

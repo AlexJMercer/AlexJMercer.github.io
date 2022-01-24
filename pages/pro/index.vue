@@ -10,7 +10,7 @@
     <section class="container">
       <h1
         class="font-monospace"
-        :class="!isDarkTheme ? 'cyber-underline-light' : 'cyber-underline-dark'"
+        :class="isDarkTheme ? 'cyber-underline-light' : 'cyber-underline-dark'"
       >
         Projetos profissionais e acadêmicos
       </h1>
@@ -30,22 +30,19 @@
   </LayoutContent>
 </template>
 <script>
-import { mapGetters } from "vuex";
-
+import { mapGetters } from 'vuex'
 export default {
   async asyncData({ $content, params }) {
-    const articles = await $content("pro", params.slug)
-      .sortBy("createdDate", "asc")
-      .fetch();
-
-    console.log(JSON.stringify(articles, undefined, 2));
+    const articles = await $content('pro', params.slug)
+      .sortBy('createdDate', 'asc')
+      .fetch()
+    console.log(JSON.stringify(articles, undefined, 2))
     return {
       articles,
-    };
+    }
   },
-
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
   },
-};
+}
 </script>

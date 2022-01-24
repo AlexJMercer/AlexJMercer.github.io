@@ -21,9 +21,9 @@
           <h1 class="article-title text-center">
             <em>
               <span
-                class="background-texture p-1"
+                class="p-1"
                 :class="
-                  isDarkTheme ? 'text-dark bg-light ' : 'text-light bg-dark'
+                  !isDarkTheme ? 'text-dark bg-light' : 'text-light bg-dark'
                 "
               >
                 <i class="marker-line">
@@ -35,9 +35,9 @@
           <h5 class="article-meta text-center">
             <em>
               <span
-                class="background-texture p-1"
+                class="p-1"
                 :class="
-                  isDarkTheme ? 'text-dark bg-light' : 'text-light bg-dark'
+                  !isDarkTheme ? 'text-dark bg-light' : 'text-light bg-dark'
                 "
               >
                 <i class="marker-line">

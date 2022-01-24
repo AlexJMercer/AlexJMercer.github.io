@@ -13,7 +13,7 @@ tags:
   - Photoshop
 featured: false
 type: "normal"
-headerLayout: "profile"
+headerLayout: "square-profile"
 fontType: "base"
 isPublished: true
 author:

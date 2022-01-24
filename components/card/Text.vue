@@ -9,7 +9,7 @@
       <h2 class="font-monospace mb-3">
         <span
           class="py-2"
-          :class="!isDarkTheme ? 'text-dark bg-light' : 'text-light bg-dark'"
+          :class="isDarkTheme ? 'text-dark bg-light' : 'text-light bg-dark'"
         >
           <span class="marker-line">{{ article.title }}</span>
         </span>
@@ -23,7 +23,7 @@
       <nuxt-link
         v-if="article.isPublished"
         :to="article.path"
-        :class="isDarkTheme ? 'text-dark' : 'text-light'"
+        :class="!isDarkTheme ? 'text-dark' : 'text-light'"
       >
         Ler mais...
       </nuxt-link>
@@ -37,7 +37,7 @@
   </article>
 </template>
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex'
 
 export default {
   props: {
@@ -48,8 +48,8 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
   },
-};
+}
 </script>
 <style lang="scss" scoped></style>

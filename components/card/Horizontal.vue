@@ -1,13 +1,13 @@
 <template>
   <article
     class="card card-raised mb-4"
-    :class="[!isDarkTheme ? 'card-plain hover-card-yellow' : 'hover-card-uv']"
+    :class="[isDarkTheme ? 'card-plain hover-card-yellow' : 'hover-card-uv']"
   >
     <div class="d-flex align-items-center px-3 py-3">
       <span
         class="badge bg-transparent border ms-0 me-2"
         :class="[
-          !isDarkTheme ? ' border-neon-yellow' : ' border-uv text-dark',
+          isDarkTheme ? ' border-neon-yellow' : ' border-uv text-dark',
           badgeIsTag ? 'badge-tag' : '',
         ]"
       >
@@ -21,7 +21,7 @@
           v-lazy="article.cover ? article.cover : article.imageHeader"
           :alt="article.title"
           class="card-image-h card-img-border hover-filter-cyberpunk-v"
-          :class="!isDarkTheme ? 'border-light' : 'border-dark'"
+          :class="isDarkTheme ? 'border-light' : 'border-dark'"
         />
       </div>
       <div class="flex-grow-1 ms-sm-3">
@@ -33,11 +33,9 @@
             class="mt-2"
           />
         </template>
-        <h5 class="font-monospace my-2">
-          <em>
-            {{ article.title }}
-          </em>
-        </h5>
+        <h3 class="card-font-test my-2">
+          {{ article.title }}
+        </h3>
 
         <p class="d-xl-block d-lg-block d-sm-none mb-1">
           <template v-if="article.description">
@@ -60,18 +58,13 @@
       </div>
     </div>
     <div class="d-flex align-items-center px-3 py-3">
-      <template v-if="article.isPublished">
-        <NuxtLink
-          :to="article.path"
-          class="btn btn-raised btn-read-more-sm ms-auto"
-          :class="!isDarkTheme ? 'btn-neon-yellow' : 'btn-uv'"
-        >
-          Ler mais...
-        </NuxtLink>
-      </template>
-      <template v-else>
-        <p class="ms-auto"><em> Em atualização...</em></p>
-      </template>
+      <NuxtLink
+        :to="`${article.dir}/${article.slug}`"
+        class="btn btn-raised btn-read-more-sm ms-auto"
+        :class="isDarkTheme ? 'btn-neon-yellow' : 'btn-uv'"
+      >
+        Ler mais...
+      </NuxtLink>
     </div>
   </article>
 </template>
@@ -104,16 +97,18 @@ export default {
     ...mapGetters(["isDarkTheme"]),
   },
 
-  // methods: {
-  //   slugName(data) {
-  //     const link = data.replace("articles/", "").replace("/", "");
-  //     return link;
-  //   },
-  // },
+  methods: {
+    slugName(data) {
+      const link = data.replace("articles/", "").replace("/", "");
+      return link;
+    },
+  },
 };
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 .card-image-h {
   width: 350px;
   height: 250px;
@@ -134,5 +129,9 @@ export default {
     height: 300px;
     object-fit: cover;
   }
+}
+
+.card-font-test {
+  font-family: "Playfair Display", serif;
 }
 </style>

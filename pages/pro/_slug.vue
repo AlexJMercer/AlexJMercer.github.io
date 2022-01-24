@@ -1,5 +1,5 @@
 <template>
-  <LayoutContent>
+  <div>
     <template v-if="article.layout === 'two-column'">
       <ArticleTwoColumn :article="article" />
     </template>
@@ -7,37 +7,33 @@
       <Article :article="article" />
     </template>
     <!-- <PrevNextArticles :prev="prev" :next="next" /> -->
-  </LayoutContent>
+  </div>
 </template>
 <script>
 // import global from "@/utils/global";
 // import getSiteMeta from "@/utils/getSiteMeta";
-
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content("pro", params.slug).fetch();
-
+    const article = await $content('pro', params.slug).fetch()
     // const author = await $content("authors")
     //   .only(["username", "bio", "cover"])
     //   .where({ username: article.author.name })
     //   .fetch();
-
-    const [prev, next] = await $content("pro")
+    const [prev, next] = await $content('pro')
       .only([
-        "title",
-        "slug",
-        "cover",
-        "imageHeader",
-        "createdDate",
-        "channel",
-        "dir",
+        'title',
+        'slug',
+        'cover',
+        'imageHeader',
+        'createdDate',
+        'channel',
+        'dir',
       ])
-      .sortBy("createdDate", "desc")
+      .sortBy('createdDate', 'desc')
       .where({ isPublished: true })
       .surround(params.slug)
-      .fetch();
-
-    return { article, prev, next };
+      .fetch()
+    return { article, prev, next }
   },
   // head() {
   //   return {
@@ -60,7 +56,6 @@ export default {
   //     ],
   //   };
   // },
-
   // computed: {
   //   meta() {
   //     const metaData = {
@@ -73,7 +68,7 @@ export default {
   //     return getSiteMeta(metaData);
   //   },
   // },
-};
+}
 </script>
 
 <style lang="scss">

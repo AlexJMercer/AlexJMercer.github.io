@@ -1,126 +1,382 @@
 <template>
-  <section>
-    <div class="scroller">
-      <div class="scroller__container--controls">
-        <button
-          class="scroller__container--prev"
-          @click.prevent="clickPrev('parent')"
-        >
-          <font-awesome-icon :icon="['fas', 'chevron-left']" size="lg" />
-        </button>
-        <button
-          class="scroller__container--next"
-          @click.prevent="clickNext('parent')"
-        >
-          <font-awesome-icon :icon="['fas', 'chevron-right']" size="lg" />
-        </button>
+  <main>
+    <div class="container bg-light p-5">
+      <div class="d-flex">
+        <template v-for="parent in parents">
+          <span
+            :key="parent.id"
+            class="badge badge-tag"
+            :class="[
+              activeParents.includes(parent.id) ? 'bg-orange' : 'bg-dark',
+            ]"
+            @click.prevent="toggleParent(parent)"
+          >
+            {{ parent.title }}
+          </span>
+        </template>
       </div>
-      <section ref="parent" class="scroller__container">
-        <div v-for="(art, i) in arts" :key="i" class="d-inline">
-          <div class="d-inline-block">
-            <img
-              :src="art.url"
-              class="img-fluid mx-2 mb-4 rounded shadow"
-              :alt="art.title"
-              style="width: 300px; height: 150px; object-fit: cover"
-            />
-            <p class="text-center text-wrap" style="width: 200px">
-              {{ art.title }}
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="scroller">
-      <div class="scroller__container--controls">
-        <button class="scroller__container--prev" @click.prevent="clickPrev()">
-          <font-awesome-icon :icon="['fas', 'chevron-left']" size="lg" />
-        </button>
-        <button class="scroller__container--next" @click.prevent="clickNext()">
-          <font-awesome-icon :icon="['fas', 'chevron-right']" size="lg" />
-        </button>
+      <div class="d-flex">
+        <template v-for="tag in tags">
+          <span
+            :key="tag.id"
+            class="badge"
+            :class="[
+              activeTags.includes(tag)
+                ? 'bg-neon-yellow text-dark'
+                : 'bg-secondary text-dark',
+            ]"
+            :title="tag.title"
+            @click.prevent="toggleChildren(tag)"
+          >
+            {{ tag.title }}
+          </span>
+        </template>
       </div>
-      <section ref="tags" class="scroller__container">
-        <div v-for="(art, i) in arts" :key="i" class="d-inline">
-          <div class="d-inline-block">
-            <img
-              :src="art.url"
-              class="img-fluid mx-2 mb-4 rounded shadow"
-              :alt="art.title"
-              style="width: 300px; height: 150px; object-fit: cover"
-            />
-            <p class="text-center text-wrap" style="width: 200px">
-              {{ art.title }}
-            </p>
-          </div>
-        </div>
-      </section>
+      <div class="text-dark mt-5">
+        <h2 class="">Active Parents</h2>
+        <pre>{{ activeParents }}</pre>
+      </div>
+      <div class="text-dark mt-5">
+        <h2 class="">Tags</h2>
+        <pre>{{ tags }}</pre>
+      </div>
+      <div class="text-dark mt-5">
+        <h2 class="">ActiveTags</h2>
+        <pre>{{ activeTags }}</pre>
+      </div>
     </div>
-  </section>
+    <div class="first">
+      <div class="second">
+        <div class="third">
+          <FlexSidebar />
+          <!-- <div class="element-left">
+            <nav>
+              <div class="element-left-content">
+                <div class="element-left-brand">
+                  <img
+                    :src="logo"
+                    title="Ultimate Mercer"
+                    width="60"
+                    class="mx-auto d-block"
+                  />
+                </div>
+                <div class="element-left-block">
+                  <div class="element-left-links">
+                    <img
+                      :src="logo"
+                      title="Ultimate Mercer"
+                      width="40"
+                      class="filter-cyberpunk-v mx-auto d-block"
+                    />
+                  </div>
+                  <div class="element-left-links">
+                    <img
+                      :src="logo"
+                      title="Ultimate Mercer"
+                      width="40"
+                      class="filter-cyberpunk-v mx-auto d-block"
+                    />
+                  </div>
+                  <div class="element-left-links">
+                    <img
+                      :src="logo"
+                      title="Ultimate Mercer"
+                      width="40"
+                      class="filter-cyberpunk-v mx-auto d-block"
+                    />
+                  </div>
+                </div>
+                <div class="element-left-block">
+                  <div class="element-left-links">
+                    <img
+                      :src="logo"
+                      title="Ultimate Mercer"
+                      width="40"
+                      class="filter-cyberpunk-purple-red-orange mx-auto d-block"
+                    />
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div> -->
+
+          <footer class="element-footer">
+            <div class="element-footer-content">
+              <div class="element-footer-container">
+                <div class="element-footer-items">
+                  <img
+                    :src="logo"
+                    title="Ultimate Mercer"
+                    width="30"
+                    class="mx-auto d-block"
+                  />
+                </div>
+                <div class="element-footer-items">
+                  <img
+                    :src="logo"
+                    title="Ultimate Mercer"
+                    width="30"
+                    class="mx-auto d-block"
+                  />
+                </div>
+                <div class="element-footer-items">
+                  <img
+                    :src="logo"
+                    title="Ultimate Mercer"
+                    width="30"
+                    class="mx-auto d-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </main>
 </template>
 <script>
-import artsData from "~/assets/data/arts.json";
-
+import Logo from '@/assets/images/ultimate-logo-red.svg'
 export default {
   data() {
     return {
-      arts: artsData,
-      scrollLeft: null,
-    };
+      logo: Logo,
+      parents: [
+        {
+          id: 1,
+          title: 'Ultimates',
+        },
+        {
+          id: 2,
+          title: 'Prototype',
+        },
+        {
+          id: 3,
+          title: 'Super Saiyans',
+        },
+      ],
+      templateChildrens: [
+        {
+          id: 1,
+          title: 'Mercer',
+          parentId: 1,
+        },
+        {
+          id: 2,
+          title: 'Alex J. Mercer',
+          parentId: 2,
+        },
+        {
+          id: 3,
+          title: 'Goku',
+          parentId: 3,
+        },
+        {
+          id: 4,
+          title: 'Vegeta',
+          parentId: 3,
+        },
+        {
+          id: 5,
+          title: 'Dana Mercer',
+          parentId: 2,
+        },
+        {
+          id: 6,
+          title: 'Watson',
+          parentId: 1,
+        },
+      ],
+      childrens: [],
+      tags: [],
+      activeParents: [],
+      activeTags: [],
+    }
   },
-
   methods: {
-    clickPrev(block) {
-      const { parent, tags } = this.$refs;
-      if (block === "parent") {
-        parent.scrollLeft -= 200;
-      } else {
-        tags.scrollLeft -= 200;
+    toggleParent(parent) {
+      const isActive = this.activeParents.includes(parent.id) // true or false
+      // const children = this.tags.filter(id => id === parent.id)
+      if (isActive) {
+        // this.activeParents.filter(id=> id !== parent.id)
+        const index = this.activeParents.indexOf(parent.id)
+        if (index > -1) {
+          this.activeParents.splice(index, 1)
+        }
+        console.log(this.activeParents)
+        return
       }
+      this.activeParents.push(parent)
+      this.checkChildrenByParents(parent)
+      console.log(this.activeParents)
     },
-    clickNext(block) {
-      const { parent, tags } = this.$refs;
-      if (block === "parent") {
-        parent.scrollLeft += 200;
-      } else {
-        tags.scrollLeft += 200;
+    toggleChildren(children) {
+      const isActive = this.activeTags.includes(children)
+      // eslint-disable-next-line no-debugger
+      debugger
+      if (isActive) {
+        this.activeTags.find((id) => id !== children.id)
+        const index = this.activeTags.indexOf(children)
+        if (index > -1) {
+          this.activeTags.splice(index, 1)
+        }
+        return
       }
+      this.activeTags.push(children)
+      // eslint-disable-next-line no-debugger
+      debugger
+    },
+    checkChildrenByParents(parent) {
+      const isActive = this.activeTags.includes(parent.id)
+      // eslint-disable-next-line no-debugger
+      debugger
+      if (isActive) {
+        this.activeTags.find((obj) => obj.parentId !== parent.id)
+        const index = this.activeTags.indexOf()
+        if (index > -1) {
+          this.activeTags.splice(index, 1)
+        }
+        return
+      }
+      console.log(parent)
+      const mappedTags = this.templateChildrens
+        .filter((obj) => obj.parentId === parent.id)
+        .map((obj) => ({
+          ...obj,
+        }))
+      debugger
+      console.log(JSON.stringify(this.tags, undefined, 2))
+      console.log(JSON.stringify(mappedTags, undefined, 2))
+      const order = []
+      order.unshift(mappedTags)
+      console.log('Order', JSON.stringify(order, undefined, 2))
+      debugger
+      for (let i = mappedTags.length - 1; i >= 0; i--) {
+        const element = mappedTags[i]
+        this.toggleChildren(element)
+        const filter = this.tags.find((obj) => obj.id === element.id)
+        const isTrue = filter
+        if (!isTrue) {
+          this.tags.unshift(element)
+        }
+      }
+      this.filterDuplicates()
+    },
+    filterDuplicates() {
+      this.activeParents = Array.from(
+        new Set(this.activeParents.map((obj) => obj.id))
+      ).map((id) => {
+        return this.activeParents.find((e) => e.id === id)
+      })
+      this.activeTags = Array.from(
+        new Set(this.activeTags.map((obj) => obj.id))
+      ).map((id) => {
+        return this.activeTags.find((e) => e.id === id)
+      })
     },
   },
-};
-</script>
-<style scoped>
-.scroller {
-  width: 100%;
-  /* padding: 0.5rem 2rem; */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
-.scroller__container {
-  max-width: 100vw;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  white-space: nowrap;
-  transition: all 0.2s;
-  will-change: transform;
-  user-select: none;
-  /* cursor: grab; */
-  position: relative;
-  margin: 16px 40px;
-  padding: 0 16px;
+</script>
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*,
+::before,
+::after {
+  box-sizing: inherit;
 }
 
-.scroller__container--controls {
-  position: relative;
-  z-index: 10;
-  height: auto;
+body {
+  text-rendering: optimizeLegibility;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
 }
-.scroller__container--prev {
-  position: absolute;
+
+.first {
+  display: block;
+  background-color: #ebebeb;
+}
+
+.second {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.third {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.element-left {
+  background-color: transparent;
+  width: 80px;
+  min-height: 80vh;
+  flex-shrink: 1;
+  border: 2px solid #121212;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  nav {
+    height: 100%;
+  }
+
+  &-block {
+    display: block;
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+    height: 100%;
+  }
+
+  &-brand {
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  &-links {
+    padding-bottom: 2rem;
+  }
+}
+
+.element-footer {
+  display: block;
+  position: fixed;
   left: 0;
-  margin: auto 0;
-}
-.scroller__container--next {
-  position: absolute;
   right: 0;
+  bottom: 0;
+  z-index: 500;
+
+  &-block {
+    display: block;
+  }
+
+  &-content {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 60px;
+    position: relative;
+    background-color: #fff6dd;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px;
+    z-index: 600;
+  }
+  &-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0%;
+  }
 }
 </style>

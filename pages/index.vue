@@ -104,39 +104,37 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex'
 export default {
   data() {
     return {
       images: [
-        "https://i.imgur.com/p7kPVCN.jpg",
-        "https://i.imgur.com/YFUEbBx.jpg",
-        "https://i.imgur.com/Qw6LuRE.jpg",
-        "https://i.imgur.com/KMN1KQ5.jpg",
+        'https://i.imgur.com/p7kPVCN.jpg',
+        'https://i.imgur.com/YFUEbBx.jpg',
+        'https://i.imgur.com/Qw6LuRE.jpg',
+        'https://i.imgur.com/KMN1KQ5.jpg',
       ],
-    };
+    }
   },
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
     setImage() {
-      const img = this.images;
-      const randomImg = Math.floor(Math.random() * img.length);
-      return img[randomImg];
+      const img = this.images
+      const randomImg = Math.floor(Math.random() * img.length)
+      return img[randomImg]
     },
   },
-};
+}
 </script>
 <style lang="scss">
 .landing {
   max-width: 1024px;
   margin: 0 auto 0;
-  height: calc(100vh - 60px);
-
+  height: 100vh;
   &-info {
     display: block;
   }
 }
-
 .background-layout {
   background-position: center;
   background-repeat: no-repeat;

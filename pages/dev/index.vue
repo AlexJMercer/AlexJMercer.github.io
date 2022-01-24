@@ -1,5 +1,5 @@
 <template>
-  <LayoutContent>
+  <div>
     <div class="bg-dark">
       <div class="d-block mx-auto mb-4">
         <div class="d-flex">
@@ -30,25 +30,22 @@
         :article="article"
       />
     </section>
-  </LayoutContent>
+  </div>
 </template>
 <script>
-import { mapGetters } from "vuex";
-
+import { mapGetters } from 'vuex'
 export default {
   async asyncData({ $content, params }) {
-    const articles = await $content("pro", params.slug)
-      .sortBy("createdDate", "desc")
-      .fetch();
-
-    console.log(JSON.stringify(articles, undefined, 2));
+    const articles = await $content('pro', params.slug)
+      .sortBy('createdDate', 'desc')
+      .fetch()
+    console.log(JSON.stringify(articles, undefined, 2))
     return {
       articles,
-    };
+    }
   },
-
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
   },
-};
+}
 </script>

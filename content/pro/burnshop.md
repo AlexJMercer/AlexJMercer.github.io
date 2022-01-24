@@ -12,9 +12,9 @@ tags:
   - Desenvolvimento Front-end
 featured: false
 type: "normal"
-headerLayout: "profile"
+headerLayout: "square-profile"
 fontType: "base"
-isPublished: false
+isPublished: true
 author:
   name: "Ultimate Mercer"
   quote: "Bora estudar mais uma tecnologia pra estudar..."

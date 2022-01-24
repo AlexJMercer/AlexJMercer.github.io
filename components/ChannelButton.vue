@@ -2,19 +2,34 @@
   <div>
     <nuxt-link v-if="isHome" to="/" class="channelbutton channelbutton-brand">
       <img
-        src="../assets/images/ultimate-logo-dark.svg"
+        src="../static/blklight-white.svg"
         class="brand"
         title="Ultimate Mercer"
       />
       <!-- <div class="mentions" v-if="mentions">{{ mentions }}</div> -->
     </nuxt-link>
-    <nuxt-link v-else :to="{ name: channel.slug }" class="channelbutton">
+    <nuxt-link v-else :to="{ name: null }" class="channelbutton">
       <img v-lazy="thumbSrc" class="channelbutton-img" :title="channel.name" />
+      <div class="overlay">
+        <div class="h-100 d-flex justify-content-center align-items-center">
+          <p class="font-monospace mb-0">
+            <span class="text-light bg-dark px-2 py-1">
+              <strong>
+                <em>
+                  <i class="marker-line">{{ channel.name }}</i>
+                </em>
+              </strong>
+            </span>
+          </p>
+        </div>
+      </div>
     </nuxt-link>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   props: {
     channel: {
@@ -40,6 +55,8 @@ export default {
   },
 
   computed: {
+    ...mapGetters(["isDarkTheme"]),
+
     constructslug() {
       const slug = `${this.channel.slug}/`;
       return slug;
@@ -47,17 +64,18 @@ export default {
 
     thumbSrc() {
       if (
-        this.channel.thumb.startsWith("http") ||
-        this.channel.thumb.startsWith("https")
+        this.channel.cover.startsWith("http") ||
+        this.channel.cover.startsWith("https")
       ) {
-        return this.channel.thumb;
+        return this.channel.cover;
       } else {
-        return require(`~/assets/images/thumbs/${this.channel.thumb}`);
+        return require(`~/assets/images/thumbs/blklight-thumbs.jpg`);
       }
     },
   },
 };
 </script>
+
 <style scoped lang="scss">
 .brand {
   // background-color: #121212;
@@ -78,10 +96,10 @@ export default {
   height: 60px !important;
   object-fit: cover;
 
-  &.active,
+  /* &.active,
   &:hover {
     //border-radius: 0.5rem;
-  }
+  } */
 }
 
 .channelbutton {

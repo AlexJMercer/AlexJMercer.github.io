@@ -1,5 +1,5 @@
 <template>
-  <section class="main-article mb-5">
+  <section class="main-article pb-5">
     <ArticleHeader :article="headerData" />
     <article class="mb-5" :class="[isDarkTheme ? 'light-theme' : '']">
       <template v-if="article.type === 'stories'">
@@ -59,23 +59,20 @@
   </section>
 </template>
 <script>
-import { mapGetters } from "vuex";
-
+import { mapGetters } from 'vuex'
 export default {
   props: {
     article: {
       type: Object,
       default: null,
     },
-
     author: {
       type: Object,
       default: null,
     },
   },
-
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
     headerData() {
       return {
         title: this.article.title,
@@ -87,7 +84,7 @@ export default {
         cover: this.article.cover,
         imageHeader: this.article.imageHeader,
         headerLayout: this.article.headerLayout,
-      };
+      }
     },
     authorInfo() {
       return {
@@ -95,10 +92,10 @@ export default {
         bio: this.author[0].bio,
         quote: this.article.author.quote,
         cover: this.author[0].cover,
-      };
+      }
     },
   },
-};
+}
 </script>
 <style lang="scss">
 .gallery-block {
@@ -106,31 +103,26 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.25rem;
-
   &-content {
     display: inline-block;
     margin: 1rem 1rem;
   }
-
   &-img {
     max-width: 100%;
     height: 600px;
     object-fit: cover;
   }
 }
-
 @media screen and (max-width: 768px) {
   .gallery-block {
     display: grid;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
-
     &-content {
       display: block;
       margin: 1rem 1rem;
     }
-
     &-img {
       max-width: 100%;
       height: 500px;
@@ -140,7 +132,6 @@ export default {
     }
   }
 }
-
 // .nuxt-content {
 //   border: 1px solid #480bff;
 // }

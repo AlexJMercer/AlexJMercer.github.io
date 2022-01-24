@@ -24,7 +24,7 @@
     <div class="container">
       <div
         class="card card-plain border border-primary mb-4"
-        :class="!isDarkTheme ? ' text-light' : 'text-dark'"
+        :class="isDarkTheme ? ' text-light' : 'text-dark'"
       >
         <div class="card-header bg-primary">
           <h2 class="text-light">Desenvolvimento Front-End/Web</h2>
@@ -96,8 +96,8 @@
       </div>
 
       <div
-        class="card card-plain border border-uv text-md-end"
-        :class="!isDarkTheme ? ' text-light' : 'text-dark'"
+        class="card card-plain border border-uv text-md-end mb-5"
+        :class="isDarkTheme ? ' text-light' : 'text-dark'"
       >
         <div class="card-header bg-uv">
           <h2 class="text-light">Design</h2>
@@ -142,20 +142,18 @@
   </LayoutContent>
 </template>
 <script>
-import { mapGetters } from "vuex";
-
+import { mapGetters } from 'vuex'
 export default {
   async asyncData({ $content, params }) {
-    const projects = await $content("pro", params.slug).fetch();
+    const projects = await $content('pro', params.slug).fetch()
     return {
       projects,
-    };
+    }
   },
-
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
   },
-};
+}
 </script>
 <style lang="scss">
 .skills-header {

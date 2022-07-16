@@ -2,7 +2,7 @@
 title: "Ultimate Series - Nº 054"
 description:
 imageHeader: https://i.imgur.com/hftzpxW.jpg
-cover:
+cover: https://i.imgur.com/84nep13.jpg?1
 createdDate: "2021-08-16 23:15"
 updatedDate: ""
 channel: "pessoal"
@@ -21,7 +21,7 @@ author:
 gallery:
 ---
 
-### Sobre
+## Sobre
 <figure>
 	<img src="https://i.imgur.com/hftzpxW.jpg" class="img-fluid mx-auto d-block mb-4" />
 </figure>

@@ -11,14 +11,13 @@
     <div class="container-fluid">
       <div class="container">
         <h1
-          class="font-monospace"
           :class="
-            !isDarkTheme ? 'cyber-underline-light' : 'cyber-underline-dark'
+            isDarkTheme ? 'cyber-underline-light' : 'cyber-underline-dark'
           "
         >
           Projetos pessoais - Arte digital
         </h1>
-        <p class="font-monospace" style="font-size: 1.25rem">
+        <p class="font-art" style="font-size: 18px">
           Aqui reúno todos os meus projetos e idéias desenvolvidas, tanto para o
           âmbito acadêmico e profissional, quanto para o pessoal com o objetivo
           de me manter sempre em evolução das minhas técnicas e habilidades, e
@@ -27,48 +26,43 @@
         </p>
       </div>
 
-      <!-- <div class="grid-masonry mb-4 mx-auto d-block">
-        <div class="grid-masonry-sizer"></div>
+      <div class="grid-masonry mb-4">
+        <div class="grid-sizer col-xl-4 col-lg-4 col-md-6 col-12"></div>
         <div
           v-for="(article, i) in articles"
           :key="i"
-          class="grid-masonry-item"
+          class="grid-item col-xl-4 col-lg-4 col-md-6 col-12 px-lg-2 px-md-2"
         >
           <div
-            class="card card-masonry card-raised view-anchor"
+            class="card card-masonry card-raised my-2"
             :class="
-              !isDarkTheme
-                ? 'card-plain hover-card-red-bordered border border-light'
-                : 'hover-card-red-bordered card-raised border border-dark'
+              isDarkTheme
+                ? 'card-plain hover-card-neon-yellow border border-light'
+                : 'hover-card-uv card-raised border border-dark'
             "
             style="border-radius: 0.5rem"
           >
-            <div class="card-masonry-area-image with-hover-overlay">
+            <div class="card-masonry-area-image view-anchor gradient-mask">
               <img
                 :src="article.cover ? article.cover : article.imageHeader"
                 class="card-masonry-image"
                 :class="colorFilterRandom"
                 :alt="article.title"
               />
+              <div class="mask gradient-mask"></div>
               <div class="mask texture-mask-4"></div>
             </div>
             <div
-              class="
-                card-masonry-area-header
-                h-100
-                d-flex
-                flex-column
-                justify-content-end
-              "
+              class="card-img-overlay h-100 d-flex flex-column justify-content-end"
             >
               <div class="">
-                <h4 class="card-title">
-                  <span class="text-light bg-dark py-1">
-                    <em>
-                      <i class="marker-line"> {{ article.title }} </i>
-                    </em>
-                  </span>
-                </h4>
+                <div class="text-light">
+                  <DateFormat :date="article.createdDate" />
+                </div>
+
+                <h3 class="card-title text-light my-2">
+                  {{ article.title }}
+                </h3>
                 <div class="d-flex justify-content-end">
                   <nuxt-link
                     :to="article.path"
@@ -80,62 +74,39 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
 
-    <div class="container-lg" style="max-width: 1700px !important">
+    <div class="container-fluid px-xl-5">
       <div class="grid-cards">
         <section v-if="articles.length > 0" class="grid-cards-content">
           <div
             v-for="article of articles"
             :key="article.title"
-            class="card card-raised card-background view-anchor my-2"
+            class="card card-flat card-background view-anchor my-2"
             :class="[
               isDarkTheme
-                ? 'hover-card-yellow-bordered border border-light'
-                : 'hover-card-uv-bordered border border-dark',
+                ? 'hover-card-crimson border border-light'
+                : 'hover-card-uv border border-dark',
             ]"
           >
             <img
               :src="article.cover ? article.cover : article.imageHeader"
-              class="card-background-image-featured card-img-border"
+              class="card-background-image-featured"
               alt="..."
-              style="height: calc(95vh - 60px) !important"
               :class="colorFilterRandom"
             />
-            <div class="mask texture-mask-4"></div>
+            <div class="mask texture-mask-4 gradient-mask"></div>
 
             <div
-              class="
-                card-img-overlay
-                h-100
-                d-flex
-                flex-column
-                justify-content-end
-              "
+              class="card-img-overlay p-3 h-100 d-flex flex-column justify-content-end"
             >
-              <div class="">
-                <span
-                  class="
-                    badge
-                    bg-dark
-                    text-light
-                    badge-tag
-                    border border-dark
-                    ms-0
-                    me-2
-                  "
-                >
-                  <DateFormat :date="article.createdDate" />
-                </span>
+              <div class="text-light">
+                <DateFormat :date="article.createdDate" />
               </div>
 
-              <h3 class="card-title my-2">
-                <span class="text-light bg-dark py-1">
-                  <em>
-                    <i class="marker-line"> {{ article.title }} </i>
-                  </em>
-                </span>
+              <h3 class="card-title text-light my-2">
+                {{ article.title }}
               </h3>
               <div class="d-flex justify-content-end">
                 <nuxt-link
@@ -166,7 +137,12 @@ export default {
   computed: {
     ...mapGetters(['isDarkTheme']),
     colorFilterRandom() {
-      const filters = ['black-white', 'cyberpunk-v', 'purple-red-orange']
+      const filters = [
+        // 'black-white',
+        // 'cyberpunk-v',
+        // 'purple-red-orange',
+        'blue-red-golden',
+      ]
       const num = Math.floor(Math.random() * filters.length)
       const filter = `hover-filter-${filters[num]}`
       return filter
@@ -174,30 +150,30 @@ export default {
   },
   watch: {
     data() {
-      // this.loadMasonry()
+      this.loadMasonry()
     },
   },
   mounted() {
-    // this.loadMasonry()
+    this.loadMasonry()
   },
   methods: {
-    // loadMasonry() {
-    //   const Masonry = require('masonry-layout')
-    //   const ImagesLoaded = require('imagesloaded')
-    //   const grid = document.querySelector('.grid-masonry')
-    //   ImagesLoaded(grid, () => {
-    //     this.$emit('images-loaded')
-    //     const msnry = new Masonry(grid, {
-    //       // options...
-    //       itemSelector: '.grid-masonry-item',
-    //       columnWidth: '.grid-masonry-sizer',
-    //       // percentPosition: true,
-    //       gutter: 4,
-    //       fitWidth: true,
-    //     })
-    //     this.$emit('masonry-loaded', msnry)
-    //   })
-    // },
+    loadMasonry() {
+      const Masonry = require('masonry-layout')
+      const ImagesLoaded = require('imagesloaded')
+      const grid = document.querySelector('.grid-masonry')
+      ImagesLoaded(grid, () => {
+        this.$emit('images-loaded')
+        const msnry = new Masonry(grid, {
+          // options...
+          itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer',
+          percentPosition: true,
+          // gutter: 4,
+          // fitWidth: true,
+        })
+        this.$emit('masonry-loaded', msnry)
+      })
+    },
   },
 }
 </script>
@@ -209,7 +185,7 @@ export default {
   padding: 0 20px;
   &-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-auto-columns: auto auto;
     column-gap: 16px;
@@ -226,13 +202,13 @@ export default {
 @media screen and (max-width: 992px) {
   .grid-cards {
     &-content {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
 @media screen and (max-width: 768px) {
   .grid-cards {
-    padding: 0 16px;
+    padding: 0;
     &-content {
       grid-template-columns: 1fr;
     }
@@ -242,9 +218,9 @@ export default {
 
 <style lang="scss" scoped>
 .grid-masonry {
-  display: flex;
-  width: 100%;
-  // padding: 0.25rem;
+  /* display: flex;
+  width: 100%; */
+  /* // padding: 0.25rem;
   // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   // grid-template-columns: repeat(4, 1fr);
   // grid-auto-rows: minmax(25%, 1fr);
@@ -277,10 +253,34 @@ export default {
       max-width: 100vw;
       width: 100%;
     }
-  }
+  } */
 }
 ::selection {
   color: #121212;
   background: #ffff00;
+}
+
+.card-img-art {
+  height: 650px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .card-img-art {
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.font-art {
+  font-family: 'Inter', sans-serif;
+}
+
+.gradient-mask {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(18, 18, 18, 1) 100%
+  );
 }
 </style>

@@ -30,7 +30,7 @@
   </div>
 </template>
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex'
 
 export default {
   props: {
@@ -40,25 +40,14 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
 
     colorFilterRandom() {
-      const filters = [
-        "black-green",
-        "black-white",
-        "blue-red",
-        "cyberpunk-v",
-        "cyberpunk-vi",
-        "cyberpunk-vii",
-        "pink-blue",
-        "purple-red-orange",
-        "red-sunset",
-        "soft-blue-pink",
-      ];
-      const num = Math.floor(Math.random() * filters.length);
-      const filter = `hover-filter-${filters[num]}`;
-      return filter;
+      const filters = ['blue-red-golden']
+      const num = Math.floor(Math.random() * filters.length)
+      const filter = `hover-filter-${filters[num]}`
+      return filter
     },
   },
-};
+}
 </script>

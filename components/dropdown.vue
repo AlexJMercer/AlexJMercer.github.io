@@ -1,34 +1,24 @@
 <template>
-  <div class="organization__selector">
-    <div class="organization__selector--view">
+  <div class="mobile-menu">
+    <div class="mobile-menu-view">
       <span style="font-size: 32px">{{ activeData }}</span>
       <button
-        class="organization__selector--btn"
+        class="mobile-menu--btn"
         :class="open ? 'active' : ''"
         @click="toggle"
       >
-        <font-awesome-icon :icon="['fas', 'chevron-down']" />
+        <font-awesome-icon :icon="['fas', 'bars']" />
       </button>
     </div>
-    <!-- <div v-if="open" class="organization__dropdown">
-      <a href="#" class="organization__dropdown--item">
-        <img
-          src="https://i.imgur.com/ewZOa95.jpg"
-          class="organization__dropdown--logo"
-          alt=""
-        />
-        blueshift-cc
-      </a>
-    </div> -->
-    <div v-if="open" class="organization__dropdown">
+    <div v-if="open" class="pages-dropdown">
       <template v-for="org in orgs">
         <a
           :key="org.name"
           :href="org.url"
-          class="organization__dropdown--item"
+          class="pages-dropdown-item"
           @click="itemClicked(org.name)"
         >
-          <img :src="org.logo" class="organization__dropdown--logo" alt="" />
+          <img :src="org.logo" class="pages-dropdown--logo" alt="" />
           {{ org.name }}
         </a>
       </template>
@@ -36,6 +26,8 @@
   </div>
 </template>
 <script>
+import { mapMutations, mapGetters } from 'vuex'
+
 export default {
   props: {},
   data() {
@@ -68,6 +60,9 @@ export default {
       activeData: 'blueshift-cc',
     }
   },
+  computed: {
+    ...mapGetters(['isDarkTheme', 'isSidebarOpen']),
+  },
   mounted() {
     document.addEventListener('click', this.close)
   },
@@ -75,6 +70,11 @@ export default {
     document.removeEventListener('click', this.close)
   },
   methods: {
+    ...mapMutations({
+      darkTheme: 'darkTheme',
+      sidebarSwitch: 'sidebarSwitch',
+    }),
+
     toggle() {
       this.open = !this.open
     },
@@ -95,17 +95,17 @@ export default {
 </script>
 
 <style>
-.organization__selector {
+.mobile-menu {
   display: inline-block;
   position: relative;
 }
 
-.organization__selector--view {
+.mobile-menu-view {
   display: flex;
   align-items: center;
 }
 
-.organization__dropdown {
+.pages-dropdown {
   width: 200px;
   background-color: #fff;
   background-clip: padding-box;
@@ -124,7 +124,7 @@ export default {
   right: 0;
 }
 
-.organization__dropdown--item {
+.pages-dropdown-item {
   text-decoration: none;
   color: #212529;
   padding: 0.25rem 1.5rem;
@@ -133,7 +133,7 @@ export default {
   align-items: center;
 }
 
-.organization__dropdown--logo {
+.pages-dropdown--logo {
   width: 25px;
   height: 25px;
   object-fit: cover;
@@ -141,12 +141,12 @@ export default {
   margin-right: 8px;
 }
 
-.organization__dropdown--item:hover {
+.pages-dropdown-item:hover {
   color: #f16622;
   cursor: pointer;
 }
 
-.organization__selector--btn {
+.mobile-menu--btn {
   display: inline-flex;
   vertical-align: middle;
   line-height: 1.5;
@@ -159,8 +159,8 @@ export default {
   margin-left: 8px;
 }
 
-.organization__selector--btn.active,
-.organization__selector--btn:hover {
+.mobile-menu--btn.active,
+.mobile-menu--btn:hover {
   background: rgba(232, 72, 85, 1);
   color: #ffffff;
 }

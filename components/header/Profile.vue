@@ -1,8 +1,8 @@
 <template>
   <div :class="twoColumn ? 'info-article-overlay' : ''">
     <header
-      class="header-profile container"
-      :class="twoColumn ? 'd-block sticky-content' : 'd-flex'"
+      class="header-profile"
+      :class="twoColumn ? 'd-block sticky-content' : ''"
     >
       <div>
         <img
@@ -19,15 +19,13 @@
         class="header-profile-content"
         :class="twoColumn ? 'text-lg-center mx-1' : ''"
       >
-        <h1 class="article-title">
-          <em>
-            <span class="text-light bg-dark p-1">
-              <i class="marker-line">
-                {{ article.title }}
-              </i>
+        <h2 class="article-title">
+          <span class="text-light bg-dark p-1">
+            <span class="marker-line">
+              {{ article.title }}
             </span>
-          </em>
-        </h1>
+          </span>
+        </h2>
         <h5 class="article-meta">
           <span class="text-light bg-dark p-1">{{ dateFormat }}</span>
         </h5>
@@ -42,8 +40,8 @@
   </div>
 </template>
 <script>
-import { format } from "date-fns";
-import { ptBR } from "date-fns/locale";
+import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
 
 export default {
   props: {
@@ -71,10 +69,10 @@ export default {
         {
           locale: ptBR,
         }
-      );
+      )
 
-      return formattedDate;
+      return formattedDate
     },
   },
-};
+}
 </script>

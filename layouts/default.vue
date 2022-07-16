@@ -5,7 +5,9 @@
         <FlexSidebar />
         <div class="main-content">
           <Nuxt />
-          <!-- <Footer /> -->
+          <Footer v-if="$route.name !== 'index'" />
+          <FooterNavbar />
+          <MobileSidebar />
           <ColorFilters />
         </div>
       </div>
@@ -74,7 +76,7 @@ export default {
 .footer {
   grid-area: Footer;
   max-width: 100%;
-  padding: 1rem 1.5rem 1rem;
+  padding: 1rem 1.5rem 4rem;
   margin-top: auto;
   min-height: 250px;
 }

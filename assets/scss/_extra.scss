@@ -260,85 +260,106 @@
   animation: shadow-pop-bl 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
-.hover-card {
-  &-uv {
-    &:hover {
-      -webkit-animation: shadow-pop-bl-uv 0.2s
-        cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      animation: shadow-pop-bl-uv 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      border-radius: 0 !important;
-    }
-  }
-  &-yellow {
-    &:hover {
-      -webkit-animation: shadow-pop-bl-yellow 0.2s
-        cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      animation: shadow-pop-bl-yellow 0.2s cubic-bezier(0.47, 0, 0.745, 0.715)
-        both;
-      border-radius: 0 !important;
-    }
-  }
-
-  &-dark {
-    &:hover {
-      -webkit-animation: shadow-pop-br-dark 0.2s
-        cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      animation: shadow-pop-br-dark 0.2s cubic-bezier(0.47, 0, 0.745, 0.715)
-        both;
-      border-radius: 0 !important;
-    }
-  }
-
-  &-red {
-    &:hover {
-      -webkit-animation: shadow-pop-br-red 0.2s
-        cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      animation: shadow-pop-br-red 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      border-radius: 0 !important;
-    }
-  }
-
-  &-uv-bordered {
-    &:hover {
-      -webkit-animation: shadow-pop-br-uv 0.2s
-        cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      animation: shadow-pop-br-uv 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      border-radius: 0 !important;
-      border: 1px solid #4c00ff !important;
-    }
-  }
-  &-yellow-bordered {
-    &:hover {
-      -webkit-animation: shadow-pop-br-yellow 0.2s
-        cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      animation: shadow-pop-br-yellow 0.2s cubic-bezier(0.47, 0, 0.745, 0.715)
-        both;
-      border-radius: 0 !important;
-      border-color: #ffff00 !important;
-      border: 1px solid #ffff00 !important;
-    }
-  }
-  &-dark-bordered {
-    &:hover {
-      -webkit-animation: shadow-pop-br-dark 0.2s
-        cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      animation: shadow-pop-br-dark 0.2s cubic-bezier(0.47, 0, 0.745, 0.715)
-        both;
-      border-radius: 0 !important;
-      border: 1px solid #000000 !important;
-    }
-  }
-
-  &-red-bordered {
-    &:hover {
-      -webkit-animation: shadow-pop-br-red 0.2s
-        cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      animation: shadow-pop-br-red 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-      border-radius: 0 !important;
-      border: 1px solid $crimson !important;
-    }
+@each $color, $value in $theme-colors {
+  .hover-card-#{$color} {
+    @include hover-card-variant($color, $value);
   }
 }
+
+@each $color, $value in $theme-colors {
+  .hover-card-bordered-#{$color} {
+    @include hover-card-bordered-variant($color, $value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  @include shadow-pop-bl($color, $value);
+}
+
+// @each $color, $value in $theme-colors {
+//   .btn-outline-v2-#{$color} {
+//     @include button-outline-variant-two($value);
+//   }
+// }
+// .hover-card {
+//   &-uv {
+//     &:hover {
+//       -webkit-animation: shadow-pop-bl-uv 0.2s
+//         cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       animation: shadow-pop-bl-uv 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       border-radius: 0 !important;
+//     }
+//   }
+//   &-yellow {
+//     &:hover {
+//       -webkit-animation: shadow-pop-bl-yellow 0.2s
+//         cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       animation: shadow-pop-bl-yellow 0.2s cubic-bezier(0.47, 0, 0.745, 0.715)
+//         both;
+//       border-radius: 0 !important;
+//     }
+//   }
+
+//   &-dark {
+//     &:hover {
+//       -webkit-animation: shadow-pop-br-dark 0.2s
+//         cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       animation: shadow-pop-br-dark 0.2s cubic-bezier(0.47, 0, 0.745, 0.715)
+//         both;
+//       border-radius: 0 !important;
+//     }
+//   }
+
+//   &-red {
+//     &:hover {
+//       -webkit-animation: shadow-pop-br-red 0.2s
+//         cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       animation: shadow-pop-br-red 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       border-radius: 0 !important;
+//     }
+//   }
+
+//   &-uv-bordered {
+//     &:hover {
+//       -webkit-animation: shadow-pop-br-uv 0.2s
+//         cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       animation: shadow-pop-br-uv 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       border-radius: 0 !important;
+//       border: 1px solid #4c00ff !important;
+//     }
+//   }
+//   &-yellow-bordered {
+//     &:hover {
+//       -webkit-animation: shadow-pop-br-yellow 0.2s
+//         cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       animation: shadow-pop-br-yellow 0.2s cubic-bezier(0.47, 0, 0.745, 0.715)
+//         both;
+//       border-radius: 0 !important;
+//       border-color: #ffff00 !important;
+//       border: 1px solid #ffff00 !important;
+//     }
+//   }
+//   &-dark-bordered {
+//     &:hover {
+//       -webkit-animation: shadow-pop-br-dark 0.2s
+//         cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       animation: shadow-pop-br-dark 0.2s cubic-bezier(0.47, 0, 0.745, 0.715)
+//         both;
+//       border-radius: 0 !important;
+//       border: 1px solid #000000 !important;
+//     }
+//   }
+
+//   &-red-bordered {
+//     &:hover {
+//       -webkit-animation: shadow-pop-br-red 0.2s
+//         cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       animation: shadow-pop-br-red 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+//       border-radius: 0 !important;
+//       border: 1px solid $crimson !important;
+//     }
+//   }
+// }
 
 .slide-in-left {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
@@ -425,37 +446,17 @@
   }
 }
 
-.hover-card {
-  &-uv,
-  &-yellow,
-  &-dark,
-  &-uv-bordered,
-  &-yellow-bordered,
-  &-dark-bordered {
-    .card-img-border {
-      border-radius: 0.5rem;
-    }
+.card {
+  .card-img-border {
+    border-radius: 1rem;
   }
 
-  &-uv,
-  &-yellow,
-  &-dark,
-  &-uv-bordered,
-  &-yellow-bordered,
-  &-dark-bordered {
-    &:hover {
-      .card-img-border {
-        border-radius: 0 !important;
-      }
-    }
-  }
+  // &:hover {
+  //   .card-img-border {
+  //     border-radius: 0 !important;
+  //   }
+  // }
 }
-
-// @each $color, $value in $theme-colors {
-//   .btn-outline-v2-#{$color} {
-//     @include button-outline-variant-two($value);
-//   }
-// }
 
 .member-avatar {
   width: 325px;
@@ -551,6 +552,6 @@ hr {
 }
 
 .background-texture {
-  background: url('../mask-overlays/13-extra.png');
+  background: url("../mask-overlays/13-extra.png");
   background-attachment: local;
 }

@@ -11,7 +11,7 @@ tags:
   - Edição digital
 featured: false
 type: "normal"
-headerLayout: "basic"
+headerLayout: "landscape"
 fontType: ""
 isPublished: true
 isLocal: false

@@ -15,14 +15,21 @@
     <FilterPurple-Red-Orange />
     <FilterRed-Sunset />
     <FilterSoft-Blue-Pink />
+    <FilterBlue-Red-Golden />
+    <FilterTeste1 />
+    <FilterTeste2 />
+    <FilterTeste3 />
+    <FilterTeste4 />
+    <FilterTeste5 />
+
     <!-- <FilterPurple-Red-Green /> -->
   </svg>
 </template>
 <script>
-export default {};
+export default {}
 </script>
 <style lang="scss">
 .test-filter {
-  filter: url("#cyberpunk-vii");
+  filter: url('#cyberpunk-vii');
 }
 </style>

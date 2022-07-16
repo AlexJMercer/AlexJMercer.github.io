@@ -22,9 +22,7 @@ gallery:
 ---
 
 ### Sobre
-<figure>
-	<img src="https://i.imgur.com/YU2M76w.jpg" class="img-fluid mx-auto d-block mb-4" />
-</figure>
+<img src="https://i.imgur.com/YU2M76w.jpg" class="img-fluid mx-auto d-block mb-4" />
 
 <figure>
 	<img src="https://i.imgur.com/XfkZcBw.jpg" class="img-fluid mx-auto d-block mb-4" />

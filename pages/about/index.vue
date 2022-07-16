@@ -1,8 +1,5 @@
 <template>
-  <section
-    v-lazy:background-image="setImage"
-    class="background-texture background-layout py-5"
-  >
+  <section class="py-5">
     <template v-if="isDarkTheme">
       <img
         src="~/assets/images/ultimate-logo-red.svg"
@@ -20,11 +17,12 @@
 
     <div
       style="max-width: 1024px; margin: 0 auto 2.5rem; display: block"
+      class="rounded"
       :class="[isDarkTheme ? 'bg-dark' : 'bg-light']"
     >
-      <div class="main-article rounded">
+      <div class="main-article">
         <div
-          class="nuxt-content background-texture py-5"
+          class="nuxt-content mono-font py-5"
           :class="[isDarkTheme ? 'dark-theme' : '']"
         >
           <div class="about-header mb-2">
@@ -32,7 +30,7 @@
               v-lazy="me"
               class="about-header-img mx-auto d-block shadow"
               :class="
-                !isDarkTheme ? 'border border-light' : 'border border-dark'
+                isDarkTheme ? 'border border-light' : 'border border-dark'
               "
             />
             <div class="about-header-info">

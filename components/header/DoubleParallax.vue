@@ -21,32 +21,24 @@
           "
         >
           <h1 class="article-title">
-            <em>
-              <span
-                class="p-1"
-                :class="
-                  isDarkTheme ? 'text-dark bg-light' : 'text-light bg-dark'
-                "
-              >
-                <i class="marker-line">
-                  {{ article.title }}
-                </i>
+            <span
+              class="p-1"
+              :class="isDarkTheme ? 'text-dark bg-light' : 'text-light bg-dark'"
+            >
+              <span class="marker-line">
+                {{ article.title }}
               </span>
-            </em>
+            </span>
           </h1>
           <h5 class="article-meta">
-            <em>
-              <span
-                class="p-1"
-                :class="
-                  isDarkTheme ? 'text-dark bg-light' : 'text-light bg-dark'
-                "
-              >
-                <i class="marker-line">
-                  <DateFormat :date="article.date" full />
-                </i>
+            <span
+              class="p-1"
+              :class="isDarkTheme ? 'text-dark bg-light' : 'text-light bg-dark'"
+            >
+              <span class="marker-line">
+                <DateFormat :date="article.date" full />
               </span>
-            </em>
+            </span>
           </h5>
           <h5 class="">
             <span>
@@ -60,10 +52,10 @@
   </header>
 </template>
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex'
 
-import { format } from "date-fns";
-import { ptBR } from "date-fns/locale";
+import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
 
 export default {
   props: {
@@ -74,7 +66,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
 
     dateFormat() {
       const formattedDate = format(
@@ -83,29 +75,29 @@ export default {
         {
           locale: ptBR,
         }
-      );
+      )
 
-      return formattedDate;
+      return formattedDate
     },
 
     colorFilterRandom() {
       const filters = [
-        "black-green",
-        "black-white",
-        "blue-red",
-        "cyberpunk-v",
-        "cyberpunk-vi",
-        "cyberpunk-vii",
-        "pink-blue",
-        "purple-red-green",
-        "purple-red-orange",
-        "red-sunset",
-        "soft-blue-pink",
-      ];
-      const num = Math.floor(Math.random() * filters.length);
-      const filter = `hover-filter-${filters[num]}`;
-      return filter;
+        'black-green',
+        'black-white',
+        'blue-red',
+        'cyberpunk-v',
+        'cyberpunk-vi',
+        'cyberpunk-vii',
+        'pink-blue',
+        'purple-red-green',
+        'purple-red-orange',
+        'red-sunset',
+        'soft-blue-pink',
+      ]
+      const num = Math.floor(Math.random() * filters.length)
+      const filter = `hover-filter-${filters[num]}`
+      return filter
     },
   },
-};
+}
 </script>

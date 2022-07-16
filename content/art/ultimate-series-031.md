@@ -3,7 +3,7 @@ title: "Ultimate Series - Nº 031 - Hope"
 description:
 imageHeader: https://i.imgur.com/2St7UBs.jpg
 cover:
-createdDate: "2021-04-11 19:30"
+createdDate: "2021-04-02 19:30"
 updatedDate: ""
 channel: "pessoal"
 category: "Design"
@@ -11,7 +11,7 @@ tags:
   - Edição digital
 featured: false
 type: "normal"
-headerLayout: "parallax"
+headerLayout: "landscape"
 fontType: ""
 isPublished: true
 author:

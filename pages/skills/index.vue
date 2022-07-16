@@ -3,7 +3,7 @@
     <div class="skills-header">
       <img
         src="~/assets/images/ultimate-logo-light.svg"
-        width="150"
+        width="175"
         style="margin: 0 auto 1.25rem; display: block; padding: 1.25rem"
       />
     </div>
@@ -27,71 +27,73 @@
         :class="isDarkTheme ? ' text-light' : 'text-dark'"
       >
         <div class="card-header bg-primary">
-          <h2 class="text-light">Desenvolvimento Front-End/Web</h2>
+          <h2 class="text-light mb-0">Desenvolvimento Front-End/Web</h2>
         </div>
         <div class="card-body background-texture">
           <h4>Tecnologias conhecidas:</h4>
-          <h5 class="mb-3">
-            <span class="badge bg-primary border border-dark text-light"
+          <div class="mb-3">
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >HTML</span
             >
-            <span class="badge bg-primary border border-dark text-light"
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >CSS</span
             >
-            <span class="badge bg-primary border border-dark text-light"
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >SASS/SCSS</span
             >
-            <span class="badge bg-primary border border-dark text-light"
-              >PHP</span
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
+              >React</span
             >
-          </h5>
-          <h4>Quero aprimorar:</h4>
-          <h5 class="mb-3">
-            <span class="badge bg-primary border border-dark text-light"
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >Vue</span
             >
-            <span class="badge bg-primary border border-dark text-light"
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >NuxtJS</span
             >
-            <span class="badge bg-primary border border-dark text-light"
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >Javascript</span
             >
-            <span class="badge bg-primary border border-dark text-light"
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >AdonisJS</span
             >
-          </h5>
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
+              >Express</span
+            >
+          </div>
           <h4>Ferramentas de desenvolvimento:</h4>
-          <h5 class="mb-3">
-            <span class="badge bg-primary border border-dark text-light"
+          <div class="mb-3">
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >VSCode</span
             >
 
-            <span class="badge bg-primary border border-dark text-light"
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >Bootstrap</span
             >
-            <span class="badge bg-primary border border-dark text-light"
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >GitHub</span
             >
 
-            <span class="badge bg-primary border border-dark text-light"
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >NodeJS</span
             >
-            <span class="badge bg-primary border border-dark text-light"
+            <span
+              class="badge badge-tag bg-primary border border-dark text-light"
               >NPM</span
             >
-          </h5>
-          <h4>Quero aprender:</h4>
-          <h5 class="mb-3">
-            <span class="badge bg-primary border border-dark text-light"
-              >React</span
-            >
-            <span class="badge bg-primary border border-dark text-light"
-              >NextJS</span
-            >
-            <span class="badge bg-primary border border-dark text-light"
-              >Gatsby</span
-            >
-          </h5>
+          </div>
         </div>
       </div>
 
@@ -100,7 +102,7 @@
         :class="isDarkTheme ? ' text-light' : 'text-dark'"
       >
         <div class="card-header bg-uv">
-          <h2 class="text-light">Design</h2>
+          <h2 class="text-light mb-0 text-light">Design</h2>
         </div>
         <div class="card-body background-texture">
           <h4>O que eu gosto de desenvolver:</h4>
@@ -110,22 +112,16 @@
             <span class="badge bg-uv border border-dark">Wallpapers</span>
             <span class="badge bg-uv border border-dark">Capas</span>
           </h5>
-          <h4>Quero aprimorar:</h4>
-          <h5 class="mb-3">
-            <span class="badge bg-uv border border-dark"
-              >Adobe After Effects</span
-            >
-            <span class="badge bg-uv border border-dark"
-              >Adobe Illustrator</span
-            >
-            <span class="badge bg-uv border border-dark">Adobe InDesign</span>
-          </h5>
+
           <h4>Ferramentas de design:</h4>
           <h5 class="mb-3">
             <span class="badge bg-uv border border-dark">Adobe Photoshop</span>
-            <span class="badge bg-uv border border-dark"
-              >Adobe Illustrator</span
-            >
+            <span class="badge bg-uv border border-dark">
+              Adobe Illustrator
+            </span>
+            <span class="badge bg-uv border border-dark">
+              Adobe After Effects
+            </span>
             <span class="badge bg-uv border border-dark">Figma</span>
             <span class="badge bg-uv border border-dark">Adobe XD</span>
             <span class="badge bg-uv border border-dark">Invision</span>

@@ -1,22 +1,22 @@
 ---
-title: "Design Corpo Nu"
-description: ""
+title: 'Design Corpo Nu'
+description: ''
 imageHeader: https://i.imgur.com/5e51dHU.jpg
-cover: ""
-createdDate: "2018-02-27 10:00"
-updatedDate: ""
-channel: "pro"
-category: "Design"
+cover: ''
+createdDate: '2018-02-27 10:00'
+updatedDate: ''
+channel: 'pro'
+category: 'Design'
 tags:
   - Cartaz
   - Edição
   - Photoshop
 featured: false
-type: "normal"
-headerLayout: "square-profile"
-fontType: "base"
-isPublished: true
+type: 'normal'
+headerLayout: 'square-profile'
+fontType: 'base'
+isPublished: false
 author:
-  name: "Ultimate Mercer"
-  quote: "Bora estudar mais uma tecnologia pra estudar..."
+  name: 'Ultimate Mercer'
+  quote: 'Bora estudar mais uma tecnologia pra estudar...'
 ---

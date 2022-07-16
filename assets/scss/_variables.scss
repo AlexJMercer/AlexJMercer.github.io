@@ -16,6 +16,7 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #121212;
+$gray-plus: #e7dfd2;
 $black: #000;
 // scss-docs-end gray-color-variables
 
@@ -37,7 +38,7 @@ $grays: (
 
 // scss-docs-start color-variables
 $blue: #007bff;
-$indigo: #6610f2;
+$indigo: #465fc3;
 $purple: #6f42c1;
 $pink: #d63384;
 $red: #dc3545;
@@ -46,10 +47,14 @@ $yellow: #fbc02d;
 $green: #00c853;
 $teal: #20c997;
 $cyan: #0dcaf0;
-$uv: darken(#480bff, 5%);
+$uv: #480bff;
+// $uv: darken(#480bff, 5%);
 $neon-yellow: #ffff00;
 $polen: #fff6dd;
 $crimson: #eb1e32;
+$vue-green: #42b883;
+$javascript-yellow: #f7e018;
+$react-blue: #61dafb;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -72,6 +77,9 @@ $colors: (
   "neon-yellow": $neon-yellow,
   "polen": $polen,
   "crimson": $crimson,
+  "vue": $vue-green,
+  "javascript": $javascript-yellow,
+  "react": $react-blue,
 );
 // scss-docs-end colors-map
 
@@ -104,6 +112,10 @@ $theme-colors: (
   "pink": $pink,
   "indigo": $indigo,
   "darkest": $black,
+  "vue": $vue-green,
+  "javascript": $javascript-yellow,
+  "react": $react-blue,
+  "gray-plus": $gray-plus,
 );
 // scss-docs-end theme-colors-map
 
@@ -508,7 +520,7 @@ $badge-font-weight: 500;
 
 $card-bg: $gray-100;
 
-$btn-font-family: "Exo 2", "Overpass", "JetBrains Mono", monospace;
+$btn-font-family: "Lexend", "Exo 2", "Overpass", "JetBrains Mono", monospace;
 $btn-font-weight: 500;
 $btn-padding-y: 0.5rem;
 $btn-padding-x: 1rem;

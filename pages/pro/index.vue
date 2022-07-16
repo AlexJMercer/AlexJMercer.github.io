@@ -9,7 +9,6 @@
     </div>
     <section class="container">
       <h1
-        class="font-monospace"
         :class="isDarkTheme ? 'cyber-underline-light' : 'cyber-underline-dark'"
       >
         Projetos profissionais e acadêmicos

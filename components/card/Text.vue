@@ -6,7 +6,7 @@
       <p class="mb-3 fw-normal">
         <DateFormat :date="article.createdDate" full />
       </p>
-      <h2 class="font-monospace mb-3">
+      <h2 class="mb-3">
         <span
           class="py-2"
           :class="isDarkTheme ? 'text-dark bg-light' : 'text-light bg-dark'"
@@ -30,7 +30,7 @@
       <p v-else>
         <u>
           <font-awesome-icon :icon="['fas', 'pen']" />
-          <em> Em atualização...</em>
+          Em atualização...
         </u>
       </p>
     </div>

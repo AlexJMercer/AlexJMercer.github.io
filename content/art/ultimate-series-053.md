@@ -2,7 +2,7 @@
 title: "Ultimate Series - Nº 053"
 description:
 imageHeader: https://i.imgur.com/K9ajfAH.jpg
-cover:
+cover: https://i.imgur.com/OyVL4W9.jpg?1
 createdDate: "2021-08-16 22:45"
 updatedDate: ""
 channel: "pessoal"

@@ -24,87 +24,96 @@
             </nuxt-link>
           </div>
           <div class="d-block">
-            <div class="flex-sidebar-items">
+            <div
+              class="flex-sidebar-items"
+              :class="
+                $route.name === 'about' ? 'flex-sidebar-items-active' : ''
+              "
+            >
               <NuxtLink to="/about">
                 <img
                   src="https://i.imgur.com/rkCtudG.jpg"
-                  style="
-                    width: 50px;
-                    height: 50px;
-                    object-fit: cover;
-                    border-radius: 50%;
-                  "
-                  class="mx-auto d-block"
+                  class="page-button mx-auto d-block"
+                  :class="$route.name === 'about' ? 'page-button-active' : ''"
                   alt="Sobre mim"
                 />
               </NuxtLink>
             </div>
-            <div class="flex-sidebar-items">
-              <NuxtLink to="/skills">
+            <div
+              class="flex-sidebar-items"
+              :class="
+                $route.name === 'skills' ? 'flex-sidebar-items-active' : ''
+              "
+            >
+              <NuxtLink
+                v-tooltip="{
+                  placement: 'right',
+                  content: 'Acessar',
+                }"
+                to="/skills"
+              >
                 <img
                   :src="skillThumb"
-                  style="
-                    width: 50px;
-                    height: 50px;
-                    object-fit: cover;
-                    border-radius: 50%;
-                  "
-                  class="mx-auto d-block"
+                  class="page-button mx-auto d-block"
+                  :class="$route.name === 'skills' ? 'page-button-active' : ''"
                   alt="Sobre mim"
                 />
               </NuxtLink>
             </div>
-            <div class="flex-sidebar-items">
-              <NuxtLink to="/pro">
+            <div
+              class="flex-sidebar-items"
+              :class="$route.name === 'pro' ? 'flex-sidebar-items-active' : ''"
+            >
+              <NuxtLink
+                v-tooltip="{ placement: 'right', content: 'Acessar' }"
+                to="/pro"
+              >
                 <img
                   :src="proThumb"
-                  style="
-                    width: 50px;
-                    height: 50px;
-                    object-fit: cover;
-                    border-radius: 50%;
-                  "
-                  class="mx-auto d-block"
+                  class="page-button mx-auto d-block"
+                  :class="$route.name === 'pro' ? 'page-button-active' : ''"
                   alt="Sobre mim"
                 />
               </NuxtLink>
             </div>
-            <div class="flex-sidebar-items">
-              <NuxtLink to="/dev">
+            <div
+              class="flex-sidebar-items"
+              :class="$route.name === 'dev' ? 'flex-sidebar-items-active' : ''"
+            >
+              <NuxtLink
+                v-tooltip="{ placement: 'right', content: 'Acessar' }"
+                to="/dev"
+              >
                 <img
                   :src="devThumb"
-                  style="
-                    width: 50px;
-                    height: 50px;
-                    object-fit: cover;
-                    border-radius: 50%;
-                  "
-                  class="mx-auto d-block"
+                  class="page-button mx-auto d-block"
+                  :class="$route.name === 'dev' ? 'page-button-active' : ''"
                   alt="Sobre mim"
                 />
               </NuxtLink>
             </div>
-            <div class="flex-sidebar-items">
-              <NuxtLink to="/art">
+            <div
+              class="flex-sidebar-items"
+              :class="$route.name === 'art' ? 'flex-sidebar-items-active' : ''"
+            >
+              <NuxtLink
+                v-tooltip="{ placement: 'right', content: 'Acessar' }"
+                to="/art"
+              >
                 <img
                   :src="artThumb"
-                  style="
-                    width: 50px;
-                    height: 50px;
-                    object-fit: cover;
-                    border-radius: 50%;
-                  "
-                  class="mx-auto d-block"
+                  class="page-button mx-auto d-block"
+                  :class="$route.name === 'art' ? 'page-button-active' : ''"
                   alt="Sobre mim"
                 />
               </NuxtLink>
             </div>
           </div>
           <div class="d-block">
-            <div class="flex-sidebar-items">
+            <div class="flex-sidebar-footer">
               <a
                 href="#"
-                class="btn btn-flat mx-auto d-block"
+                class="btn btn-flat btn-lg mx-auto d-block"
                 :class="isDarkTheme ? 'btn-outline-light' : 'btn-outline-dark'"
                 @click.prevent="darkTheme"
               >
@@ -159,7 +168,8 @@ export default {
   align-self: flex-start;
   top: 0;
   position: sticky;
-  z-index: 1;
+  z-index: 1000;
+  box-shadow: 0px 0px 8px 0px rgba(18, 18, 18, 0.75);
 
   nav {
     height: 100%;
@@ -183,7 +193,57 @@ export default {
   }
 
   &-items {
-    padding-bottom: 1.25rem;
+    padding: 0.75rem 0;
+    cursor: pointer;
+
+    &:hover,
+    &-active {
+      background-color: #ff6d00;
+    }
+
+    &-avatar {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+
+      &:hover,
+      &-active {
+        &-avatar {
+          border-radius: 0.5rem !important;
+        }
+      }
+    }
+
+    /* &:hover,
+    &-active {
+      background-color: #ff6d00;
+
+      &-avatar {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+    } */
+  }
+
+  &-footer {
+    padding: 0.5rem 0;
+  }
+}
+
+.page-button {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border: 1px solid #121212;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+
+  &-active,
+  &:hover {
+    border-radius: 25% !important;
   }
 }
 

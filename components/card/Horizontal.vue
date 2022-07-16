@@ -20,7 +20,7 @@
         <img
           v-lazy="article.cover ? article.cover : article.imageHeader"
           :alt="article.title"
-          class="card-image-h card-img-border hover-filter-cyberpunk-v"
+          class="card-image-h card-img-border hover-filter-blue-red-golden"
           :class="isDarkTheme ? 'border-light' : 'border-dark'"
         />
       </div>
@@ -33,7 +33,7 @@
             class="mt-2"
           />
         </template>
-        <h3 class="card-font-test my-2">
+        <h3 class="my-2">
           {{ article.title }}
         </h3>
 
@@ -59,17 +59,24 @@
     </div>
     <div class="d-flex align-items-center px-3 py-3">
       <NuxtLink
+        v-if="article.isPublished"
         :to="`${article.dir}/${article.slug}`"
         class="btn btn-raised btn-read-more-sm ms-auto"
         :class="isDarkTheme ? 'btn-neon-yellow' : 'btn-uv'"
       >
         Ler mais...
       </NuxtLink>
+      <p v-else class="ms-auto">
+        <u>
+          <font-awesome-icon :icon="['fas', 'pen']" />
+          Em atualização...
+        </u>
+      </p>
     </div>
   </article>
 </template>
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex'
 export default {
   props: {
     article: {
@@ -94,20 +101,20 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
   },
 
   methods: {
     slugName(data) {
-      const link = data.replace("articles/", "").replace("/", "");
-      return link;
+      const link = data.replace('articles/', '').replace('/', '')
+      return link
     },
   },
-};
+}
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .card-image-h {
   width: 350px;
@@ -129,9 +136,5 @@ export default {
     height: 300px;
     object-fit: cover;
   }
-}
-
-.card-font-test {
-  font-family: "Playfair Display", serif;
 }
 </style>

@@ -1,5 +1,10 @@
 <template>
-  <section class="info-article">
+  <section
+    class="info-article"
+    :class="
+      isDarkTheme ? 'info-article-light-border' : 'info-article-dark-border'
+    "
+  >
     <template v-if="headerLayout === 'profile'">
       <HeaderProfile :article="article" twoColumn />
     </template>
@@ -12,7 +17,7 @@
   </section>
 </template>
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex'
 
 export default {
   props: {
@@ -22,16 +27,16 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
     headerLayout() {
-      const layoutTemplate = "fullpage";
+      const layoutTemplate = 'fullpage'
 
       const layout = this.article.headerLayout
         ? this.article.headerLayout
-        : layoutTemplate;
+        : layoutTemplate
 
-      return layout;
+      return layout
     },
   },
-};
+}
 </script>

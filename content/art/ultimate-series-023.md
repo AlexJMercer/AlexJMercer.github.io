@@ -3,7 +3,7 @@ title: "Ultimate Series - Nº 023 - Halsey"
 description:
 imageHeader: https://i.imgur.com/nOOzZsf.jpg
 cover:
-createdDate: "2020-05-25 18:30"
+createdDate: "2020-06-25 18:30"
 updatedDate: ""
 channel: "pessoal"
 category: "Design"

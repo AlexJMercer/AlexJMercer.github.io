@@ -21,20 +21,16 @@
             <span class="badge bg-dark border border-light">Posters</span>
           </h5>
           <h1 class="article-title">
-            <em>
-              <span class="text-light bg-dark p-1">
-                <i class="marker-line"> {{ article.title }} </i>
-              </span>
-            </em>
+            <span class="text-light bg-dark p-1">
+              <span class="marker-line"> {{ article.title }} </span>
+            </span>
           </h1>
           <h5 class="article-meta">
-            <em>
-              <span class="text-light bg-dark p-1">
-                <i class="marker-line">
-                  <DateFormat :date="article.date" full />
-                </i>
+            <span class="text-light bg-dark p-1">
+              <span class="marker-line">
+                <DateFormat :date="article.date" full />
               </span>
-            </em>
+            </span>
           </h5>
         </div>
       </div>
@@ -42,10 +38,10 @@
   </header>
 </template>
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex'
 
-import { format } from "date-fns";
-import { ptBR } from "date-fns/locale";
+import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
 
 export default {
   props: {
@@ -56,7 +52,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["isDarkTheme"]),
+    ...mapGetters(['isDarkTheme']),
 
     dateFormat() {
       const formattedDate = format(
@@ -65,29 +61,17 @@ export default {
         {
           locale: ptBR,
         }
-      );
+      )
 
-      return formattedDate;
+      return formattedDate
     },
 
     colorFilterRandom() {
-      const filters = [
-        "black-green",
-        "black-white",
-        "blue-red",
-        "cyberpunk-v",
-        "cyberpunk-vi",
-        "cyberpunk-vii",
-        "pink-blue",
-        "purple-red-green",
-        "purple-red-orange",
-        "red-sunset",
-        "soft-blue-pink",
-      ];
-      const num = Math.floor(Math.random() * filters.length);
-      const filter = `hover-filter-${filters[num]}`;
-      return filter;
+      const filters = ['blue-red-golden']
+      const num = Math.floor(Math.random() * filters.length)
+      const filter = `hover-filter-${filters[num]}`
+      return filter
     },
   },
-};
+}
 </script>

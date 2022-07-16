@@ -68,6 +68,14 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,350;0,500;0,700;1,350;1,500;1,700&display=swap',
       },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700;900&display=swap',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;350;400;700;900&display=swap',
+      },
     ],
   },
 
@@ -75,7 +83,7 @@ export default {
   css: ['~/assets/scss/blklight.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/vue-lazyload'],
+  plugins: ['~/plugins/vue-lazyload', '~/plugins/floating-vue'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -131,7 +139,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ['vue-lazyload'],
+    transpile: ['vue-lazyload', 'floating-vue', 'masonry-layout'],
   },
 
   fontawesome: {
@@ -153,6 +161,7 @@ export default {
         'faChevronDown',
         'faSearch',
         'faHome',
+        'faPen',
       ],
       regular: ['faSun', 'faMoon', 'faWindowClose'],
       brands: [

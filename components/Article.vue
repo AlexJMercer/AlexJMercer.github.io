@@ -1,7 +1,7 @@
 <template>
   <section class="main-article pb-5">
     <ArticleHeader :article="headerData" />
-    <article class="mb-5" :class="[isDarkTheme ? 'light-theme' : '']">
+    <article class="mb-5" :class="[isDarkTheme ? 'dark-theme' : '']">
       <template v-if="article.type === 'stories'">
         <div
           class="nuxt-content"
@@ -26,7 +26,7 @@
             <h4 class="mb-1">
               <strong><em>Índice</em></strong>
             </h4>
-            <hr class="mt-2" :class="isDarkMode ? 'bg-light' : 'bg-dark'" />
+            <hr class="mt-2" :class="isDarkTheme ? 'bg-light' : 'bg-dark'" />
 
             <ul>
               <li v-for="link of article.toc" :key="link.id" class="mb-2">
@@ -38,7 +38,21 @@
           </nav>
         </div>
       </template>
+
       <nuxt-content :document="article" />
+
+      <template v-if="article.gallery">
+        <div class="nuxt-content">
+          <figure v-for="(art, i) in article.gallery" :key="i">
+            <img
+              v-lazy="art"
+              :alt="article.title"
+              :title="article.title"
+              class="img-fluid mx-auto d-block mb-4"
+            />
+          </figure>
+        </div>
+      </template>
 
       <template v-if="article.tags">
         <div class="nuxt-content pb-4">

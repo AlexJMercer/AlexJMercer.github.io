@@ -1,140 +1,144 @@
 <template>
-  <div
-    class="mobile-sidebar"
+  <aside
+    class="mobile-container"
     :class="[
       isSidebarOpen ? 'slide-in-left' : 'slide-out-left',
-      isDarkTheme ? 'bg-dark' : 'bg-light',
+      isBlock ? 'd-block' : 'd-none',
     ]"
   >
-    <nav>
-      <div class="mobile-sidebar-container">
-        <div class="mobile-sidebar-content">
-          <div class="mobile-sidebar-brand">
-            <nuxt-link to="/">
-              <template v-if="isDarkTheme">
-                <img
-                  src="../static/ultimate-logo-red.svg"
-                  title="Ultimate Mercer"
-                  width="100"
-                  class="mx-auto d-block"
-                />
-              </template>
-              <template v-else>
-                <img
-                  src="../static/ultimate-logo-dark.svg"
-                  title="Ultimate Mercer"
-                  width="100"
-                  class="mx-auto d-block"
-                />
-              </template>
-            </nuxt-link>
-          </div>
-          <div class="d-block">
-            <div
-              class="mobile-sidebar-items"
-              :class="
-                $route.name === 'about' ? 'mobile-sidebar-items-active' : ''
-              "
-            >
-              <NuxtLink
-                to="/about"
-                class="mobile-sidebar-link"
-                :class="isDarkTheme ? 'text-light' : 'text-dark'"
-              >
-                <img
-                  src="https://i.imgur.com/rkCtudG.jpg"
-                  class="mobile-page"
-                  :class="$route.name === 'about' ? 'mobile-page-active' : ''"
-                  alt="Sobre mim"
-                />
-                <h5 class="ms-3 mb-0">Sobre mim</h5>
-              </NuxtLink>
+    <div class="mobile-sidebar" :class="[isDarkTheme ? 'bg-dark' : 'bg-light']">
+      <nav>
+        <div class="mobile-sidebar-container">
+          <div class="mobile-sidebar-content">
+            <div class="mobile-sidebar-brand">
+              <nuxt-link to="/">
+                <template v-if="isDarkTheme">
+                  <img
+                    src="../static/ultimate-logo-red.svg"
+                    title="Ultimate Mercer"
+                    width="100"
+                    class="mx-auto d-block"
+                  />
+                </template>
+                <template v-else>
+                  <img
+                    src="../static/ultimate-logo-dark.svg"
+                    title="Ultimate Mercer"
+                    width="100"
+                    class="mx-auto d-block"
+                  />
+                </template>
+              </nuxt-link>
             </div>
-            <div
-              class="mobile-sidebar-items"
-              :class="
-                $route.name === 'skills' ? 'mobile-sidebar-items-active' : ''
-              "
-            >
-              <NuxtLink
-                to="/skills"
-                class="mobile-sidebar-link"
-                :class="isDarkTheme ? 'text-light' : 'text-dark'"
+            <div class="d-block">
+              <div
+                class="mobile-sidebar-items"
+                :class="
+                  $route.name === 'about' ? 'mobile-sidebar-items-active' : ''
+                "
               >
-                <img
-                  :src="skillThumb"
-                  class="mobile-page"
-                  :class="$route.name === 'skills' ? 'mobile-page-active' : ''"
-                  alt="Sobre mim"
-                />
-                <h5 class="ms-3 mb-0">Skills</h5>
-              </NuxtLink>
-            </div>
-            <div
-              class="mobile-sidebar-items"
-              :class="
-                $route.name === 'pro' ? 'mobile-sidebar-items-active' : ''
-              "
-            >
-              <NuxtLink
-                to="/pro"
-                class="mobile-sidebar-link"
-                :class="isDarkTheme ? 'text-light' : 'text-dark'"
+                <NuxtLink
+                  to="/about"
+                  class="mobile-sidebar-link"
+                  :class="isDarkTheme ? 'text-light' : 'text-dark'"
+                >
+                  <img
+                    src="https://i.imgur.com/rkCtudG.jpg"
+                    class="mobile-page"
+                    :class="$route.name === 'about' ? 'mobile-page-active' : ''"
+                    alt="Sobre mim"
+                  />
+                  <h5 class="ms-3 mb-0">Sobre mim</h5>
+                </NuxtLink>
+              </div>
+              <div
+                class="mobile-sidebar-items"
+                :class="
+                  $route.name === 'skills' ? 'mobile-sidebar-items-active' : ''
+                "
               >
-                <img
-                  :src="proThumb"
-                  class="mobile-page"
-                  :class="$route.name === 'pro' ? 'mobile-page-active' : ''"
-                  alt="Sobre mim"
-                />
-                <h5 class="ms-3 mb-0">Projetos profissionais e acadêmicos</h5>
-              </NuxtLink>
-            </div>
-            <div
-              class="mobile-sidebar-items"
-              :class="
-                $route.name === 'dev' ? 'mobile-sidebar-items-active' : ''
-              "
-            >
-              <NuxtLink
-                to="/dev"
-                class="mobile-sidebar-link"
-                :class="isDarkTheme ? 'text-light' : 'text-dark'"
+                <NuxtLink
+                  to="/skills"
+                  class="mobile-sidebar-link"
+                  :class="isDarkTheme ? 'text-light' : 'text-dark'"
+                >
+                  <img
+                    :src="skillThumb"
+                    class="mobile-page"
+                    :class="
+                      $route.name === 'skills' ? 'mobile-page-active' : ''
+                    "
+                    alt="Sobre mim"
+                  />
+                  <h5 class="ms-3 mb-0">Skills</h5>
+                </NuxtLink>
+              </div>
+              <div
+                class="mobile-sidebar-items"
+                :class="
+                  $route.name === 'pro' ? 'mobile-sidebar-items-active' : ''
+                "
               >
-                <img
-                  :src="devThumb"
-                  class="mobile-page"
-                  :class="$route.name === 'dev' ? 'mobile-page-active' : ''"
-                  alt="Sobre mim"
-                />
-                <h5 class="ms-3 mb-0">Projetos dev pessoais</h5>
-              </NuxtLink>
-            </div>
-            <div
-              class="mobile-sidebar-items"
-              :class="
-                $route.name === 'art' ? 'mobile-sidebar-items-active' : ''
-              "
-            >
-              <NuxtLink
-                to="/art"
-                class="mobile-sidebar-link"
-                :class="isDarkTheme ? 'text-light' : 'text-dark'"
+                <NuxtLink
+                  to="/pro"
+                  class="mobile-sidebar-link"
+                  :class="isDarkTheme ? 'text-light' : 'text-dark'"
+                >
+                  <img
+                    :src="proThumb"
+                    class="mobile-page"
+                    :class="$route.name === 'pro' ? 'mobile-page-active' : ''"
+                    alt="Sobre mim"
+                  />
+                  <h5 class="ms-3 mb-0">Projetos profissionais e acadêmicos</h5>
+                </NuxtLink>
+              </div>
+              <div
+                class="mobile-sidebar-items"
+                :class="
+                  $route.name === 'dev' ? 'mobile-sidebar-items-active' : ''
+                "
               >
-                <img
-                  :src="artThumb"
-                  class="mobile-page"
-                  :class="$route.name === 'art' ? 'mobile-page-active' : ''"
-                  alt="Sobre mim"
-                />
-                <h5 class="ms-3 mb-0">Projetos de art</h5>
-              </NuxtLink>
+                <NuxtLink
+                  to="/dev"
+                  class="mobile-sidebar-link"
+                  :class="isDarkTheme ? 'text-light' : 'text-dark'"
+                >
+                  <img
+                    :src="devThumb"
+                    class="mobile-page"
+                    :class="$route.name === 'dev' ? 'mobile-page-active' : ''"
+                    alt="Sobre mim"
+                  />
+                  <h5 class="ms-3 mb-0">Projetos dev pessoais</h5>
+                </NuxtLink>
+              </div>
+              <div
+                class="mobile-sidebar-items"
+                :class="
+                  $route.name === 'art' ? 'mobile-sidebar-items-active' : ''
+                "
+              >
+                <NuxtLink
+                  to="/art"
+                  class="mobile-sidebar-link"
+                  :class="isDarkTheme ? 'text-light' : 'text-dark'"
+                >
+                  <img
+                    :src="artThumb"
+                    class="mobile-page"
+                    :class="$route.name === 'art' ? 'mobile-page-active' : ''"
+                    alt="Sobre mim"
+                  />
+                  <h5 class="ms-3 mb-0">Projetos de art</h5>
+                </NuxtLink>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>
+  </aside>
 </template>
 <script>
 import { mapMutations, mapGetters } from 'vuex'
@@ -150,18 +154,24 @@ export default {
       proThumb: UMProThumb,
       devThumb: DevThumb,
       artThumb: UMThumb,
+      isBlock: false,
     }
   },
   computed: {
     ...mapGetters(['isDarkTheme', 'isSidebarOpen']),
   },
 
-  mounted() {
-    console.log(this.isSidebarOpen)
+  watch: {
+    displaySidebar(isSidebarOpen) {
+      this.isBlock = isSidebarOpen
+      debugger
+    },
   },
 
+  mounted() {},
+
   updated() {
-    console.log(this.isSidebarOpen)
+    this.isBlockSidebar()
   },
 
   methods: {
@@ -169,24 +179,41 @@ export default {
       darkTheme: 'darkTheme',
       sidebarSwitch: 'sidebarSwitch',
     }),
+    isBlockSidebar() {
+      setTimeout(() => {
+        this.isBlock = this.isSidebarOpen
+      }, 500)
+      return this.isSidebarOpen
+    },
   },
 }
 </script>
 <style lang="scss">
-.mobile-sidebar {
+.mobile-container {
   position: fixed;
   top: 0;
+  transform: translateX(-100%);
+  width: 100%;
+}
+
+/* .mobile-sidebar {
+  display: none;
+} */
+@media screen and (max-width: 768px) {
+}
+
+.mobile-sidebar {
   background-color: transparent;
   width: 100%;
   min-height: 100vh;
-  transform: translateX(0);
+  /* transform: translateX(-100%); */
   flex-shrink: 1;
   border-right: 1px solid #ced4da;
   height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-self: mobile-start;
+  align-self: flex-start;
   top: 0;
   /* position: sticky; */
   z-index: 400;
@@ -281,7 +308,6 @@ export default {
     display: none;
   }
 } */
-
 .slide-in-left {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;

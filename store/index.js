@@ -1,6 +1,6 @@
 export const state = () => ({
   isDark: loadState('darkTheme') || false,
-  isOpen: loadSidebarState('sidebarSwitch') || false,
+  isOpen: loadSidebarState('sidebarSwitch') || undefined,
 })
 
 export const mutations = {
@@ -37,6 +37,6 @@ function loadSidebarState(key) {
   try {
     return JSON.parse(window.localStorage.getItem(key))
   } catch (err) {
-    return false
+    return undefined
   }
 }

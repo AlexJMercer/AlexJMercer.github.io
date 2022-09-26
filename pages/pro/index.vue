@@ -35,7 +35,6 @@ export default {
     const articles = await $content('pro', params.slug)
       .sortBy('createdDate', 'asc')
       .fetch()
-    console.log(JSON.stringify(articles, undefined, 2))
     return {
       articles,
     }

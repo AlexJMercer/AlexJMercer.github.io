@@ -1,7 +1,9 @@
 <template>
   <article
     class="card card-raised mb-4"
-    :class="[isDarkTheme ? 'card-plain hover-card-yellow' : 'hover-card-uv']"
+    :class="[
+      isDarkTheme ? 'card-plain hover-card-neon-yellow' : 'hover-card-uv',
+    ]"
   >
     <div class="d-flex align-items-center px-3 py-3">
       <span

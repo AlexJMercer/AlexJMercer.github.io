@@ -23,13 +23,17 @@
         </div>
       </div>
     </div>
-    <section class="container">
+
+    <div class="container">
+      <h1>Em atualização...</h1>
+    </div>
+    <!-- <section class="container">
       <CardText
         v-for="article in articles"
         :key="article.slug"
         :article="article"
       />
-    </section>
+    </section> -->
   </div>
 </template>
 <script>
@@ -39,7 +43,6 @@ export default {
     const articles = await $content('pro', params.slug)
       .sortBy('createdDate', 'desc')
       .fetch()
-    console.log(JSON.stringify(articles, undefined, 2))
     return {
       articles,
     }

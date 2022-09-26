@@ -70,13 +70,9 @@ export default {
     ...mapGetters(['isDarkTheme', 'isSidebarOpen']),
   },
 
-  mounted() {
-    console.log(this.isSidebarOpen)
-  },
+  mounted() {},
 
-  updated() {
-    console.log(this.isSidebarOpen)
-  },
+  updated() {},
 
   methods: {
     ...mapMutations({
@@ -97,7 +93,7 @@ export default {
     position: fixed;
     left: 16px;
     right: 16px;
-    bottom: 16px;
+    bottom: 8px;
     z-index: 500;
 
     &-block {
@@ -110,7 +106,7 @@ export default {
       /* background-color: #fff6dd; */
       box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px;
       z-index: 600;
-      border-radius: 0.5rem;
+      border-radius: 0.25rem;
     }
     &-container {
       height: 100%;

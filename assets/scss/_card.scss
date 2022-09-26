@@ -302,7 +302,7 @@
   transition: all 0.3s;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-height: 275px;
+  min-height: 300px;
 
   .card-masonry-area-header {
     position: absolute;
@@ -351,7 +351,7 @@
     &.with-hover-overlay:before {
       display: block;
       position: absolute;
-      content: " ";
+      content: ' ';
       background: $dark;
       opacity: 0;
       width: 100%;
@@ -368,14 +368,14 @@
   }
   .card-masonry-image {
     width: 100%;
-    min-height: 275px;
+    min-height: 300px;
     object-fit: cover;
   }
 }
 
 .card-background {
-  border-radius: 1rem;
-  min-height: 400px;
+  border-radius: 0.5rem;
+  min-height: 300px;
 
   .card-body {
     position: absolute;

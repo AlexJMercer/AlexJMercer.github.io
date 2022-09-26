@@ -160,7 +160,6 @@ export default {
   width: 80px;
   min-height: 100vh;
   flex-shrink: 1;
-  border-right: 1px solid #ced4da;
   height: 100vh;
   display: flex;
   justify-content: space-between;

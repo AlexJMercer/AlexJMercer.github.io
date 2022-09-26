@@ -26,7 +26,7 @@
         </p>
       </div>
 
-      <div class="grid-masonry mb-4">
+      <!-- <div class="grid-masonry mb-4">
         <div class="grid-sizer col-xl-4 col-lg-4 col-md-6 col-12"></div>
         <div
           v-for="(article, i) in articles"
@@ -37,8 +37,8 @@
             class="card card-masonry card-raised my-2"
             :class="
               isDarkTheme
-                ? 'card-plain hover-card-neon-yellow border border-light'
-                : 'hover-card-uv card-raised border border-dark'
+                ? 'card-plain hover-card-bordered-crimson border border-light'
+                : 'hover-card-bordered-uv card-raised border border-dark'
             "
             style="border-radius: 0.5rem"
           >
@@ -50,23 +50,23 @@
                 :alt="article.title"
               />
               <div class="mask gradient-mask"></div>
-              <div class="mask texture-mask-4"></div>
             </div>
             <div
               class="card-img-overlay h-100 d-flex flex-column justify-content-end"
             >
               <div class="">
-                <div class="text-light">
+                <div class="badge badge-tag bg-dark text-light">
                   <DateFormat :date="article.createdDate" />
                 </div>
 
-                <h3 class="card-title text-light my-2">
+                <h3 class="card-title text-light mt-1 mb-2">
                   {{ article.title }}
                 </h3>
                 <div class="d-flex justify-content-end">
                   <nuxt-link
                     :to="article.path"
-                    class="btn btn-raised btn-uv btn-read-more-sm ms-auto"
+                    class="btn btn-raised btn-read-more-sm ms-auto"
+                    :class="isDarkTheme ? 'btn-crimson' : 'btn-uv'"
                     >Acessar projeto</nuxt-link
                   >
                 </div>
@@ -74,7 +74,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="container-fluid px-xl-5">
@@ -83,11 +83,11 @@
           <div
             v-for="article of articles"
             :key="article.title"
-            class="card card-flat card-background view-anchor my-2"
+            class="card card-background view-anchor my-2"
             :class="[
               isDarkTheme
-                ? 'hover-card-crimson border border-light'
-                : 'hover-card-uv border border-dark',
+                ? 'hover-card-bordered-crimson border border-light'
+                : 'hover-card-bordered-uv border border-dark',
             ]"
           >
             <img
@@ -101,8 +101,10 @@
             <div
               class="card-img-overlay p-3 h-100 d-flex flex-column justify-content-end"
             >
-              <div class="text-light">
-                <DateFormat :date="article.createdDate" />
+              <div class="">
+                <div class="badge badge-tag bg-dark text-light">
+                  <DateFormat :date="article.createdDate" />
+                </div>
               </div>
 
               <h3 class="card-title text-light my-2">
@@ -111,9 +113,11 @@
               <div class="d-flex justify-content-end">
                 <nuxt-link
                   :to="article.path"
-                  class="btn btn-raised btn-uv btn-read-more-sm ms-auto"
-                  >Acessar projeto</nuxt-link
+                  class="btn btn-raised btn-read-more-sm ms-auto"
+                  :class="isDarkTheme ? 'btn-crimson' : 'btn-uv'"
                 >
+                  Acessar projeto
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -185,7 +189,7 @@ export default {
   padding: 0 20px;
   &-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-auto-columns: auto auto;
     column-gap: 16px;

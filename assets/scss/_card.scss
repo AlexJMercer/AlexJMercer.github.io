@@ -77,6 +77,9 @@
 }
 
 .card-title {
+  font-family: "Barlow", "Exo 2", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   margin-bottom: $card-title-spacer-y;
   &.-material {
     margin-top: 1.75rem;
@@ -302,7 +305,7 @@
   transition: all 0.3s;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-height: 300px;
+  min-height: 275px;
 
   .card-masonry-area-header {
     position: absolute;
@@ -351,7 +354,7 @@
     &.with-hover-overlay:before {
       display: block;
       position: absolute;
-      content: ' ';
+      content: " ";
       background: $dark;
       opacity: 0;
       width: 100%;
@@ -368,7 +371,7 @@
   }
   .card-masonry-image {
     width: 100%;
-    min-height: 300px;
+    min-height: 275px;
     object-fit: cover;
   }
 }

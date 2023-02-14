@@ -32,7 +32,7 @@
 import { mapGetters } from 'vuex'
 export default {
   async asyncData({ $content, params }) {
-    const articles = await $content('pro', params.slug)
+    const articles = await $content('projects/pro', params.slug)
       .sortBy('createdDate', 'asc')
       .fetch()
     return {

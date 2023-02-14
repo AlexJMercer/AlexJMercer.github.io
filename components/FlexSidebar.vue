@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-sidebar">
+  <div class="flex-sidebar border-end border-secondary">
     <nav>
       <div class="flex-sidebar-container">
         <div class="flex-sidebar-content">
@@ -168,7 +168,6 @@ export default {
   top: 0;
   position: sticky;
   z-index: 1000;
-  box-shadow: 0px 0px 8px 0px rgba(18, 18, 18, 0.75);
 
   nav {
     height: 100%;

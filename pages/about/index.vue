@@ -1,20 +1,5 @@
 <template>
-  <section class="py-5">
-    <!-- <template v-if="isDarkTheme">
-      <img
-        src="~/assets/images/ultimate-logo-red.svg"
-        width="175"
-        style="margin: 0 auto 1.25rem; display: block; padding: 0 0 1.25rem"
-      />
-    </template>
-    <template v-else>
-      <img
-        src="~/assets/images/ultimate-logo-red.svg"
-        width="175"
-        style="margin: 0 auto 1.25rem; display: block; padding: 0 0 1.25rem"
-      />
-    </template> -->
-
+  <main class="">
     <section class="py-5">
       <div
         style="max-width: 1024px; margin: 0 auto 2.5rem; display: block"
@@ -23,7 +8,7 @@
       >
         <div class="main-article rounded">
           <div
-            class="nuxt-content mono-font py-5"
+            class="nuxt-content py-5"
             :class="[isDarkTheme ? 'dark-theme' : '']"
           >
             <div class="about-header mb-2">
@@ -99,7 +84,7 @@
         </div>
       </div>
     </section>
-  </section>
+  </main>
 </template>
 
 <script>

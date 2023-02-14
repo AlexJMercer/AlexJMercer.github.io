@@ -13,20 +13,11 @@
         >
           <img
             v-lazy="prev.cover ? prev.cover : prev.imageHeader"
-            class="
-              card-background-image card-img-border
-              hover-filter-cyberpunk-v
-            "
+            class="card-background-image card-img-border hover-filter-cyberpunk-v"
             :alt="prev.title"
           />
           <div
-            class="
-              card-img-overlay
-              h-100
-              d-flex
-              flex-column
-              justify-content-end
-            "
+            class="card-img-overlay h-100 d-flex flex-column justify-content-end"
           >
             <div class="d-flex mb-1">
               <span class="badge bg-dark border border-dark ms-0 me-1">
@@ -42,10 +33,7 @@
 
             <div class="d-flex justify-content-between my-1">
               <nuxt-link
-                :to="{
-                  name: `${slugName(prev.dir)}-slug`,
-                  params: { slug: `${prev.slug}` },
-                }"
+                :to="prev.path"
                 class="btn btn-uv btn-raised btn-sm ms-auto"
               >
                 Ler mais...
@@ -66,20 +54,11 @@
         >
           <img
             v-lazy="next.cover ? next.cover : next.imageHeader"
-            class="
-              card-background-image card-img-border
-              hover-filter-cyberpunk-v
-            "
+            class="card-background-image card-img-border hover-filter-cyberpunk-v"
             :alt="next.title"
           />
           <div
-            class="
-              card-img-overlay
-              h-100
-              d-flex
-              flex-column
-              justify-content-end
-            "
+            class="card-img-overlay h-100 d-flex flex-column justify-content-end"
           >
             <div class="d-flex mb-1">
               <span class="badge bg-dark border border-dark ms-0 me-1">
@@ -95,10 +74,7 @@
 
             <div class="d-flex justify-content-between my-1">
               <nuxt-link
-                :to="{
-                  name: `${slugName(next.dir)}-slug`,
-                  params: { slug: `${next.slug}` },
-                }"
+                :to="next.path"
                 class="btn btn-uv btn-raised btn-sm ms-auto"
               >
                 Ler mais...

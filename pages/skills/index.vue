@@ -140,12 +140,6 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-  async asyncData({ $content, params }) {
-    const projects = await $content('pro', params.slug).fetch()
-    return {
-      projects,
-    }
-  },
   computed: {
     ...mapGetters(['isDarkTheme']),
   },

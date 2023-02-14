@@ -25,10 +25,7 @@
                 width="175"
               />
 
-              <h1
-                class="text-light cyber-underline-light"
-                style="font-family: 'Lexend'"
-              >
+              <h1 class="text-light cyber-underline-light">
                 Oi! Eu sou o Julian Silva da Cunha
               </h1>
               <h3
@@ -37,10 +34,9 @@
                   line-height: 1.5;
                   margin-bottom: 1.25rem;
                   font-weight: 400;
-                  font-family: 'Lexend';
                 "
               >
-                Desenvolvedor Front-end | blueshift.cc
+                Desenvolvedor Front-end
               </h3>
               <div class="pb-3">
                 <a

@@ -27,20 +27,20 @@
     <div class="container">
       <h1>Em atualização...</h1>
     </div>
-    <!-- <section class="container">
+    <section class="container">
       <CardText
         v-for="article in articles"
         :key="article.slug"
         :article="article"
       />
-    </section> -->
+    </section>
   </div>
 </template>
 <script>
 import { mapGetters } from 'vuex'
 export default {
   async asyncData({ $content, params }) {
-    const articles = await $content('pro', params.slug)
+    const articles = await $content('projects/dev', params.slug)
       .sortBy('createdDate', 'desc')
       .fetch()
     return {

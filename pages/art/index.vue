@@ -8,7 +8,7 @@
       />
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid px-md-5">
       <div class="container">
         <h1
           :class="
@@ -40,7 +40,6 @@
                 ? 'card-plain hover-card-bordered-crimson border border-light'
                 : 'hover-card-bordered-uv card-raised border border-dark'
             "
-            style="border-radius: 0.5rem"
           >
             <div class="card-masonry-area-image view-anchor gradient-mask">
               <img
@@ -130,7 +129,7 @@
 import { mapGetters } from 'vuex'
 export default {
   async asyncData({ $content, params }) {
-    const articles = await $content('art', params.slug)
+    const articles = await $content('projects/art', params.slug)
       .sortBy('createdDate', 'desc')
       .fetch()
     // console.log(JSON.stringify(articles, undefined, 2));
@@ -143,7 +142,7 @@ export default {
     colorFilterRandom() {
       const filters = [
         // 'black-white',
-        // 'cyberpunk-v',
+        'cyberpunk-v',
         // 'purple-red-orange',
         'blue-red-golden',
       ]
@@ -189,7 +188,7 @@ export default {
   padding: 0 20px;
   &-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-auto-columns: auto auto;
     column-gap: 16px;

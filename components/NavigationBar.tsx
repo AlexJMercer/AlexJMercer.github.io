@@ -104,14 +104,14 @@ const NavigationBar = () => {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Projetos</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <ul className="grid gap-3 p-4 md:w-[500px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
+                      <ul className="grid gap-3 p-4 md:w-[500px] lg:w-[600px] lg:grid-cols-2">
                         <li className="row-span-3">
                           <Link href="/ultimate-series" passHref>
                             <NavigationMenuLink asChild>
                               <div className="card hover:ring-1 ring-dark-200 dark:ring-light-800 transition-all view-anchor !my-0">
                                 <img
                                   src="https://i.imgur.com/qOEajoe.jpg"
-                                  className="rounded-lg w-full md:h-80 h-48 scale-125 object-cover"
+                                  className="rounded-lg w-full md:h-80 h-48 object-cover"
                                   alt=""
                                 />
                                 <div className="mask bg-dark-500/[.4]"></div>
@@ -131,14 +131,21 @@ const NavigationBar = () => {
                           <li>
                             <Link href="/dev" passHref>
                               <NavigationMenuLink asChild>
-                                <div className="block py-2 px-3 mb-2 rounded-md hover:bg-white dark:hover:bg-slate-800">
-                                  <h4 className="text-lg font-semibold tracking-wider leading-normal">
-                                    Projetos - Dev
-                                  </h4>
-                                  <p className="text-base leading-snug text-slate-600 dark:text-slate-400">
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit.
-                                  </p>
+                                <div className="card hover:ring-1 ring-dark-200 dark:ring-light-800 transition-all view-anchor !mt-0">
+                                  <img
+                                    src="https://i.imgur.com/AOOqa0N.jpg"
+                                    className="rounded-lg w-full h-24 object-cover"
+                                    alt=""
+                                  />
+                                  <div className="mask bg-dark-500/[.4]"></div>
+                                  <Link
+                                    href="/dev"
+                                    className="card-img-overlay flex flex-col justify-end"
+                                  >
+                                    <h4 className="text-lg text-light-500 font-semibold tracking-wider leading-normal">
+                                      Projetos - Dev
+                                    </h4>
+                                  </Link>
                                 </div>
                               </NavigationMenuLink>
                             </Link>
@@ -146,14 +153,21 @@ const NavigationBar = () => {
                           <li>
                             <Link href="/arts" passHref>
                               <NavigationMenuLink asChild>
-                                <div className="block py-2 px-3 mb-2 rounded-md hover:bg-white dark:hover:bg-slate-800">
-                                  <h4 className="text-lg font-semibold tracking-wider leading-normal">
-                                    Projetos - Arts
-                                  </h4>
-                                  <p className="text-base leading-snug text-slate-600 dark:text-slate-400">
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit.
-                                  </p>
+                                <div className="card hover:ring-1 ring-dark-200 dark:ring-light-800 transition-all view-anchor !mt-0">
+                                  <img
+                                    src="/images/ultimate-mercer-thumb.jpg"
+                                    className="rounded-lg w-full h-24 object-cover"
+                                    alt=""
+                                  />
+                                  <div className="mask bg-dark-500/[.4]"></div>
+                                  <Link
+                                    href="/arts"
+                                    className="card-img-overlay flex flex-col justify-end"
+                                  >
+                                    <h4 className="text-lg text-light-500 font-semibold tracking-wider leading-normal">
+                                      Projetos - Arts
+                                    </h4>
+                                  </Link>
                                 </div>
                               </NavigationMenuLink>
                             </Link>

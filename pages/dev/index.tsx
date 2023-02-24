@@ -26,18 +26,15 @@ const Dev = ({ documents, initialDisplayDocuments, pagination }: HomeProp) => {
       <div className="bg-dark-500 flex items-center">
         <Image
           src="/images/ultimate-logo-red.svg"
-          className="mx-auto d-block py-4"
+          className="mx-auto d-block py-8"
           width={175}
           height={175}
           alt="Ultimate Mercer Logo"
         />
-        <FontAwesomeIcon
-          icon={faPlus}
-          className="text-light-500-500 text-2xl"
-        />
+        <FontAwesomeIcon icon={faPlus} className="text-light-500 text-2xl" />
         <Image
           src="/images/blklight-base-w.svg"
-          className="mx-auto d-block py-4"
+          className="mx-auto d-block py-8"
           width={150}
           height={150}
           alt="Ultimate Mercer Logo"

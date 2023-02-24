@@ -61,11 +61,12 @@ const about = () => {
               alguns websites, assim posso seguir aprimorando tanto o
               conhecimento em design como desenvolver o front-end dos projetos.
             </p>
+            <h4 className="font-bold leading-normal tracking-wide text-3xl mb-4">
+              Em atualização...
+            </h4>
 
             <h4 className="font-bold leading-normal tracking-wide text-2xl">
-              Mas se quiser pode me chamar também de
-              <br />
-              <mark className="bg-crimson p-1">Ultimate Mercer</mark>
+              Mas se quiser pode me chamar também de Ultimate Mercer
             </h4>
           </div>
         </div>

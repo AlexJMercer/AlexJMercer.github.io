@@ -59,34 +59,35 @@ const Home = () => {
             <h3 className="text-3xl text-light-500 mb-4">
               Desenvolvedor Front-end
             </h3>
-            <div className="">
-              <Link href="/" target="_blank">
-                <div className="text-lg bg-light-500 text-dark-500 inline-block py-1 px-3 rounded-lg m-1 leading-normal">
+            <div className="flex">
+              <Link href="mailto:juliancunha2010@hotmail.com" target="_blank">
+                <div className="w-10 h-10 text-xl bg-light-500 text-dark-500 flex items-center justify-center  rounded-full m-1 leading-normal">
                   <FontAwesomeIcon icon={faEnvelope} />
                 </div>
               </Link>
-              <Link href="/" target="_blank">
-                <div className="text-lg bg-light-500 text-dark-500 inline-block py-1 px-3 rounded-lg m-1 leading-normal">
-                  <FontAwesomeIcon icon={faFacebook} />
-                </div>
-              </Link>
-              <Link href="/" target="_blank">
-                <div className="text-lg bg-light-500 text-dark-500 inline-block py-1 px-3 rounded-lg m-1 leading-normal">
+              <Link
+                href="https://www.instagram.com/ultimatemercer/"
+                target="_blank"
+              >
+                <div className="w-10 h-10 text-xl bg-light-500 text-dark-500 flex items-center justify-center  rounded-full m-1 leading-normal">
                   <FontAwesomeIcon icon={faInstagram} />
                 </div>
               </Link>
-              <Link href="/" target="_blank">
-                <div className="text-lg bg-light-500 text-dark-500 inline-block py-1 px-3 rounded-lg m-1 leading-normal">
+              <Link
+                href="https://www.behance.net/ultimatemercer"
+                target="_blank"
+              >
+                <div className="w-10 h-10 text-xl bg-light-500 text-dark-500 flex items-center justify-center  rounded-full m-1 leading-normal">
                   <FontAwesomeIcon icon={faBehance} />
                 </div>
               </Link>
-              <Link href="/" target="_blank">
-                <div className="text-lg bg-light-500 text-dark-500 inline-block py-1 px-3 rounded-lg m-1 leading-normal">
+              <Link href="https://medium.com/@ultimatemercer" target="_blank">
+                <div className="w-10 h-10 text-xl bg-light-500 text-dark-500 flex items-center justify-center  rounded-full m-1 leading-normal">
                   <FontAwesomeIcon icon={faMedium} />
                 </div>
               </Link>
-              <Link href="/" target="_blank">
-                <div className="text-lg bg-light-500 text-dark-500 inline-block py-1 px-3 rounded-lg m-1 leading-normal">
+              <Link href="https://github.com/UltimateMercer" target="_blank">
+                <div className="w-10 h-10 text-xl bg-light-500 text-dark-500 flex items-center justify-center  rounded-full m-1 leading-normal">
                   <FontAwesomeIcon icon={faGithub} />
                 </div>
               </Link>

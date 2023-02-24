@@ -44,7 +44,7 @@ const Skills = () => {
     {
       title: "Mentorise",
       imageUrl: "/images/loading.jpg",
-      role: "Desenvolvedor Front-end - React",
+      role: "Desenvolvedor Front-end - ReactJS",
       description: "",
       started: "Jan 2021",
       finished: "Dez 2022",
@@ -61,11 +61,11 @@ const Skills = () => {
 
   const techs = [
     {
-      name: "Vue",
+      name: "VueJS",
       imageUrl: "https://i.imgur.com/qbNTl5W.png",
     },
     {
-      name: "React",
+      name: "ReactJS",
       imageUrl: "https://i.imgur.com/Wa0TqhR.jpg",
     },
     {
@@ -132,7 +132,7 @@ const Skills = () => {
         title={`Conhecimento - ${siteMetadata.title}`}
         description={siteMetadata.description}
       />
-      <div className="block bg-gradient-to-r from-blue-500 via-crimson-500 to-uv-500 w-full h-56">
+      <div className="block bg-gradient-to-r from-blue-500 via-dark-500 to-uv-500 w-full h-56">
         <img
           src="/images/ultimate-logo-light.svg"
           className="mx-auto d-block py-8"
@@ -209,11 +209,11 @@ const Skills = () => {
             </h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
               {techs.map((tech) => (
-                <div key={tech.name} className="flex items-center my-4 px-2">
+                <div key={tech.name} className="flex items-center mb-4 px-2">
                   <Image
                     src={tech.imageUrl}
                     alt={`${tech.name} image`}
-                    className="w-20 h-20 object-cover rounded hover:drop-shadow-xl hover:ring-2 ring-gray-300 transition-all"
+                    className="w-24 h-24 object-cover rounded hover:drop-shadow-xl hover:ring-2 ring-gray-300 transition-all"
                     width={1000}
                     height={1000}
                   />

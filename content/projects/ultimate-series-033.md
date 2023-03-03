@@ -10,11 +10,11 @@ category: Design
 tags:
   - Ultimate Series
 layout: LandscapeLayout
-filter: filter-dunastone
+filter: filter-icecream-plus
 typography:
 draft: false
 authors:
-  - name: Ultimate Mercer
+  - name: Julian Silva da Cunha
     quote:
 gallery:
 ---

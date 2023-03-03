@@ -14,7 +14,7 @@ filter: filter-cyberpunk-v
 typography:
 draft: false
 authors:
-  - name: Ultimate Mercer
+  - name: Julian Silva da Cunha
     quote:
 gallery:
   - https://i.imgur.com/K2TTuaX.jpg

@@ -9,12 +9,12 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: LandscapeLayout
-filter: filter-dunastone
+layout: FullpageLayout
+filter: filter-purple-red-orange
 typography:
 draft: false
 authors:
-  - name: Ultimate Mercer
+  - name: Julian Silva da Cunha
     quote:
 gallery:
   - https://i.imgur.com/BInJo5d.jpg

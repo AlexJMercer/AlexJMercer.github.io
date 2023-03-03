@@ -22,8 +22,8 @@ const BasicOverflowLayout = ({ doc, authordetails, next, prev, children }) => {
   return (
     <>
       <ArticleSEO
-        url={`${siteMetadata.siteUrl}/articles/${slug}`}
-        canonicalUrl={`${siteMetadata.siteUrl}/articles/${slug}`}
+        url={`${siteMetadata.siteUrl}/${slug}`}
+        canonicalUrl={`${siteMetadata.siteUrl}/${slug}`}
         authorDetails={authordetails}
         cover={doc.cover ? doc.cover : doc.imageHeader}
         images={images}

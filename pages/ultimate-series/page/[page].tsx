@@ -1,15 +1,14 @@
 import Image from "next/image";
-import { getAllDocumentsByTag } from "@/lib/services";
+import { getDocumentsByTag, rawDocuments } from "@/lib/services";
 import ListArticles from "@/components/List/Articles";
 import { PageSEO } from "@/components/SEO";
 import siteMetadata from "@/content/siteMetadata";
-import { getAllFilesFrontMatter } from "@/lib/mdx";
 import { DOCS_PER_PAGE } from "@/lib/services";
 
 export async function getStaticPaths() {
-  const rawDocs = await getAllFilesFrontMatter("projects");
+  const rawDocs = rawDocuments;
 
-  const totalDocs = rawDocs.filter((doc) =>
+  const totalDocs = rawDocs.filter((doc: any) =>
     doc.tags.includes("Ultimate Series")
   );
 
@@ -30,7 +29,7 @@ export async function getStaticProps(context: any) {
     params: { page },
   } = context;
   const pageNumber = parseInt(page);
-  return getAllDocumentsByTag("Ultimate Series", pageNumber);
+  return getDocumentsByTag("Ultimate Series", pageNumber);
 }
 
 interface HomeProp {

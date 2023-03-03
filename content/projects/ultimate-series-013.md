@@ -1,20 +1,20 @@
 ---
 title: Ultimate Series - Nº 013 - Glitched
-description: 
+description:
 imageHeader: https://i.imgur.com/6mIuScT.jpg
 cover: https://i.imgur.com/6mIuScT.jpg
 date: 2019-10-14 18:30
-modifiedDate: 
+modifiedDate:
 channel: Arts
 category: Design
-tags: 
-	- Ultimate Series
+tags:
+  - Ultimate Series
 layout: PortraitLayout
-filter: filter-cyberpunk-v
-typography: 
+filter: filter-burn
+typography:
 draft: false
 authors:
-  - name: Ultimate Mercer
+  - name: Julian Silva da Cunha
     quote:
 gallery:
 ---

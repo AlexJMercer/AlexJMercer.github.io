@@ -1,9 +1,7 @@
 import Link from "@/components/Link";
-import Tag from "@/components/Tag";
 import siteMetadata from "@/content/siteMetadata";
 import { useState } from "react";
 import CardBackground from "@/components/Cards/Background";
-import formatDate from "@/lib/utils/formatDate";
 import Pagination from "@/components/Pagination";
 
 const ListArticles = ({
@@ -29,10 +27,10 @@ const ListArticles = ({
         <div className="flex justify-center mb-4">
           <div className="relative max-w-lg flex-1">
             <input
-              aria-label="Pesquisar artigos"
+              aria-label="Pesquisar projetos"
               type="text"
               onChange={(e) => setSearchValue(e.target.value)}
-              placeholder="Pesquisar artigos"
+              placeholder="Pesquisar projetos"
               className="block w-full rounded-md border border-gray-300 bg-light-500 px-4 py-2 text-dark-500 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
             />
             <svg

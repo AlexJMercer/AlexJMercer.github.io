@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { getAllDocumentsByChannel } from "@/lib/services";
+import { getDocumentsByChannel } from "@/lib/services";
 import ListArticles from "@/components/List/Articles";
 import { PageSEO } from "@/components/SEO";
 import siteMetadata from "@/content/siteMetadata";
 
 export async function getStaticProps() {
-  return getAllDocumentsByChannel("Arts");
+  return getDocumentsByChannel("Arts");
 }
 
 interface HomeProp {

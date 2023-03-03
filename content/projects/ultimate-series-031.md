@@ -9,12 +9,12 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: LandscapeLayout
-filter: filter-pink-blue
+layout: ParallaxLayout
+filter: filter-dark-red
 typography:
 draft: false
 authors:
-  - name: Ultimate Mercer
+  - name: Julian Silva da Cunha
     quote:
 gallery:
   - https://i.imgur.com/2St7UBs.jpg

@@ -9,12 +9,12 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: LandscapeLayout
+layout: PortraitLayout
 filter: filter-cyberpunk-vii
 typography:
 draft: false
 authors:
-  - name: Ultimate Mercer
+  - name: Julian Silva da Cunha
     quote:
 gallery:
   - https://i.imgur.com/EFReFV8.jpg

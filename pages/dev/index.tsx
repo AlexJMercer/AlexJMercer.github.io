@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getAllDocumentsByChannel } from "@/lib/services";
+import { getDocumentsByChannel } from "@/lib/services";
 import ListArticles from "@/components/List/Articles";
 import { PageSEO } from "@/components/SEO";
 import siteMetadata from "@/content/siteMetadata";
@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export async function getStaticProps() {
-  return getAllDocumentsByChannel("Dev");
+  return getDocumentsByChannel("Dev");
 }
 
 interface HomeProp {

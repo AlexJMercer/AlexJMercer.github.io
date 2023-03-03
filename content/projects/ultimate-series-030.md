@@ -1,8 +1,8 @@
 ---
 title: Ultimate Series - Nº 030 - Supergirl
 description:
-imageHeader: https://i.imgur.com/ereFZEm.jpg
-cover: https://i.imgur.com/ereFZEm.jpg
+imageHeader: https://i.imgur.com/wy3r2rR.jpg
+cover: https://i.imgur.com/wy3r2rR.jpg
 date: 2021-04-01 21:45
 modifiedDate:
 channel: Arts
@@ -14,7 +14,7 @@ filter: filter-dunastone
 typography:
 draft: false
 authors:
-  - name: Ultimate Mercer
+  - name: Julian Silva da Cunha
     quote:
 gallery:
   - https://i.imgur.com/ereFZEm.jpg

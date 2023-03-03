@@ -14,7 +14,7 @@ filter: filter-icecream
 typography:
 draft: false
 authors:
-  - name: Ultimate Mercer
+  - name: Julian Silva da Cunha
     quote:
 gallery:
   - https://i.imgur.com/qaP9S8Z.jpg

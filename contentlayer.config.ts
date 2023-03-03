@@ -70,7 +70,7 @@ export const AuthorsArticle = defineNestedType(() => ({
 
 export const Article = defineDocumentType(() => ({
   name: "Article",
-  filePathPattern: `articles/**/*.(md|mdx)`,
+  filePathPattern: `projects/**/*.(md|mdx)`,
   contentType: "mdx",
   fields: {
     title: {
@@ -113,6 +113,7 @@ export const Article = defineDocumentType(() => ({
         type: "string",
       },
       required: false,
+      default: [],
     },
     layout: {
       type: "string",

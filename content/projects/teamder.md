@@ -13,7 +13,7 @@ filter: filter-burn
 typography: serif
 draft: false
 authors:
-  - name: Ultimate Mercer
+  - name: Julian Silva da Cunha
     quote:
 gallery:
 ---

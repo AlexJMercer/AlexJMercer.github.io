@@ -25,8 +25,8 @@ const SimpleLayout = ({ doc, authordetails, next, prev, children }) => {
   return (
     <>
       <ArticleSEO
-        url={`${siteMetadata.siteUrl}/articles/${slug}`}
-        canonicalUrl={`${siteMetadata.siteUrl}/articles/${slug}`}
+        url={`${siteMetadata.siteUrl}/${slug}`}
+        canonicalUrl={`${siteMetadata.siteUrl}/${slug}`}
         authorDetails={authordetails}
         images={images}
         {...doc}

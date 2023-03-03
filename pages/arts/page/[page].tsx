@@ -1,15 +1,14 @@
 import Image from "next/image";
-import { getAllDocumentsByChannel } from "@/lib/services";
+import { getDocumentsByChannel, rawDocuments } from "@/lib/services";
 import ListArticles from "@/components/List/Articles";
 import { PageSEO } from "@/components/SEO";
 import siteMetadata from "@/content/siteMetadata";
-import { getAllFilesFrontMatter } from "@/lib/mdx";
 import { DOCS_PER_PAGE } from "@/lib/services";
 
 export async function getStaticPaths() {
-  const rawDocs = await getAllFilesFrontMatter("projects");
+  const rawDocs = rawDocuments;
 
-  const totalDocs = rawDocs.filter((doc) => doc.channel === "Arts");
+  const totalDocs = rawDocs.filter((doc: any) => doc.channel === "Arts");
 
   const totalPages = Math.ceil(totalDocs.length / DOCS_PER_PAGE);
 
@@ -28,7 +27,7 @@ export async function getStaticProps(context: any) {
     params: { page },
   } = context;
   const pageNumber = parseInt(page);
-  return getAllDocumentsByChannel("Arts", pageNumber);
+  return getDocumentsByChannel("Arts", pageNumber);
 }
 
 interface HomeProp {

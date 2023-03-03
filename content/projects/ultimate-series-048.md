@@ -14,7 +14,7 @@ filter: filter-purple-red-orange
 typography:
 draft: false
 authors:
-  - name: Ultimate Mercer
+  - name: Julian Silva da Cunha
     quote:
 gallery:
   - https://i.imgur.com/yb5WVlW.jpg

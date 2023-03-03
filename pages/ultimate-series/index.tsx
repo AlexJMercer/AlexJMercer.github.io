@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { getAllDocumentsByTag } from "@/lib/services";
+import { getDocumentsByTag } from "@/lib/services";
 import ListArticles from "@/components/List/Articles";
 import { PageSEO } from "@/components/SEO";
 import siteMetadata from "@/content/siteMetadata";
 
 export async function getStaticProps() {
-  return getAllDocumentsByTag("Ultimate Series");
+  return getDocumentsByTag("Ultimate Series");
 }
 
 interface HomeProp {

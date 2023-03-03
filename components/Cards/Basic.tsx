@@ -12,7 +12,7 @@ import {
 const CardBasic = ({ document, authors }: any) => {
   const [mounted, setMounted] = useState(false);
 
-  const fallbackImage = "/images/loading.jpg";
+  const fallbackImage = "/images/blklight-thumb.jpg";
 
   let image;
 
@@ -39,7 +39,7 @@ const CardBasic = ({ document, authors }: any) => {
         </div>
 
         <h3 className="card-title text-3xl">
-          <Link className="" href={`/projects/${document.slug}`}>
+          <Link className="" href={`/articles/${document.slug}`}>
             <span className=" dark:text-light-500 text-dark-500 hover:underline underline-offset-1">
               {document.title}
             </span>
@@ -86,7 +86,7 @@ const CardBasic = ({ document, authors }: any) => {
           ))}
 
           <div className="flex flex-1 items-center">
-            <Link className="ml-auto" href={`/projects/${document.slug}`}>
+            <Link className="ml-auto" href={`/articles/${document.slug}`}>
               <button className="tracking-wider text-light-500 dark:text-dark-500 bg-uv-500 dark:bg-neon-yellow-500 hover:ring-2 ring-uv-300 dark:ring-neon-yellow-200 py-1.5 px-3 rounded-md font-medium transition-all !text-base">
                 Ler mais...
               </button>

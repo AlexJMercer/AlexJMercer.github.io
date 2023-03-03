@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArticleSEO } from "@/components/SEO";
-import Image from "@/components/Image";
-import Tag from "@/components/Tag";
 import siteMetadata from "@/content/siteMetadata";
 import CardBackground from "@/components/Cards/Background";
 import AuthorInfo from "../ArticleRelated/AuthorInfo";
@@ -10,34 +8,27 @@ import ScrollTopAndComment from "@/components/ArticleRelated/ScrollTopAndComment
 import DateFormat from "@/components/DateFormat";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
-const LandscapeLayout = ({
-  frontmatter,
-  authordetails,
-  next,
-  prev,
-  children,
-}) => {
-  const { authors, slug, fileName, date, title, tags } = frontmatter;
+const LandscapeLayout = ({ doc, authordetails, next, prev, children }) => {
+  const { authors, slug, fileName, date, title, tags } = doc;
 
   const [filter, setFilter] = useState(() =>
-    frontmatter.filter ? frontmatter.filter : "filter-cyberpunk-v"
+    doc.filter ? doc.filter : "filter-cyberpunk-v"
   );
   const [typography, setTypography] = useState(() =>
-    frontmatter.typography ? `${frontmatter.typography}-article` : ""
+    doc.typography ? `${doc.typography}-article` : ""
   );
 
-  const images = [frontmatter.cover || null, frontmatter.imageHeader || null];
+  const images = [doc.cover || null, doc.imageHeader || null];
 
-  console.log(authordetails);
   return (
     <>
       <ArticleSEO
-        url={`${siteMetadata.siteUrl}/projects/${slug}`}
-        canonicalUrl={`${siteMetadata.siteUrl}/projects/${slug}`}
+        url={`${siteMetadata.siteUrl}/articles/${slug}`}
+        canonicalUrl={`${siteMetadata.siteUrl}/articles/${slug}`}
         authorDetails={authordetails}
-        cover={frontmatter.cover ? frontmatter.cover : frontmatter.imageHeader}
+        cover={doc.cover ? doc.cover : doc.imageHeader}
         images={images}
-        {...frontmatter}
+        {...doc}
       />
       <section className="main-article">
         <ScrollTopAndComment />
@@ -46,28 +37,22 @@ const LandscapeLayout = ({
           <picture>
             <source
               media="(max-width: 768px)"
-              srcSet={
-                frontmatter.cover ? frontmatter.cover : frontmatter.imageHeader
-              }
+              srcSet={doc.cover ? doc.cover : doc.imageHeader}
             />
             <source
               media="(min-width: 769px)"
-              srcSet={
-                frontmatter.cover ? frontmatter.cover : frontmatter.imageHeader
-              }
+              srcSet={doc.cover ? doc.cover : doc.imageHeader}
             />
             <img
-              src={
-                frontmatter.cover ? frontmatter.cover : frontmatter.imageHeader
-              }
+              src={doc.cover ? doc.cover : doc.imageHeader}
               className={`header-landscape-img ${filter}`}
               alt={`${title} Image`}
             />
             {/* <Image
                 src={
-                  frontMatter.cover
-                    ? frontMatter.cover
-                    : frontMatter.imageHeader
+                  doc.cover
+                    ? doc.cover
+                    : doc.imageHeader
                 }
                 className={`header-basic-container-image ${filter}`}
                 width={10000}
@@ -76,14 +61,14 @@ const LandscapeLayout = ({
               /> */}
           </picture>
           <div className="header-overlay">
-            <div className="h-full flex flex-col justify-end">
-              <div className="px-5">
-                <h5 className="md:text-2xl text-xl font-medium tracking-wide mb-4">
+            <div className="h-full flex flex-col justify-center">
+              <div className="header-portrait-content">
+                <h5 className="md:text-2xl text-xl font-medium tracking-wide text-center mb-4">
                   <span className="marker-line rounded-md background-texture !py-1 dark:bg-dark-500 dark:text-light-500 bg-light-500 text-dark-500">
                     <DateFormat date={date} fulltimestamp />
                   </span>
                 </h5>
-                <h1 className="md:text-5xl text-4xl font-extrabold tracking-wide">
+                <h1 className="md:text-5xl text-4xl font-extrabold tracking-wide text-center">
                   <span className="marker-line rounded-md background-texture p-1 dark:bg-dark-500 dark:text-light-500 bg-light-500 text-dark-500 ">
                     {title}
                   </span>
@@ -98,7 +83,7 @@ const LandscapeLayout = ({
         >
           {children}
         </article>
-        {frontmatter.gallery && frontmatter.gallery.length > 0 && (
+        {doc.gallery && doc.gallery.length > 0 && (
           <div className="article-grid">
             <h3 className="text-3xl font-bold rounded-md bg-dark-500 text-light-500 dark:bg-light-500 dark:text-dark-500 mb-4">
               <span className="marker-line !py-2 !px-3">Galeria:</span>
@@ -106,7 +91,7 @@ const LandscapeLayout = ({
             <ScrollArea className="h-full w-full p-4">
               <div className="table min-w-full">
                 <div className="flex gap-5 pb-4">
-                  {frontmatter.gallery.map((image, index) => (
+                  {doc.gallery.map((image, index) => (
                     <Link
                       href={image}
                       target="_blank"
@@ -139,11 +124,11 @@ const LandscapeLayout = ({
           ))}
         </div>
       </section>
-      {(next.frontmatter || prev.frontmatter) && (
+      {(next.document || prev.document) && (
         <div className="main-article">
           <div className="max-w-[1200px] mx-auto px-4">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
-              {prev.frontmatter && (
+              {prev.document && (
                 <div className="mb-6">
                   <h4 className="text-2xl font-bold tracking-wide mb-4">
                     <span className="marker-line rounded-md !p-2 bg-dark-500 text-light-500 dark:bg-light-500 dark:text-dark-500">
@@ -151,13 +136,13 @@ const LandscapeLayout = ({
                     </span>
                   </h4>
                   <CardBackground
-                    document={prev.frontmatter}
+                    document={prev.document}
                     authors={prev.authordetails}
                     isFeatured={false}
                   />
                 </div>
               )}
-              {next.frontmatter && (
+              {next.document && (
                 <div className="mb-6">
                   <h4 className="text-2xl font-bold tracking-wide md:text-right mb-4">
                     <span className="marker-line rounded-md !p-2 bg-dark-500 text-light-500 dark:bg-light-500 dark:text-dark-500">
@@ -165,7 +150,7 @@ const LandscapeLayout = ({
                     </span>
                   </h4>
                   <CardBackground
-                    document={next.frontmatter}
+                    document={next.document}
                     authors={next.authordetails}
                     isFeatured={false}
                   />

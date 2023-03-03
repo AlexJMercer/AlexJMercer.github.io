@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 060"
-description: ""
-imageHeader: "https://i.imgur.com/AvnIrfo.jpg"
-cover: "https://i.imgur.com/AvnIrfo.jpg"
-date: "2021-09-19 18:00"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 060
+description:
+imageHeader: https://i.imgur.com/AvnIrfo.jpg
+cover: https://i.imgur.com/AvnIrfo.jpg
+date: 2021-09-19 18:00
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-cyberpunk-ix"
-typography: ""
+filter: filter-cyberpunk-ix
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/AvnIrfo.jpg
   - https://i.imgur.com/PAuiC4e.jpg

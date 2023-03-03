@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 053"
-description: ""
-imageHeader: "https://i.imgur.com/K9ajfAH.jpg"
-cover: "https://i.imgur.com/OyVL4W9.jpg?1"
-date: "2021-08-16 22:45"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 053
+description:
+imageHeader: https://i.imgur.com/K9ajfAH.jpg
+cover: https://i.imgur.com/OyVL4W9.jpg?1
+date: 2021-08-16 22:45
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-icecream-plus"
-typography: ""
+filter: filter-icecream-plus
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

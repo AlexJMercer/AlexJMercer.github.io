@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 002 - Homem de Ferro"
-description: ""
-imageHeader: "https://i.imgur.com/UphsYlG.jpg"
-cover: "https://i.imgur.com/UphsYlG.jpg"
-date: "2019-05-25 19:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 002 - Homem de Ferro
+description:
+imageHeader: https://i.imgur.com/UphsYlG.jpg
+cover: https://i.imgur.com/UphsYlG.jpg
+date: 2019-05-25 19:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: FullpageLayout
-filter: "filter-linear-burn"
-typography: ""
+filter: filter-linear-burn
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

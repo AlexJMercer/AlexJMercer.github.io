@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 047 - Remake"
-description: ""
-imageHeader: "https://i.imgur.com/ps1THsK.jpg"
-cover: "https://i.imgur.com/ps1THsK.jpg"
-date: "2021-06-20 21:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 047 - Remake
+description:
+imageHeader: https://i.imgur.com/ps1THsK.jpg
+cover: https://i.imgur.com/ps1THsK.jpg
+date: 2021-06-20 21:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: PortraitLayout
-filter: "filter-cyberpunk-ix"
-typography: ""
+filter: filter-cyberpunk-ix
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

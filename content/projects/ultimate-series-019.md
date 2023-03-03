@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 019 - Lady Gaga"
-description: ""
-imageHeader: "https://i.imgur.com/xy3GEi9.jpg"
-cover: "https://i.imgur.com/xy3GEi9.jpg"
-date: "2020-06-21 16:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 019 - Lady Gaga
+description:
+imageHeader: https://i.imgur.com/xy3GEi9.jpg
+cover: https://i.imgur.com/xy3GEi9.jpg
+date: 2020-06-21 16:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-pink-blue"
-typography: ""
+filter: filter-pink-blue
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

@@ -1,18 +1,20 @@
 ---
-title: "Join New Avengers"
-description: "Arte produzida para avaliação na disciplina de Tipografia 1, do curso de Design Digital."
-imageHeader: "https://i.imgur.com/jlu6jwf.jpg"
-cover: "https://i.imgur.com/uIY2t68.jpg"
-date: "2019-05-30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: []
+title: Join New Avengers
+description: Arte produzida para avaliação na disciplina de Tipografia 1, do curso de Design Digital.
+imageHeader: https://i.imgur.com/jlu6jwf.jpg
+cover: https://i.imgur.com/uIY2t68.jpg
+date: 2019-05-30 15:00
+modifiedDate:
+channel: Arts
+category: Design
+tags:
 layout: PortraitLayout
-filter: "filter-pink-blue"
-typography: ""
+filter: filter-pink-blue
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

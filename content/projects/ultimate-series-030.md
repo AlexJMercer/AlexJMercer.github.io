@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 030 - Supergirl"
-description: ""
-imageHeader: "https://i.imgur.com/ereFZEm.jpg"
-cover: "https://i.imgur.com/ereFZEm.jpg"
-date: "2021-04-01 21:45"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 030 - Supergirl
+description:
+imageHeader: https://i.imgur.com/ereFZEm.jpg
+cover: https://i.imgur.com/ereFZEm.jpg
+date: 2021-04-01 21:45
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-dunastone"
-typography: ""
+filter: filter-dunastone
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/ereFZEm.jpg
   - https://i.imgur.com/wy3r2rR.jpg

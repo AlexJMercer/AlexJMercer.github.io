@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 022 - Emma Watson"
-description: ""
-imageHeader: "https://i.imgur.com/VclH5bY.jpg"
-cover: "https://i.imgur.com/VclH5bY.jpg"
-date: "2020-06-24 20:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 022 - Emma Watson
+description:
+imageHeader: https://i.imgur.com/VclH5bY.jpg
+cover: https://i.imgur.com/VclH5bY.jpg
+date: 2020-06-24 20:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: PortraitLayout
-filter: "filter-cyberpunk-vii"
-typography: ""
+filter: filter-cyberpunk-vii
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

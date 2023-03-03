@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 020 - Rihanna"
-description: ""
-imageHeader: "https://i.imgur.com/yxP4Rtv.jpg"
-cover: "https://i.imgur.com/yxP4Rtv.jpg"
-date: "2020-06-22 18:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 020 - Rihanna
+description:
+imageHeader: https://i.imgur.com/yxP4Rtv.jpg
+cover: https://i.imgur.com/yxP4Rtv.jpg
+date: 2020-06-22 18:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: PortraitLayout
-filter: "filter-dark-red"
-typography: ""
+filter: filter-dark-red
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 013 - Glitched"
-description: ""
-imageHeader: "https://i.imgur.com/6mIuScT.jpg"
-cover: "https://i.imgur.com/6mIuScT.jpg"
-date: "2019-10-14 18:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 013 - Glitched
+description: 
+imageHeader: https://i.imgur.com/6mIuScT.jpg
+cover: https://i.imgur.com/6mIuScT.jpg
+date: 2019-10-14 18:30
+modifiedDate: 
+channel: Arts
+category: Design
+tags: 
+	- Ultimate Series
 layout: PortraitLayout
-filter: "filter-cyberpunk-v"
-typography: ""
+filter: filter-cyberpunk-v
+typography: 
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

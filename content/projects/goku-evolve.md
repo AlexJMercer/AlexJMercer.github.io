@@ -1,18 +1,20 @@
 ---
-title: "Evolve - Goku"
-description: ""
-imageHeader: "https://i.imgur.com/xdrJKzk.jpg"
-cover: "https://i.imgur.com/xdrJKzk.jpg"
-date: "2020-07-24 22:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Pessoal"
-tags: []
+title: Evolve - Goku
+description:
+imageHeader: https://i.imgur.com/xdrJKzk.jpg
+cover: https://i.imgur.com/xdrJKzk.jpg
+date: 2020-07-24 22:30
+modifiedDate:
+channel: Arts
+category: Pessoal
+tags:
 layout: FullpageLayout
-filter: "filter-cyberpunk-ix"
-typography: ""
+filter: filter-cyberpunk-ix
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

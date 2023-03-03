@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 014"
-description: ""
-imageHeader: "https://i.imgur.com/dzFLCgp.jpg"
-cover: "https://i.imgur.com/dzFLCgp.jpg"
-date: "2019-11-11 18:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 014
+description:
+imageHeader: https://i.imgur.com/dzFLCgp.jpg
+cover: https://i.imgur.com/dzFLCgp.jpg
+date: 2019-11-11 18:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: BasicLayout
-filter: "filter-burn"
-typography: ""
+filter: filter-burn
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

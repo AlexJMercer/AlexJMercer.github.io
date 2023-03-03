@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 061"
-description: ""
-imageHeader: "https://i.imgur.com/OtZn3Ey.jpg"
-cover: "https://i.imgur.com/OtZn3Ey.jpg"
-date: "2021-09-19 21:00"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 061
+description:
+imageHeader: https://i.imgur.com/OtZn3Ey.jpg
+cover: https://i.imgur.com/OtZn3Ey.jpg
+date: 2021-09-19 21:00
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-purple-red-orange"
-typography: ""
+filter: filter-purple-red-orange
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/OtZn3Ey.jpg
   - https://i.imgur.com/tN38HSb.jpg

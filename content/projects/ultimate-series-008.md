@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 008 - Homelander"
-description: ""
-imageHeader: "https://i.imgur.com/v7HqYh9.jpg"
-cover: "https://i.imgur.com/v7HqYh9.jpg"
-date: "2019-08-09 19:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 008 - Homelander
+description:
+imageHeader: https://i.imgur.com/v7HqYh9.jpg
+cover: https://i.imgur.com/v7HqYh9.jpg
+date: 2019-08-09 19:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-burn"
-typography: ""
+filter: filter-burn
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

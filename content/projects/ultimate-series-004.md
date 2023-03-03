@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 004 - Dua Lipa"
-description: ""
-imageHeader: "https://i.imgur.com/KsM3NaX.jpg"
-cover: "https://i.imgur.com/KsM3NaX.jpg"
-date: "2019-07-14 19:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 004 - Dua Lipa
+description:
+imageHeader: https://i.imgur.com/KsM3NaX.jpg
+cover: https://i.imgur.com/KsM3NaX.jpg
+date: 2019-07-14 19:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: FullpageLayout
-filter: "filter-neon-lights"
-typography: ""
+filter: filter-neon-lights
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

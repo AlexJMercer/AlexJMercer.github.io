@@ -1,18 +1,20 @@
 ---
-title: "Anger - Gohan - Dragon Ball Minimalista"
-description: ""
-imageHeader: "https://i.imgur.com/0xG3dqX.png"
-cover: "https://i.imgur.com/0xG3dqX.png"
-date: "2017-09-30 19:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Pessoal"
-tags: []
+title: Anger - Gohan - Dragon Ball Minimalista
+description:
+imageHeader: https://i.imgur.com/0xG3dqX.png
+cover: https://i.imgur.com/0xG3dqX.png
+date: 2017-09-30 19:30
+modifiedDate:
+channel: Arts
+category: Pessoal
+tags:
 layout: LandscapeLayout
-filter: "filter-dark-red"
-typography: ""
+filter: filter-dark-red
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

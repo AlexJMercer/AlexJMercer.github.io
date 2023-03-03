@@ -1,18 +1,20 @@
 ---
-title: "DC - Trinity"
-description: ""
-imageHeader: "https://i.imgur.com/TvBYlAe.jpg"
-cover: "https://i.imgur.com/TvBYlAe.jpg"
-date: "2019-09-18 20:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Pessoal"
-tags: []
+title: DC - Trinity
+description:
+imageHeader: https://i.imgur.com/TvBYlAe.jpg
+cover: https://i.imgur.com/TvBYlAe.jpg
+date: 2019-09-18 20:30
+modifiedDate:
+channel: Arts
+category: Pessoal
+tags:
 layout: LandscapeLayout
-filter: "filter-dunastone"
-typography: ""
+filter: filter-dunastone
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

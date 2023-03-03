@@ -1,18 +1,23 @@
 ---
-title: "Meu amigo Sunny"
-description: "Desenvolvido pelos acadêmicos Henrique Medina e Julian Silva da Cunha, do curso de Design Digital da Universidade Federal de Pelotas, na disciplina de Interfaces de Interação I."
-imageHeader: "https://miro.medium.com/max/1400/1*WpG7T6nPIYcyqt1hLgqQNg.png"
-cover: "https://miro.medium.com/max/1400/1*WpG7T6nPIYcyqt1hLgqQNg.png"
-date: "2018-06-04 11:00"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Design de Informação", "Criação de telas", "Usabilidade"]
+title: Meu amigo Sunny
+description: Desenvolvido pelos acadêmicos Henrique Medina e Julian Silva da Cunha, do curso de Design Digital da Universidade Federal de Pelotas, na disciplina de Interfaces de Interação I.
+imageHeader: https://miro.medium.com/max/1400/1*WpG7T6nPIYcyqt1hLgqQNg.png
+cover: https://miro.medium.com/max/1400/1*WpG7T6nPIYcyqt1hLgqQNg.png
+date: 2018-06-04 11:00
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Design de Informação
+  - Criação de telas
+  - Usabilidade
 layout: PortraitLayout
-filter: "filter-cyberpunk-viii"
-typography: ""
+filter: filter-cyberpunk-viii
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

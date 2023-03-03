@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 001 - Capitã Marvel"
-description: ""
-imageHeader: "https://i.imgur.com/3uH6ypK.jpg"
-cover: "https://i.imgur.com/3uH6ypK.jpg"
-date: "2019-05-22 19:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 001 - Capitã Marvel
+description:
+imageHeader: https://i.imgur.com/3uH6ypK.jpg
+cover: https://i.imgur.com/3uH6ypK.jpg
+date: 2019-05-22 19:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: FullpageLayout
-filter: "filter-dark-red"
-typography: ""
+filter: filter-dark-red
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

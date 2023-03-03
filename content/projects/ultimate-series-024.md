@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 024 - The Power of Lady Gaga"
-description: ""
-imageHeader: "https://i.imgur.com/jm9zFhK.jpg"
-cover: "https://i.imgur.com/jm9zFhK.jpg"
-date: "2020-06-28 20:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 024 - The Power of Lady Gaga
+description:
+imageHeader: https://i.imgur.com/jm9zFhK.jpg
+cover: https://i.imgur.com/jm9zFhK.jpg
+date: 2020-06-28 20:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: BasicLayout
-filter: "filter-icecream-plus"
-typography: ""
+filter: filter-icecream-plus
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

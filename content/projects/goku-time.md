@@ -1,18 +1,20 @@
 ---
-title: "Goku Time"
-description: ""
-imageHeader: "https://i.imgur.com/PAsyPjn.png"
-cover: "https://i.imgur.com/PAsyPjn.png"
-date: "2018-01-20 16:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Pessoal"
-tags: []
+title: Goku Time
+description:
+imageHeader: https://i.imgur.com/PAsyPjn.png
+cover: https://i.imgur.com/PAsyPjn.png
+date: 2018-01-20 16:30
+modifiedDate:
+channel: Arts
+category: Pessoal
+tags:
 layout: LandscapeLayout
-filter: "filter-purple-red-orange"
-typography: ""
+filter: filter-purple-red-orange
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

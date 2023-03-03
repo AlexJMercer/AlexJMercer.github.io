@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 007"
-description: ""
-imageHeader: "https://i.imgur.com/rdguKdr.jpg"
-cover: "https://i.imgur.com/rdguKdr.jpg"
-date: "2019-08-03 21:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 007
+description:
+imageHeader: https://i.imgur.com/rdguKdr.jpg
+cover: https://i.imgur.com/rdguKdr.jpg
+date: 2019-08-03 21:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-dark-red"
-typography: ""
+filter: filter-dark-red
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/rdguKdr.jpg
   - https://i.imgur.com/q8L72uj.jpg

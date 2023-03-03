@@ -1,18 +1,22 @@
 ---
 title: "Star Wars: Rise of Skywalker"
-description: ""
-imageHeader: "https://i.imgur.com/o4mBUq7.jpg"
-cover: "https://i.imgur.com/o4mBUq7.jpg"
-date: "2019-11-13 16:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Tipografia cinética", "Edição de video"]
+description:
+imageHeader: https://i.imgur.com/o4mBUq7.jpg
+cover: https://i.imgur.com/o4mBUq7.jpg
+date: 2019-11-13 16:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Tipografia cinética
+  - Edição de video
 layout: LandscapeLayout
-filter: "filter-icecream-plus"
-typography: ""
+filter: filter-icecream-plus
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

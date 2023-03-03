@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 010 - Kristen Stewart"
-description: ""
-imageHeader: "https://i.imgur.com/CV9U9ds.jpg"
-cover: "https://i.imgur.com/CV9U9ds.jpg"
-date: "2019-09-14 21:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 010 - Kristen Stewart
+description:
+imageHeader: https://i.imgur.com/CV9U9ds.jpg
+cover: https://i.imgur.com/CV9U9ds.jpg
+date: 2019-09-14 21:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: FullpageLayout
-filter: "filter-neon-lights"
-typography: ""
+filter: filter-neon-lights
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/Mp7rbEu.jpg
   - https://i.imgur.com/wMFq903.jpg

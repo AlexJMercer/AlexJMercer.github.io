@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 005"
-description: ""
-imageHeader: "https://i.imgur.com/Wp1mfLT.jpg"
-cover: "https://i.imgur.com/Wp1mfLT.jpg"
-date: "2019-07-20 18:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 005
+description:
+imageHeader: https://i.imgur.com/Wp1mfLT.jpg
+cover: https://i.imgur.com/Wp1mfLT.jpg
+date: 2019-07-20 18:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-cyberpunk-v"
-typography: ""
+filter: filter-cyberpunk-v
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/Wp1mfLT.jpg
   - https://i.imgur.com/IEkCRqD.jpg

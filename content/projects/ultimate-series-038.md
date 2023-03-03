@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 038 - Ultimate Absentia - Remake"
-description: ""
-imageHeader: "https://i.imgur.com/9Ruuhh8.jpg"
-cover: "https://i.imgur.com/9Ruuhh8.jpg"
-date: "2021-05-06 21:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 038 - Ultimate Absentia - Remake
+description:
+imageHeader: https://i.imgur.com/9Ruuhh8.jpg
+cover: https://i.imgur.com/9Ruuhh8.jpg
+date: 2021-05-06 21:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-cyberpunk-vi"
-typography: ""
+filter: filter-cyberpunk-vi
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 048"
-description: ""
-imageHeader: "https://i.imgur.com/yb5WVlW.jpg"
-cover: "https://i.imgur.com/yb5WVlW.jpg"
-date: "2021-06-22 22:00"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 048
+description:
+imageHeader: https://i.imgur.com/yb5WVlW.jpg
+cover: https://i.imgur.com/yb5WVlW.jpg
+date: 2021-06-22 22:00
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: FullpageLayout
-filter: "filter-purple-red-orange"
-typography: ""
+filter: filter-purple-red-orange
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/yb5WVlW.jpg
   - https://i.imgur.com/aRzS4HB.jpg

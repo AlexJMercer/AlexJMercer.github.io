@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 011"
-description: ""
-imageHeader: "https://i.imgur.com/951HT2L.jpg"
-cover: "https://i.imgur.com/951HT2L.jpg"
-date: "2019-09-17 21:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 011
+description:
+imageHeader: https://i.imgur.com/951HT2L.jpg
+cover: https://i.imgur.com/951HT2L.jpg
+date: 2019-09-17 21:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: PortraitLayout
-filter: "filter-cyberpunk-vi"
-typography: ""
+filter: filter-cyberpunk-vi
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/ZdWhvBw.jpg
   - https://i.imgur.com/2VHsuqT.jpg

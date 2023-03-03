@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 041"
-description: ""
-imageHeader: "https://i.imgur.com/h5pnYik.jpg"
-cover: "https://i.imgur.com/h5pnYik.jpg"
-date: "2021-05-23 22:00"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 041
+description:
+imageHeader: https://i.imgur.com/h5pnYik.jpg
+cover: https://i.imgur.com/h5pnYik.jpg
+date: 2021-05-23 22:00
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: FullpageLayout
-filter: "filter-cyberpunk-ix"
-typography: ""
+filter: filter-cyberpunk-ix
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/h5pnYik.jpg
   - https://i.imgur.com/gWpvxSK.jpg

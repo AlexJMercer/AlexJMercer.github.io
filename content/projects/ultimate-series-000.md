@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 000 - GTA Art Style"
-description: ""
-imageHeader: "https://i.imgur.com/8EK96Ww.jpg"
-cover: "https://i.imgur.com/8EK96Ww.jpg"
-date: "2019-03-31 20:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 000 - GTA Art Style
+description:
+imageHeader: https://i.imgur.com/8EK96Ww.jpg
+cover: https://i.imgur.com/8EK96Ww.jpg
+date: 2019-03-31 20:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: PortraitLayout
-filter: "filter-blue-red-golden"
-typography: ""
+filter: filter-blue-red-golden
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/juronvy.jpg
   - https://i.imgur.com/fS8MfRD.jpg

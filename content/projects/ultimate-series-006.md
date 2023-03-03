@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 006 - Kiernan Shipka"
-description: ""
-imageHeader: "https://i.imgur.com/qaP9S8Z.jpg"
-cover: "https://i.imgur.com/qaP9S8Z.jpg"
-date: "2019-07-28 23:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 006 - Kiernan Shipka
+description:
+imageHeader: https://i.imgur.com/qaP9S8Z.jpg
+cover: https://i.imgur.com/qaP9S8Z.jpg
+date: 2019-07-28 23:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: PortraitLayout
-filter: "filter-icecream"
-typography: ""
+filter: filter-icecream
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/qaP9S8Z.jpg
   - https://i.imgur.com/de8USXH.jpg

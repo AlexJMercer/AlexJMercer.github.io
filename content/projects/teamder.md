@@ -1,18 +1,20 @@
 ---
-title: "Teamder"
-description: ""
-imageHeader: "https://i.imgur.com/6EoJmLq.jpg"
-cover: "https://i.imgur.com/6EoJmLq.jpg"
-date: "2018-06-04 10:00"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
+title: Teamder
+description:
+imageHeader: https://i.imgur.com/6EoJmLq.jpg
+cover: https://i.imgur.com/6EoJmLq.jpg
+date: 2018-06-04 10:00
+modifiedDate:
+channel: Arts
+category: Design
 tags: ["Metodologia", "Criação de telas", "Usabilidade"]
 layout: LandscapeLayout
-filter: "filter-burn"
-typography: "serif"
+filter: filter-burn
+typography: serif
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

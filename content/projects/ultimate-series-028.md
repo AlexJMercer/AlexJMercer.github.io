@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 028"
-description: ""
-imageHeader: "https://i.imgur.com/363jfTS.jpg"
-cover: "https://i.imgur.com/363jfTS.jpg"
-date: "2021-02-26 20:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 028
+description:
+imageHeader: https://i.imgur.com/363jfTS.jpg
+cover: https://i.imgur.com/363jfTS.jpg
+date: 2021-02-26 20:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-dunastone"
-typography: ""
+filter: filter-dunastone
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/363jfTS.jpg
   - https://i.imgur.com/Z446MGP.jpg

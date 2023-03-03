@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 018 - Beyonce"
-description: ""
-imageHeader: "https://i.imgur.com/4NFAKo1.jpg"
-cover: "https://i.imgur.com/4NFAKo1.jpg"
-date: "2020-06-20 18:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 018 - Beyonce
+description:
+imageHeader: https://i.imgur.com/4NFAKo1.jpg
+cover: https://i.imgur.com/4NFAKo1.jpg
+date: 2020-06-20 18:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: PortraitLayout
-filter: "filter-neon-lights"
-typography: ""
+filter: filter-neon-lights
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

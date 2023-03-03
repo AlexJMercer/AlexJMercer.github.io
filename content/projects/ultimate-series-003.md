@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 003 - Megan Rapinoe"
-description: ""
-imageHeader: "https://i.imgur.com/nPBrSJ7.jpg"
-cover: "https://i.imgur.com/nPBrSJ7.jpg"
-date: "2019-07-11 19:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 003 - Megan Rapinoe
+description:
+imageHeader: https://i.imgur.com/nPBrSJ7.jpg
+cover: https://i.imgur.com/nPBrSJ7.jpg
+date: 2019-07-11 19:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: LandscapeLayout
-filter: "filter-dunastone"
-typography: ""
+filter: filter-dunastone
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

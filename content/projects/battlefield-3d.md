@@ -1,18 +1,20 @@
 ---
-title: "Battlefield 4 - 3D Effect"
-description: ""
-imageHeader: "https://i.imgur.com/86Be8nA.png"
-cover: "https://i.imgur.com/86Be8nA.png"
-date: "2017-03-20 16:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Pessoal"
+title: Battlefield 4 - 3D Effect
+description:
+imageHeader: https://i.imgur.com/86Be8nA.png
+cover: https://i.imgur.com/86Be8nA.png
+date: 2017-03-20 16:30
+modifiedDate:
+channel: Arts
+category: Pessoal
 tags: []
 layout: LandscapeLayout
-filter: "filter-dark-red"
-typography: ""
+filter: filter-dark-red
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

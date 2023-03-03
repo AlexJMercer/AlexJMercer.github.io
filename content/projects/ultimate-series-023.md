@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 023 - Halsey"
-description: ""
-imageHeader: "https://i.imgur.com/nOOzZsf.jpg"
-cover: "https://i.imgur.com/nOOzZsf.jpg"
-date: "2020-06-25 18:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 023 - Halsey
+description:
+imageHeader: https://i.imgur.com/nOOzZsf.jpg
+cover: https://i.imgur.com/nOOzZsf.jpg
+date: 2020-06-25 18:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: PortraitLayout
-filter: "filter-blue-red-golden"
-typography: ""
+filter: filter-blue-red-golden
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

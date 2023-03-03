@@ -1,18 +1,21 @@
 ---
-title: "Ultimate Series - Nº 015 - Portal"
-description: ""
-imageHeader: "https://i.imgur.com/VlmJN2Z.jpg"
-cover: "https://i.imgur.com/VlmJN2Z.jpg"
-date: "2020-01-17 16:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: ["Ultimate Series"]
+title: Ultimate Series - Nº 015 - Portal
+description:
+imageHeader: https://i.imgur.com/VlmJN2Z.jpg
+cover: https://i.imgur.com/VlmJN2Z.jpg
+date: 2020-01-17 16:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
+  - Ultimate Series
 layout: PortraitLayout
-filter: "filter-dunastone"
-typography: ""
+filter: filter-dunastone
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
   - https://i.imgur.com/VlmJN2Z.jpg
   - https://i.imgur.com/YRieTnV.jpg

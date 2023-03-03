@@ -1,18 +1,20 @@
 ---
-title: "Hope - Trunks - Dragon Ball Minimalista"
-description: ""
-imageHeader: "https://i.imgur.com/qpw5KQ1.png"
-cover: "https://i.imgur.com/qpw5KQ1.png"
-date: "2017-09-30 18:30"
-modifiedDate: ""
-channel: "Arts"
-category: "Design"
-tags: []
+title: Hope - Trunks - Dragon Ball Minimalista
+description:
+imageHeader: https://i.imgur.com/qpw5KQ1.png
+cover: https://i.imgur.com/qpw5KQ1.png
+date: 2017-09-30 18:30
+modifiedDate:
+channel: Arts
+category: Design
+tags:
 layout: LandscapeLayout
-filter: "filter-cyberpunk-vii"
-typography: ""
+filter: filter-cyberpunk-vii
+typography:
 draft: false
-authors: [{ name: "ultimatemercer", quote: "" }]
+authors:
+  - name: Ultimate Mercer
+    quote:
 gallery:
 ---
 

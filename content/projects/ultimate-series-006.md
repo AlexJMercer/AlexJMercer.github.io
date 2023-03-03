@@ -19,7 +19,7 @@ gallery:
   - https://i.imgur.com/um36COs.jpg
 ---
 
-### Sobre
+## Sobre
 
 Uma das primeiras imagens editadas utilizando-se desse estilo de visual que eu comecei a aplicar em diferentes imagens, além disso nesta época comecei a buscar melhorar as minhas habilidades de recorte.
 

@@ -16,9 +16,9 @@ authors: [{ name: "ultimatemercer", quote: "" }]
 gallery:
 ---
 
-### Sobre
+## Sobre
 
-Edição de imagem envolvendo a manipulação das cores.
+Edição de imagens.
 
 <figure>
 <img src="https://i.imgur.com/97ZYZve.jpg" className="max-w-full mx-auto block"/>

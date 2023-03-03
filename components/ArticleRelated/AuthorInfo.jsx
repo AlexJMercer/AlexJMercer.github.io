@@ -6,6 +6,8 @@ import Image from "next/image";
 // }
 
 const AuthorInfo = ({ author, quote }) => {
+  console.log("AuthorInfo:", author);
+
   const {
     name,
     avatar,
@@ -34,7 +36,7 @@ const AuthorInfo = ({ author, quote }) => {
 
         <div className="flex flex-col flex-1 justify-center ml-6">
           <h4 className="text-2xl font-bold tracking-wider mb-2">
-            <span className="marker-line bg-dark-500 text-light-500-500 dark:bg-light-500 dark:text-dark-500 !py-1 !px-2">
+            <span className="marker-line rounded-md bg-dark-500 text-light-500 dark:bg-light-500 dark:text-dark-500 !py-1 !px-2">
               {name}
             </span>
           </h4>
@@ -42,7 +44,7 @@ const AuthorInfo = ({ author, quote }) => {
           {quote && (
             <>
               <p className="text-xl leading-normal font-medium">
-                <span className="marker-line bg-dark-500 text-light-500-500 dark:bg-light-500 dark:text-dark-500 !py-1 !px-2">
+                <span className="marker-line rounded-md bg-dark-500 text-light-500-500 dark:bg-light-500 dark:text-dark-500 !py-1 !px-2">
                   "{quote}"
                 </span>
               </p>

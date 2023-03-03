@@ -21,7 +21,7 @@ gallery:
   - https://i.imgur.com/oob8rcc.jpg
 ---
 
-### Sobre
+## Sobre
 
 Estas foram basicamente as primeiras imagens que eu editei, na época com pouca técnica e conhecimento, cada uma possuia um nível diferente para recorte e edição. Trabalhar esse estilo surgiu a partir de um tutorial em que se era tentado aplicar um estilo visual utilizado em artes do jogo da produtora _Rockstar Games_, _Grand Theft Auto 5_. Recriar este estilo, da maneira mais fiél possível necessita de ferramentas e habilidades que eu não possuo no momento(mas no futuro quem sabe né...), então aplico aquilo que eu tirei de melhor dessa experiência procurando aprimorar o que eu aprendi através das artes que venho desenvolvendo.
 

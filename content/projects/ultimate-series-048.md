@@ -8,7 +8,7 @@ modifiedDate: ""
 channel: "Arts"
 category: "Design"
 tags: ["Ultimate Series"]
-layout: LandscapeLayout
+layout: FullpageLayout
 filter: "filter-purple-red-orange"
 typography: ""
 draft: false

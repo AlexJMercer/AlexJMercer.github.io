@@ -16,6 +16,10 @@ authors: [{ name: "ultimatemercer", quote: "" }]
 gallery:
 ---
 
+## Sobre
+
+Edição de imagens.
+
 <figure>
 <img src="https://i.imgur.com/KmcsE0v.jpg" className="max-w-none mx-auto block"/>
 </figure>

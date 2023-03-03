@@ -1,6 +1,6 @@
 ---
-name: Sasha Watson
-avatar: https://i.imgur.com/1k8By32.png
+name: Julian Silva da Cunha
+avatar: https://i.imgur.com/rkCtudG.jpg
 occupation: Developer
 company:
 email:

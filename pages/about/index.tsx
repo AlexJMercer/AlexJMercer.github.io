@@ -72,6 +72,99 @@ const about = () => {
         </div>
         <div className="max-w-3xl block mt-0 mx-auto mb-10"></div>
       </section>
+      <div className="container mx-auto">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-blue-red-golden"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-cyberpunk-v"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-burn"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-linear-burn"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-cyberpunk-vi"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-cyberpunk-vii"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-cyberpunk-viii"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-cyberpunk-ix"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-dark-red"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-dunastone"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-icecream"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-icecream-plus"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-neon-lights"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-pink-blue"
+            alt=""
+          />
+
+          <img
+            src="https://i.imgur.com/7ZTDbTz.png"
+            className="max-w-full block mx-auto filter-purple-red-orange"
+            alt=""
+          />
+        </div>
+      </div>
     </>
   );
 };

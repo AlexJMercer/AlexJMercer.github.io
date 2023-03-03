@@ -22,6 +22,6 @@ gallery:
   - https://i.imgur.com/kE7uDnb.jpg
 ---
 
-### Sobre
+## Sobre
 
-Edição de imagem envolvendo a manipulação das cores.
+Edição de imagens.

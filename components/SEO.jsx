@@ -137,7 +137,7 @@ export const ArticleSEO = ({
       "@type": "WebPage",
       "@id": url,
     },
-    headline: title,
+    headline: `${title} - Ultimate Mercer`,
     image: featuredImages,
     datePublished: publishedAt,
     dateModified: modifiedAt,
@@ -158,7 +158,7 @@ export const ArticleSEO = ({
   return (
     <>
       <CommonSEO
-        title={title}
+        title={`${title} - Ultimate Mercer`}
         description={description}
         ogType="article"
         ogImage={featuredImages}

@@ -20,6 +20,6 @@ gallery:
   - https://i.imgur.com/5Z3bWBQ.jpg
 ---
 
-### Sobre
+## Sobre
 
-Edição de imagem envolvendo a manipulação das cores.
+Edição de imagens.

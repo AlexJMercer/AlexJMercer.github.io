@@ -16,10 +16,4 @@ authors: [{ name: "ultimatemercer", quote: "" }]
 gallery:
 ---
 
-## Sobre
-
-Arte construída com o objetivo de praticar a aplicação de um efeito _**3D**_ a imagem original.
-
-<figure>
-  <img src="https://i.imgur.com/86Be8nA.png" className="max-w-none mx-auto d-block"/>
-</figure>
+# Em atualização...

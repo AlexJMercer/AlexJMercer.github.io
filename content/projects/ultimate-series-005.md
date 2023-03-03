@@ -19,7 +19,7 @@ gallery:
   - https://i.imgur.com/IyVv02T.jpg
 ---
 
-### Sobre
+## Sobre
 
 Uma das primeiras imagens editadas utilizando-se desse estilo de visual que eu comecei a aplicar em diferentes imagens, além disso nesta época eu também gostava de fazer o uso de duotones, muito por causa daquelas imagens de capa das _playlists_ do spotify.
 

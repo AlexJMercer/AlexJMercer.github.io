@@ -8,7 +8,7 @@ modifiedDate: ""
 channel: "Arts"
 category: "Design"
 tags: ["Ultimate Series"]
-layout: LandscapeLayout
+layout: PortraitLayout
 filter: "filter-cyberpunk-ix"
 typography: ""
 draft: false

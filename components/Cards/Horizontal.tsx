@@ -69,7 +69,7 @@ const CardHorizontal = ({ document, authors }: any) => {
                 {document.tags.map((tag: any) => (
                   <span
                     key={tag}
-                    className="py-1 px-2 bg-gray-300 text-dark tracking-wide font-medium rounded-md"
+                    className="py-1 px-2 text-sm bg-gray-300 text-dark tracking-wide font-medium rounded-md"
                   >
                     {tag}
                   </span>

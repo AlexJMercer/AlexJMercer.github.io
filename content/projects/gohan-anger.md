@@ -16,6 +16,10 @@ authors: [{ name: "ultimatemercer", quote: "" }]
 gallery:
 ---
 
+### Sobre
+
+Arte minimalista usando o personagem Gohan de Dragon Ball Z.
+
 <figure>
-<img src="https://i.imgur.com/0xG3dqX.png" className="max-w-none mx-auto block"/>
+  <img src="https://i.imgur.com/0xG3dqX.png" className="max-w-none mx-auto block"/>
 </figure>

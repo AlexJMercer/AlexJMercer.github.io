@@ -16,6 +16,4 @@ authors: [{ name: "ultimatemercer", quote: "" }]
 gallery:
 ---
 
-<figure>
-<img src="https://i.imgur.com/WDOWQMT.jpg" className="max-w-none mx-auto block"/>
-</figure>
+## Em atualização...

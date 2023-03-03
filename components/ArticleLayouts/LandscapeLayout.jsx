@@ -28,6 +28,7 @@ const LandscapeLayout = ({
 
   const images = [frontmatter.cover || null, frontmatter.imageHeader || null];
 
+  console.log(authordetails);
   return (
     <>
       <ArticleSEO
@@ -75,14 +76,14 @@ const LandscapeLayout = ({
               /> */}
           </picture>
           <div className="header-overlay">
-            <div className="h-full flex flex-col justify-center">
-              <div className="header-portrait-content">
-                <h5 className="md:text-2xl text-xl font-medium tracking-wide text-center mb-4">
+            <div className="h-full flex flex-col justify-end">
+              <div className="px-5">
+                <h5 className="md:text-2xl text-xl font-medium tracking-wide mb-4">
                   <span className="marker-line rounded-md background-texture !py-1 dark:bg-dark-500 dark:text-light-500 bg-light-500 text-dark-500">
                     <DateFormat date={date} fulltimestamp />
                   </span>
                 </h5>
-                <h1 className="md:text-5xl text-4xl font-extrabold tracking-wide text-center">
+                <h1 className="md:text-5xl text-4xl font-extrabold tracking-wide">
                   <span className="marker-line rounded-md background-texture p-1 dark:bg-dark-500 dark:text-light-500 bg-light-500 text-dark-500 ">
                     {title}
                   </span>

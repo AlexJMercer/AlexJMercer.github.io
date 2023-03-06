@@ -9,8 +9,8 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: BasicLayout
-filter: filter-burn
+layout: PortraitLayout
+filter: filter-icecream-plus
 typography:
 draft: false
 authors:

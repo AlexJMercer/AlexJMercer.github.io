@@ -10,7 +10,7 @@ category: Design
 tags:
   - Ultimate Series
 layout: PortraitLayout
-filter: filter-burn
+filter: filter-black-white
 typography:
 draft: false
 authors:

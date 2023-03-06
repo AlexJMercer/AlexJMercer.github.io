@@ -19,7 +19,7 @@ authors:
 gallery:
 ---
 
-### Sobre
+## Sobre
 
 Edição de imagem envolvendo a manipulação das cores.
 

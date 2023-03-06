@@ -10,7 +10,7 @@ category: Design
 tags:
   - Ultimate Series
 layout: PortraitLayout
-filter: filter-cyberpunk-vii
+filter: filter-black-white
 typography:
 draft: false
 authors:
@@ -19,7 +19,7 @@ authors:
 gallery:
 ---
 
-### Sobre
+# Sobre
 
 Imagem com aplicação do meu estilo visual, a partir de uma foto da atriz Emma Watson.
 

@@ -1,5 +1,5 @@
 ---
-title: Blklight - #ManOfTheMatch
+title: Blklight - ManOfTheMatch
 description:
 imageHeader: https://i.imgur.com/AOOqa0N.jpg
 cover: https://i.imgur.com/AOOqa0N.jpg

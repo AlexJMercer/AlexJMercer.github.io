@@ -9,7 +9,7 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: LandscapeLayout
+layout: FullpageLayout
 filter: filter-dark-red
 typography:
 draft: false

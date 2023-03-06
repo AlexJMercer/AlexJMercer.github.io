@@ -19,7 +19,7 @@ authors:
 gallery:
 ---
 
-### Sobre
+# Sobre
 
 Imagem com aplicação do meu estilo visual. Como base foi utilizada uma imagem da cantora Halsey.
 

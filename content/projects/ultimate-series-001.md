@@ -10,7 +10,7 @@ category: Design
 tags:
   - Ultimate Series
 layout: FullpageLayout
-filter: filter-dark-red
+filter: filter-black-white
 typography:
 draft: false
 authors:

@@ -10,7 +10,7 @@ category: Design
 tags:
   - Ultimate Series
 layout: PortraitLayout
-filter: filter-neon-lights
+filter: filter-pink-blue
 typography:
 draft: false
 authors:
@@ -19,7 +19,7 @@ authors:
 gallery:
 ---
 
-### Sobre
+# Sobre
 
 Edição digital em uma foto da cantora Beyonce, aplicando meu estilo visual.
 

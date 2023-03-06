@@ -10,7 +10,7 @@ category: Design
 tags:
   - Ultimate Series
 layout: FullpageLayout
-filter: filter-neon-lights
+filter: filter-blue-red-golden
 typography:
 draft: false
 authors:

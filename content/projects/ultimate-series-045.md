@@ -9,7 +9,7 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: PortraitLayout
+layout: FullpageLayout
 filter: filter-icecream-plus
 typography:
 draft: false

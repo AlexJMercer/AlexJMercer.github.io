@@ -9,8 +9,8 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: LandscapeLayout
-filter: filter-dunastone
+layout: FullpageLayout
+filter: filter-pink-blue
 typography:
 draft: false
 authors:

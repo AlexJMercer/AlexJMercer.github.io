@@ -9,7 +9,7 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: BasicLayout
+layout: LandscapeLayout
 filter: filter-icecream-plus
 typography:
 draft: false
@@ -19,9 +19,9 @@ authors:
 gallery:
 ---
 
-### Sobre
+# Sobre
 
-Arte aplicando meu estilo visual. Nesta época tinha sido lançado recentemente o último álbum da Lady Gaga, _Chromatica_, e ela em parceria com a _Adobe_ lançaram um concurso para criação de obras envolvendo o álbum. Era que não aceitava submissões da América do Sul ¬¬, mas obtive acesso aos _assets_ que foram disponibilizados para aqueles que queriam participar e consegui construir esta obra, eu sinto que é uma das melhores que eu já criei até o momento XD.
+Arte aplicando meu estilo visual. Nesta época tinha sido lançado recentemente o último álbum da Lady Gaga, _Chromatica_, e ela em parceria com a _Adobe_ lançaram um concurso para criação de obras envolvendo o álbum. O único porém era que não aceitava submissões da América do Sul ¬¬, mas obtive acesso aos _assets_ que foram disponibilizados para aqueles que queriam participar e consegui construir esta obra, eu sinto que é uma das melhores que eu já criei até o momento XD.
 
 https://www.behance.net/gallery/126848735/Ultimate-Series-N-024-The-Power-of-Lady-Gaga
 

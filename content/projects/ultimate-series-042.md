@@ -1,8 +1,8 @@
 ---
 title: Ultimate Series - Nº 042
 description:
-imageHeader: https://i.imgur.com/LLMGR2k.jpg
-cover: https://i.imgur.com/LLMGR2k.jpg
+imageHeader: https://i.imgur.com/pmAoJ8g.jpg
+cover: https://i.imgur.com/pmAoJ8g.jpg
 date: 2021-05-24 22:00
 modifiedDate:
 channel: Pessoal

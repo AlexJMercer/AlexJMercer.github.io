@@ -10,7 +10,7 @@ category: Design
 tags:
   - Ultimate Series
 layout: LandscapeLayout
-filter: filter-burn
+filter: filter-dark-red
 typography:
 draft: false
 authors:

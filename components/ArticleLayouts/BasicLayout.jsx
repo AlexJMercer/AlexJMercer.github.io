@@ -9,7 +9,7 @@ import AuthorInfo from "../ArticleRelated/AuthorInfo";
 import DateFormat from "@/components/DateFormat";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
-const BasicLayout = ({ document, authordetails, next, prev, children }) => {
+const BasicLayout = ({ doc, authordetails, next, prev, children }) => {
   const { authors, slug, fileName, date, title, tags } = doc;
   const [filter, setFilter] = useState(() =>
     doc.filter ? doc.filter : "filter-cyberpunk-v"

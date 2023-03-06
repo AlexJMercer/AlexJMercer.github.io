@@ -10,7 +10,7 @@ category: Design
 tags:
   - Ultimate Series
 layout: LandscapeLayout
-filter: filter-cyberpunk-v
+filter: filter-cyberpunk-ix
 typography:
 draft: false
 authors:

@@ -8,8 +8,8 @@ modifiedDate:
 channel: Arts
 category: Design
 tags:
-layout: PortraitLayout
-filter: filter-pink-blue
+layout: FullpageLayout
+filter: filter-dark-red
 typography:
 draft: false
 authors:

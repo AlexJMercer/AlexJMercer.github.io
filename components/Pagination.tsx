@@ -28,7 +28,7 @@ const Pagination = ({ route, totalPages, currentPage }: any) => {
               </Button>
             </Link>
           )}
-          <span className="text-lg font-bold marker-line bg-dark-500 text-light-500 dark:bg-light-500 dark:text-dark-500 !py-2 !px-3 leading-normal tracking-wider">
+          <span className="text-lg rounded-md font-bold marker-line bg-dark-500 text-light-500 dark:bg-light-500 dark:text-dark-500 !py-2 !px-3 leading-normal tracking-wider">
             {currentPage} de {totalPages}
           </span>
           {!nextPage && (

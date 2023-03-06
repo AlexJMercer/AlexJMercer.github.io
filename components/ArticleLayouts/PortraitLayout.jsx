@@ -80,7 +80,7 @@ const PortraitLayout = ({ doc, authordetails, next, prev, children }) => {
                       <img
                         key={index}
                         src={image}
-                        className="max-w-full object-cover mx-auto shadow-lg"
+                        className="max-w-full lg:h-[650px] md:h-[300px] object-cover mx-auto shadow-lg"
                         alt={`${title} image ${index}`}
                       />
                     ))}

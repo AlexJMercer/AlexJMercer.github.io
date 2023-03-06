@@ -9,7 +9,7 @@ channel: Arts
 category: Pessoal
 tags:
 layout: LandscapeLayout
-filter: filter-purple-red-orange
+filter: filter-blue-red-golden
 typography:
 draft: false
 authors:

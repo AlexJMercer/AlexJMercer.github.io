@@ -61,7 +61,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      height: calc(100vh - 60px) !important;
+      height: calc(100vh - 64px) !important;
     }
 
     &-dark-border {
@@ -131,21 +131,14 @@
 
 .header-landscape {
   max-width: 100%;
-  //min-height: 750px;
   position: relative;
   cursor: default;
   overflow: hidden;
   margin-bottom: 2rem;
-  // border-bottom-left-radius: 2rem;
-  // border-bottom-right-radius: 2rem;
-  // @include shadow-big-navbar();
 
   &-img {
     width: 100%;
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    height: 87.5vh;
+    height: calc(100vh - 64px);
     object-fit: cover;
   }
 }

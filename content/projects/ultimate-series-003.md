@@ -10,7 +10,7 @@ category: Design
 tags:
   - Ultimate Series
 layout: LandscapeLayout
-filter: filter-dunastone
+filter: filter-icecream-plus
 typography:
 draft: false
 authors:

@@ -9,7 +9,7 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: LandscapeLayout
+layout: PortraitLayout
 filter: filter-cyberpunk-vii
 typography:
 draft: false

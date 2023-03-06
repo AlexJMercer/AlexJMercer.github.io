@@ -8,7 +8,7 @@ modifiedDate:
 channel: Arts
 category: Pessoal
 tags:
-layout: LandscapeLayout
+layout: ParallaxLayout
 filter: filter-dunastone
 typography:
 draft: false

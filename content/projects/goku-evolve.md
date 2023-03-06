@@ -8,7 +8,7 @@ modifiedDate:
 channel: Arts
 category: Pessoal
 tags:
-layout: FullpageLayout
+layout: PortraitLayout
 filter: filter-cyberpunk-ix
 typography:
 draft: false
@@ -18,7 +18,7 @@ authors:
 gallery:
 ---
 
-### Sobre
+# Sobre
 
 Arte minimalista focada no personagem principal da franquia _Dragon Ball_, Goku. Esta ideia surgiu na época em que o personagem alcançou/obteve o _Instinto Superior_ _(eu recomendo assistir o anime XD)_.
 

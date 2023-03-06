@@ -10,7 +10,7 @@ category: Design
 tags:
   - Ultimate Series
 layout: PortraitLayout
-filter: filter-cyberpunk-vi
+filter: filter-cyberpunk-v
 typography:
 draft: false
 authors:

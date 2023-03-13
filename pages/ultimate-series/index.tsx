@@ -19,7 +19,6 @@ const UltimateSeries = ({
   initialDisplayDocuments,
   pagination,
 }: HomeProp) => {
-  // console.log(initialDisplayDocuments);
   return (
     <>
       <PageSEO

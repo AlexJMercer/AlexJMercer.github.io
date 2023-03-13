@@ -43,7 +43,6 @@ const UltimateSeriesPage = ({
   initialDisplayDocuments,
   pagination,
 }: HomeProp) => {
-  // console.log(initialDisplayDocuments);
   return (
     <>
       <PageSEO

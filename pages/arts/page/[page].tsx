@@ -41,7 +41,6 @@ const ArtsPage = ({
   initialDisplayDocuments,
   pagination,
 }: HomeProp) => {
-  // console.log(initialDisplayDocuments);
   return (
     <>
       <PageSEO

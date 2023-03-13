@@ -22,7 +22,6 @@ const FullpageLayout = ({ doc, authordetails, next, prev, children }) => {
 
   const images = [doc.cover || null, doc.imageHeader || null];
 
-  console.log(authordetails);
   return (
     <>
       <ArticleSEO

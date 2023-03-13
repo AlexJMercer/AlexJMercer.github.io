@@ -17,10 +17,16 @@ authors:
   - name: Julian Silva da Cunha
     quote:
 gallery:
-  - https://i.imgur.com/K2TTuaX.jpg
-  - https://i.imgur.com/w4JYwME.jpg
 ---
 
 ## Sobre
 
 Edição de imagens.
+
+<figure>
+  <img src="https://i.imgur.com/K2TTuaX.jpg" className="max-w-none mx-auto block"/>
+</figure>
+
+<figure>
+  <img src="https://i.imgur.com/w4JYwME.jpg" className="max-w-none mx-auto block"/>
+</figure>

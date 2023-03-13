@@ -47,11 +47,8 @@ const UltimateSeries = ({
           <section className="container mx-auto py-6">
             <h1 className="text-5xl font-bold mb-4">Ultimate Series</h1>
             <p className="text-xl leading-normal tracking-wide mb-6">
-              Aqui reúno todos os meus projetos e idéias desenvolvidas, tanto
-              para o âmbito acadêmico e profissional, quanto para o pessoal com
-              o objetivo de me manter sempre em evolução das minhas técnicas e
-              habilidades, e praticando o uso da criatividade para o
-              desenvolvimento dos meus projeto em geral.
+              Aqui reúno uma coleção de projetos pessoais denominados “Ultimate
+              Series”, projetos esses focados em edição digital.
             </p>
           </section>
         </div>

@@ -21,34 +21,24 @@ const Arts = ({ documents, initialDisplayDocuments, pagination }: HomeProp) => {
         title={`Projetos pessoais - Arts - ${siteMetadata.title}`}
         description={siteMetadata.description}
       />
-      <div className="card rounded-none !my-0">
+      <div className="bg-dark-500">
         <img
-          src="https://i.imgur.com/p7kPVCN.jpg"
-          className="w-full md:h-60 h-48 object-cover filter-cyberpunk-ix"
-          alt=""
+          src="/images/ultimate-logo-red.svg"
+          className="mx-auto block py-8"
+          width="175"
+          height="175"
+          alt="Ultimate Mercer Logo"
         />
-        <div className="card-img-overlay flex items-center">
-          <img
-            src="/images/ultimate-logo-red.svg"
-            className="mx-auto d-block py-4 filter-cyberpunk-vii"
-            width="175"
-            height="175"
-            alt="Ultimate Mercer Logo"
-          />
-        </div>
       </div>
+
       <section className="background-texture">
         <div className="max-w-8xl mx-auto">
           <section className="container mx-auto py-6">
-            <h1 className="text-5xl font-bold mb-4">
-              Projetos pessoais - Arts
-            </h1>
+            <h1 className="text-5xl font-bold mb-4">Projetos - Arts</h1>
             <p className="text-xl leading-normal tracking-wide mb-6">
-              Aqui reúno todos os meus projetos e idéias desenvolvidas, tanto
-              para o âmbito acadêmico e profissional, quanto para o pessoal com
-              o objetivo de me manter sempre em evolução das minhas técnicas e
-              habilidades, e praticando o uso da criatividade para o
-              desenvolvimento dos meus projeto em geral.
+              Aqui reúno todos os meus projetos e ideias desenvolvidas
+              relacionadas a área do design e das artes, como a edição digital,
+              que é algo atualmente que tenho como hobby.
             </p>
           </section>
         </div>

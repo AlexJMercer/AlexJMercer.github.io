@@ -33,7 +33,7 @@ const NavigationBar = () => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <header className="flex justify-between items-center px-5 sticky top-0 dark:bg-dark-500 bg-light-500 shrink z-[100] h-16 w-full border-b border-b-dark-200 dark:border-b-light-800">
+    <header className="flex justify-between items-center px-5 sticky top-0 dark:bg-dark-500 bg-light-500 shrink z-[100] h-16 w-full border-b border-b-dark-200 dark:border-b-light-800 shadow-md">
       <nav className="grow">
         <div className="flex grow items-center justify-between flex-row">
           <div className="flex items-center">

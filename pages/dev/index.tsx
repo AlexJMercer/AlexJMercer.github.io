@@ -26,7 +26,7 @@ const Dev = ({ documents, initialDisplayDocuments, pagination }: HomeProp) => {
       <div className="bg-dark-500 flex items-center">
         <Image
           src="/images/ultimate-logo-red.svg"
-          className="mx-auto d-block py-8"
+          className="mx-auto block py-8"
           width={175}
           height={175}
           alt="Ultimate Mercer Logo"
@@ -34,7 +34,7 @@ const Dev = ({ documents, initialDisplayDocuments, pagination }: HomeProp) => {
         <FontAwesomeIcon icon={faPlus} className="text-light-500 text-2xl" />
         <Image
           src="/images/blklight-base-w.svg"
-          className="mx-auto d-block py-8"
+          className="mx-auto block py-8"
           width={150}
           height={150}
           alt="Ultimate Mercer Logo"
@@ -43,15 +43,16 @@ const Dev = ({ documents, initialDisplayDocuments, pagination }: HomeProp) => {
       <section className="background-texture">
         <div className="max-w-8xl mx-auto">
           <section className="container mx-auto py-6">
-            <h1 className="text-5xl font-bold mb-4">
-              Projetos pessoais - Development
+            <h1 className="text-5xl font-bold mb-4 align-middle flex items-center">
+              Projetos pessoais - Development{" "}
+              <span className="mx-2 inline-flex text-sm rounded-md bg-red-500 text-light-500 px-2 py-1">
+                Em atualização...
+              </span>
             </h1>
             <p className="text-xl leading-normal tracking-wide mb-6">
-              Aqui reúno todos os meus projetos e idéias desenvolvidas, tanto
-              para o âmbito acadêmico e profissional, quanto para o pessoal com
-              o objetivo de me manter sempre em evolução das minhas técnicas e
-              habilidades, e praticando o uso da criatividade para o
-              desenvolvimento dos meus projeto em geral.
+              Aqui reúno todos os meus projetos e ideias desenvolvidas
+              relacionadas a área de desenvolvimento web, com foco atualmente no
+              desenvolvimento front-end.
             </p>
           </section>
         </div>

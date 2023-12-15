@@ -39,7 +39,7 @@ const Home = () => {
       <section className="relative">
         <Image
           src={renderBackground(images)}
-          className="object-cover max-w-full min-home-screen filter-cyberpunk-ix"
+          className="object-cover max-w-full min-home-screen"
           width={10000}
           height={10000}
           alt="Ultimate Mercer Logo"

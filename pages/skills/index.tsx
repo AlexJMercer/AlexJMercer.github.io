@@ -30,8 +30,8 @@ const Skills = () => {
       imageUrl: "/images/loading.jpg",
       role: "Desenvolvedor Front-end - VueJS",
       description: "",
-      started: "Jan 2021",
-      finished: "Dez 2022",
+      started: "Jun 2020",
+      finished: "Set 2020",
     },
     {
       title: "blueshift.cc",

@@ -12,7 +12,7 @@ const experiences = () => {
   const educations = allAcademics;
 
   return (
-    <main className="container py-6">
+    <section className="container py-6">
       <div className="grid lg:grid-cols-2 gap-4">
         <div className="">
           <h1 className="text-3xl font-bold mb-4">Experiências</h1>
@@ -115,7 +115,7 @@ const experiences = () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

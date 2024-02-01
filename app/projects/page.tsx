@@ -18,6 +18,12 @@ async function getData(query = "") {
   return data;
 }
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projetos",
+};
+
 export default async function page({
   searchParams,
 }: {

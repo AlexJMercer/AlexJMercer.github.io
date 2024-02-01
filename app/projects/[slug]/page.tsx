@@ -35,10 +35,23 @@ export async function generateMetadata(
   const authors = article.authordetails.map((author: any) => {
     return author.name;
   });
-  // const article = await rawDocuments.find(
-  //   (doc: any) => doc.slug === params.slug
-  // );
-  return { title: article.doc?.title, authors: authors };
+
+  const images = article.doc?.cover
+    ? article.doc?.cover
+    : article.doc?.imageHeader
+    ? article.doc?.imageHeader
+    : "/ultimate-mercer-base.jpg";
+
+  // optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title: article.doc?.title,
+    authors: authors,
+    openGraph: {
+      images: [images, ...previousImages],
+    },
+  };
 }
 const ArticleLayout = async ({ params }: { params: { slug: string } }) => {
   const article = await getDocument(params);

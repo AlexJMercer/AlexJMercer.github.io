@@ -9,7 +9,8 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: DoubleParallaxLayout
+  - Projeto pessoal
+layout: parallax-layout
 filter: filter-neon-lights
 typography:
 draft: false

@@ -16,15 +16,15 @@
   border: 2px solid transparent;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply leading-normal #{!important};
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   @apply leading-normal #{!important};
+// }
 
-.min-home-screen {
-  height: calc(100vh - 64px);
+.container-fluid {
+  @apply w-full px-4 mx-auto;
 }

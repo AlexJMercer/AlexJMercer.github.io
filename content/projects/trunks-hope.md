@@ -8,7 +8,8 @@ modifiedDate:
 channel: Arts
 category: Design
 tags:
-layout: LandscapeLayout
+  - Projeto pessoal
+layout: landscape-layout
 filter: filter-cyberpunk-vii
 typography:
 draft: false

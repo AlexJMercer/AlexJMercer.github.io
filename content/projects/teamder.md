@@ -7,8 +7,11 @@ date: 2018-06-04 10:00
 modifiedDate:
 channel: Arts
 category: Design
-tags: ["Metodologia", "Criação de telas", "Usabilidade"]
-layout: LandscapeLayout
+tags:
+  - "Metodologia"
+  - "Criação de telas"
+  - "Usabilidade"
+layout: landscape-layout
 filter: filter-burn
 typography: serif
 draft: false

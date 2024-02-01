@@ -9,7 +9,7 @@ channel: Arts
 category: Design
 tags:
   - Edição digital
-layout: ParallaxLayout
+layout: parallax-layout
 filter: filter-dunastone
 typography:
 draft: false

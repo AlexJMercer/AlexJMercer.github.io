@@ -9,7 +9,8 @@ channel: Pessoal
 category: Edição Digital
 tags:
   - Ultimate Series
-layout: FullpageLayout
+  - Projeto pessoal
+layout: fullpage-layout
 filter: filter-cyberpunk-ix
 typography:
 draft: false

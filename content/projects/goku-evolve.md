@@ -8,7 +8,8 @@ modifiedDate:
 channel: Arts
 category: Pessoal
 tags:
-layout: PortraitLayout
+  - Projeto pessoal
+layout: portrait-layout
 filter: filter-cyberpunk-ix
 typography:
 draft: false

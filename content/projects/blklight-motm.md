@@ -8,7 +8,8 @@ modifiedDate:
 channel: Dev
 category: Pessoal
 tags:
-layout: LandscapeLayout
+  - Projeto pessoal
+layout: landscape-layout
 filter: filter-cyberpunk-ix
 typography:
 draft: false

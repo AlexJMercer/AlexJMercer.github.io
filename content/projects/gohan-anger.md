@@ -8,7 +8,8 @@ modifiedDate:
 channel: Arts
 category: Pessoal
 tags:
-layout: LandscapeLayout
+  - Projeto pessoal
+layout: landscape-layout
 filter: filter-dark-red
 typography:
 draft: false

@@ -10,7 +10,7 @@ category: Design
 tags:
   - Tipografia cinética
   - Edição de video
-layout: LandscapeLayout
+layout: landscape-layout
 filter: filter-icecream-plus
 typography:
 draft: false

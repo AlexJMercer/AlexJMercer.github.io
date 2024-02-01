@@ -7,8 +7,9 @@ date: 2017-03-20 16:30
 modifiedDate:
 channel: Arts
 category: Pessoal
-tags: []
-layout: LandscapeLayout
+tags:
+  - Projeto pessoal
+layout: landscape-layout
 filter: filter-burn
 typography:
 draft: false

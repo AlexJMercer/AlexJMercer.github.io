@@ -9,7 +9,8 @@ channel: Arts
 category: Design
 tags:
   - Ultimate Series
-layout: LandscapeLayout
+  - Projeto pessoal
+layout: landscape-layout
 filter: filter-blue-red-golden
 typography:
 draft: false

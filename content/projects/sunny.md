@@ -11,7 +11,7 @@ tags:
   - Design de Informação
   - Criação de telas
   - Usabilidade
-layout: PortraitLayout
+layout: portrait-layout
 filter: filter-cyberpunk-viii
 typography:
 draft: false

@@ -8,7 +8,7 @@ modifiedDate:
 channel: Arts
 category: Design
 tags:
-layout: FullpageLayout
+layout: fullpage-layout
 filter: filter-dark-red
 typography:
 draft: false

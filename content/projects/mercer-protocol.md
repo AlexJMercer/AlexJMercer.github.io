@@ -8,7 +8,7 @@ modifiedDate:
 channel: Arts
 category: Design
 tags:
-layout: PortraitLayout
+layout: portrait-layout
 filter: filter-dark-red
 typography:
 draft: false

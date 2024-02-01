@@ -4,8 +4,7 @@ $card-bg: #eaeaea;
   @apply relative flex flex-col min-w-0 rounded-lg;
   background-color: lighten($card-bg, 3%);
   background-clip: border-box;
-  border: none;
-  margin: 0.75rem 0;
+  // border: none;
   height: null;
 
   > hr {
@@ -39,7 +38,6 @@ $card-bg: #eaeaea;
 .card-title {
   font-weight: 600 !important;
   letter-spacing: 0.025em;
-  margin-bottom: 0.5rem;
   line-height: 1.5 !important;
 }
 

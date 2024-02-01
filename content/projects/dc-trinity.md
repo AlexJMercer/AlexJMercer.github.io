@@ -8,7 +8,8 @@ modifiedDate:
 channel: Arts
 category: Pessoal
 tags:
-layout: ParallaxLayout
+  - Projeto pessoal
+layout: parallax-layout
 filter: filter-dunastone
 typography:
 draft: false

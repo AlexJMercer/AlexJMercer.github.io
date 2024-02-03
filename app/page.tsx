@@ -3,7 +3,6 @@
 import {
   Globe,
   Envelope,
-  InstagramLogo,
   GithubLogo,
   BehanceLogo,
   MediumLogo,

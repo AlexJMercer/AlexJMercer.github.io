@@ -4,7 +4,7 @@ import { getExperiences, techs } from "services";
 import { allAcademics } from "contentlayer/generated";
 import { FormatMonthYear } from "@/components/date-format";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";

@@ -106,7 +106,7 @@ const components = {
   },
 };
 
-export const MDXComponents = ({ layout, code, ...rest }) => {
+export const MDXComponents = ({ layout, code, ...rest }: any) => {
   const Component = useMDXComponent(code);
   return <Component layout={layout} components={components} {...rest} />;
 };

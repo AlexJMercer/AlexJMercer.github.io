@@ -91,14 +91,14 @@ const experiences = () => {
                 key={`${education.course}`}
                 className="flex items-center mb-2"
               >
-                <Avatar className="w-16 h-16 mr-2">
+                <Avatar className="size-16 rounded-md mr-2">
                   <AvatarImage src={education.image} className="object-cover" />
                   <AvatarFallback>{education.institute}</AvatarFallback>
                 </Avatar>
                 <Card className="!border-none !shadow-none bg-transparent">
-                  <CardHeader className="!pt-0 !px-0 !pb-2">
+                  <CardHeader className="!py-0 !px-0">
                     <div className="flex items-center justify-between gap-x-2 text-base">
-                      <h3 className="inline-flex text-xl items-center justify-center gap-x-1 font-semibold leading-none">
+                      <h3 className="inline-flex text-xl items-center justify-center gap-x-1 font-semibold leading-none mb-1">
                         {education.institute}
                       </h3>
                     </div>

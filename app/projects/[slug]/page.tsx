@@ -20,20 +20,18 @@ type Props = {
 };
 
 export const generateStaticParams = async () =>
-  rawDocuments.map((doc: any) => ({ slug: doc.slug }));
+  rawDocuments.map((doc: any) => ({
+    slug: doc.slug.replace("/projects/", ""),
+  }));
 
 export async function generateMetadata(
   { params, searchParams }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  let metadata = {};
-
-  const slug = params.slug;
-
-  const article = await getDocument({ slug });
+  const article = await getDocument(params);
 
   const authors = article.authordetails.map((author: any) => {
-    return author.name;
+    return { name: author.name };
   });
 
   const images = article.doc?.cover
@@ -47,7 +45,7 @@ export async function generateMetadata(
 
   return {
     title: article.doc?.title,
-    authors: authors,
+    authors: [...authors],
     openGraph: {
       images: [images, ...previousImages],
     },
@@ -55,7 +53,6 @@ export async function generateMetadata(
 }
 const ArticleLayout = async ({ params }: { params: { slug: string } }) => {
   const article = await getDocument(params);
-
   return (
     <>
       {article && (

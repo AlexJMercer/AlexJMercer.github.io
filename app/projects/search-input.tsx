@@ -26,13 +26,9 @@ const SearchInput = ({ documents }: any) => {
 
   const [search, setSearch] = React.useState<string | null>(watch("search"));
 
-  // const form = watch("search");
-  // console.log(form);
-
   const onSubmit = (value: z.infer<typeof searchSchema>) => {
     const { search } = value;
     const params = new URLSearchParams(searchParams);
-    console.log(search, params);
 
     if (search) {
       params.set("query", search);
@@ -45,7 +41,6 @@ const SearchInput = ({ documents }: any) => {
   React.useEffect(() => {
     const search = watch("search");
     const params = new URLSearchParams(searchParams);
-    console.log(search, params);
 
     if (search) {
       params.set("query", search);

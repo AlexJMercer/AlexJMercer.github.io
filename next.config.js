@@ -3,7 +3,9 @@ const { withContentlayer } = require("next-contentlayer");
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  output: "export",
   images: {
+    unoptimized: true,
     // domains: ["i.imgur.com", "miro.medium.com"],
     remotePatterns: [
       {

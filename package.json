@@ -47,6 +47,7 @@
     "contentlayer": "^0.3.4",
     "date-fns": "^3.2.0",
     "embla-carousel-react": "^8.0.0-rc19",
+    "eslint-plugin-tailwindcss": "^3.14.1",
     "lucide-react": "^0.309.0",
     "next": "14.0.4",
     "next-contentlayer": "^0.3.4",
@@ -67,6 +68,7 @@
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7",
     "unist-util-visit": "^5.0.0",
+    "use-debounce": "^10.0.0",
     "vaul": "^0.8.0",
     "zod": "^3.22.4"
   },

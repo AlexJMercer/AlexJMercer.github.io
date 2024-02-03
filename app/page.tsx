@@ -56,6 +56,7 @@ export default function Home() {
                         href={`mailto:${links.email}`}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Acessar e-mail"
                       >
                         <Envelope size={20} />
                       </a>
@@ -72,6 +73,16 @@ export default function Home() {
                   </>
                 )}
 
+                <a
+                  href="http://ultimatemercer.com"
+                  className="hidden print:flex items-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Browser size={24} className="mr-1" />
+                  https://ultimatemercer.com/
+                </a>
+
                 {links.github && (
                   <>
                     <Button
@@ -84,6 +95,7 @@ export default function Home() {
                         href={links.github}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Acessar Github"
                       >
                         <GithubLogo size={20} />
                       </a>
@@ -100,16 +112,6 @@ export default function Home() {
                   </>
                 )}
 
-                <a
-                  href="http://ultimatemercer.com"
-                  className="hidden print:flex items-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Browser size={24} className="mr-1" />
-                  https://ultimatemercer.com/
-                </a>
-
                 {links.linkedin && (
                   <>
                     <Button
@@ -122,6 +124,7 @@ export default function Home() {
                         href={links.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Acessar Linkedin"
                       >
                         <LinkedinLogo size={20} />
                       </a>
@@ -138,23 +141,6 @@ export default function Home() {
                   </>
                 )}
 
-                {links.instagram && (
-                  <Button
-                    className="print:hidden"
-                    variant="outline"
-                    size={"icon"}
-                    asChild
-                  >
-                    <a
-                      href={links.instagram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <InstagramLogo size={20} />
-                    </a>
-                  </Button>
-                )}
-
                 {links.behance && (
                   <Button
                     className="print:hidden"
@@ -166,6 +152,7 @@ export default function Home() {
                       href={links.behance}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Acessar Behance"
                     >
                       <BehanceLogo size={20} />
                     </a>
@@ -182,6 +169,7 @@ export default function Home() {
                       href={links.medium}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Acessar Medium"
                     >
                       <MediumLogo size={20} />
                     </a>
@@ -195,7 +183,9 @@ export default function Home() {
                 alt="Julian Silva da Cunha"
                 className="rounded-lg"
               />
-              <AvatarFallback> JSC </AvatarFallback>
+              <AvatarFallback className={"!rounded-lg font-bold text-xl"}>
+                JSC
+              </AvatarFallback>
             </Avatar>
           </div>
           <article className="flex min-h-0 flex-col gap-y-1">

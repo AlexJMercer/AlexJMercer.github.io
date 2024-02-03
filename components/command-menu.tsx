@@ -86,7 +86,7 @@ const CommandMenu = ({ ...props }: DialogProps) => {
       <Button
         variant="outline"
         className={cn(
-          "relative h-8 w-full justify-start rounded-[0.5rem] bg-background text-sm font-normal text-muted-foreground shadow-none sm:pr-12 md:w-96 lg:max-w-[500px]"
+          "relative h-8 w-full justify-start rounded-sm bg-background text-sm font-normal text-muted-foreground shadow-none sm:pr-12 md:w-96 lg:max-w-[500px]"
         )}
         onClick={() => setOpen(true)}
         {...props}

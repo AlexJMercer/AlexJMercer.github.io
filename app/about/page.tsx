@@ -4,7 +4,7 @@ const About = () => {
       <div className="max-w-5xl block mt-0 mx-auto mb-10">
         <img
           src="https://i.imgur.com/rkCtudG.jpg"
-          className="w-64 h-64 mx-auto block rounded-lg border border-dark-500 dark:border-light-500"
+          className="size-48 mx-auto block rounded-lg border border-dark-500 dark:border-light-500"
           width="256"
           height="256"
           alt="Julian Silva da Cunha"

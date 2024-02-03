@@ -39,7 +39,6 @@ export const CardBackground = ({
       : fallbackImage;
     return data;
   };
-
   return (
     <div className="card card-background border border-dark-500 dark:border-light-500 hover:hover-card !rounded-xs hover:hover-card-dark-bordered hover:dark:hover-card-light-bordered view-anchor group">
       <img
@@ -55,9 +54,6 @@ export const CardBackground = ({
       <div className="card-img-overlay flex flex-col">
         <div className="flex items-center leading-normal !text-base">
           <span className="marker-line text-light-500 rounded-xs font-medium bg-dark-500 !py-1 text-lg tracking-wide">
-            {/* {format(new Date(document.date), "dd MMM yyyy", {
-              locale: ptBR,
-            })} */}
             <FormatDate date={document.date} />
           </span>
         </div>
@@ -66,7 +62,7 @@ export const CardBackground = ({
         <h3 className="card-title text-3xl">
           <Link
             className=""
-            href={{ pathname: `${document.slug}` }}
+            href={`${document.slug}`}
             aria-label="Ir para o projeto"
           >
             <span className="marker-line rounded-xs bg-dark-500 text-light-500 !py-1 hover:underline underline-offset-1">
@@ -75,48 +71,33 @@ export const CardBackground = ({
           </Link>
         </h3>
 
-        {/* {document.tags && document.tags?.length > 0 && (
-          <div className="flex-wrap gap-1 items-center my-1 leading-normal !text-base group-hover:flex hidden transition-all group-hover:ease-in-out">
-            {document.tags?.map((tag) => (
-              <Badge
-                key={tag}
-                className="bg-dark-500 dark:bg-dark-500 text-light-500 rounded-md font-mono"
-              >
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        )} */}
-
         <div className="flex mt-1">
-          {authors.map((author: any) => (
-            <div key={author.name} className="flex items-center my-1">
-              <div className="shrink-0">
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <img
-                        id={`anchor-${author.slug}-${document.slug}`}
-                        src={author.avatar}
-                        className="w-[50px] h-[50px] object-cover rounded-full border border-dark-500 mr-2"
-                        alt={`${author.name} avatar`}
-                      />
-                    </TooltipTrigger>
-                    <TooltipContent align="center" side="right">
-                      <p>{author.name}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
+          {authors &&
+            authors.map((author: any) => (
+              <div key={author.name} className="flex items-center my-1">
+                <div className="shrink-0">
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <img
+                          id={`anchor-${author.slug}-${document.slug}`}
+                          src={author.avatar}
+                          className="w-[50px] h-[50px] object-cover rounded-full border border-dark-500 mr-2"
+                          alt={`${author.name} avatar`}
+                        />
+                      </TooltipTrigger>
+                      <TooltipContent align="center" side="right">
+                        <p>{author.name}</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
 
           <div className="flex flex-1 items-center">
             <Button className="ml-auto" asChild>
-              <Link
-                href={{ pathname: `${document.slug}` }}
-                aria-label="Ir para o projeto"
-              >
+              <Link href={`${document.slug}`} aria-label="Ir para o projeto">
                 Ler mais
               </Link>
             </Button>

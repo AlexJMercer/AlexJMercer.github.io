@@ -47,7 +47,7 @@ export async function generateMetadata(
     title: article.doc?.title,
     authors: [...authors],
     openGraph: {
-      images: [images, ...previousImages],
+      images: images,
     },
   };
 }

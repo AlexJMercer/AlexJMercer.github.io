@@ -6,7 +6,6 @@ const nextConfig = {
   output: "export",
   images: {
     unoptimized: true,
-    // domains: ["i.imgur.com", "miro.medium.com"],
     remotePatterns: [
       {
         protocol: "https",

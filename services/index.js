@@ -167,6 +167,26 @@ export const getDocumentsByTag = async (tag, pageNumber) => {
   return { props: { documents, initialDisplayDocuments, pagination } };
 };
 
+export const user = {
+  name: "Julian Silva da Cunha",
+  initials: "JSC",
+  role: "Desenvolvedor Front-end",
+  location: "Pelotas, Rio Grande do Sul, Brasil",
+  locationLink: "https://www.google.com/maps/place/Pelotas+-+RS",
+  about:
+    "Atualmente sou Desenvolvedor Front-end, tendo experiência trabalhando com React e Vue.JS. Em projetos pessoais venho praticando com frameworks back-end, como Express e NestJS, com o intuito de me tornar um Desenvolvedor FullStack.",
+  avatar: "https://i.imgur.com/rkCtudG.jpg",
+  social: {
+    website: "http://ultimatemercer.com",
+    email: "ultimatemercer.blklight+dev@gmail.com",
+    github: "https://github.com/UltimateMercer",
+    linkedin: "https://www.linkedin.com/in/ultimatemercer/",
+    behance: "https://www.behance.net/ultimatemercer",
+    medium: "https://medium.com/@ultimatemercer",
+    instagram: "",
+  },
+};
+
 export const techs = [
   {
     name: "Vue.JS",

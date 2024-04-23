@@ -11,7 +11,7 @@ import {
 } from "@phosphor-icons/react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { getExperiences } from "services";
+import { getExperiences, user } from "services";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { allAcademics } from "contentlayer/generated";
 import { techs, links } from "services";
@@ -28,22 +28,29 @@ export default function Home() {
         <section className="mx-auto w-full max-w-2xl space-y-5 print:space-y-5">
           <div className="flex items-center justify-between">
             <div className="flex-1 space-y-1.5">
-              <h1 className="text-3xl font-bold">Julian Silva da Cunha</h1>
+              <h1 className="text-3xl font-bold">{user.name}</h1>
               <p className="max-w-md text-pretty font-mono text-xl">
-                Desenvolvedor Front-end
+                {user.role}
               </p>
-              <p className="max-w-md items-center text-pretty font-mono">
-                <a
-                  className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
-                  href={"https://www.google.com/maps/place/Pelotas+-+RS"}
-                  target="_blank"
-                >
-                  <Globe size={16} />
-                  Pelotas, Rio Grande do Sul, Brasil
-                </a>
-              </p>
+              <div className="max-w-md items-center text-pretty font-mono">
+                {user.locationLink ? (
+                  <a
+                    className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
+                    href={user.locationLink}
+                    target="_blank"
+                  >
+                    <Globe size={16} />
+                    {user.location}
+                  </a>
+                ) : (
+                  <span className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline">
+                    <Globe size={16} />
+                    {user.location}
+                  </span>
+                )}
+              </div>
               <div className="flex print:flex-col gap-x-1 font-mono text-sm !mt-0.5">
-                {links.email && (
+                {user.social.email && (
                   <>
                     <Button
                       className="print:hidden"
@@ -52,7 +59,7 @@ export default function Home() {
                       asChild
                     >
                       <a
-                        href={`mailto:${links.email}`}
+                        href={`mailto:${user.social.email}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Acessar e-mail"
@@ -61,28 +68,30 @@ export default function Home() {
                       </a>
                     </Button>
                     <a
-                      href={`mailto:${links.email}`}
+                      href={`mailto:${user.social.email}`}
                       className="hidden print:flex items-center"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Envelope size={24} className="mr-1" />
-                      {links.email}
+                      {user.social.email}
                     </a>
                   </>
                 )}
 
-                <a
-                  href="http://ultimatemercer.com"
-                  className="hidden print:flex items-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Browser size={24} className="mr-1" />
-                  https://ultimatemercer.com/
-                </a>
+                {user.social.website && (
+                  <a
+                    href="http://ultimatemercer.com"
+                    className="hidden print:flex items-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Browser size={24} className="mr-1" />
+                    https://ultimatemercer.com/
+                  </a>
+                )}
 
-                {links.github && (
+                {user.social.github && (
                   <>
                     <Button
                       className="print:hidden"
@@ -91,7 +100,7 @@ export default function Home() {
                       asChild
                     >
                       <a
-                        href={links.github}
+                        href={user.social.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Acessar Github"
@@ -100,18 +109,18 @@ export default function Home() {
                       </a>
                     </Button>
                     <a
-                      href={`${links.github}`}
+                      href={`${user.social.github}`}
                       className="hidden print:flex items-center"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <GithubLogo size={24} className="mr-1" />
-                      {links.github}
+                      {user.social.github}
                     </a>
                   </>
                 )}
 
-                {links.linkedin && (
+                {user.social.linkedin && (
                   <>
                     <Button
                       className="print:hidden"
@@ -120,7 +129,7 @@ export default function Home() {
                       asChild
                     >
                       <a
-                        href={links.linkedin}
+                        href={user.social.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Acessar Linkedin"
@@ -129,61 +138,83 @@ export default function Home() {
                       </a>
                     </Button>
                     <a
-                      href={`${links.linkedin}`}
+                      href={`${user.social.linkedin}`}
                       className="hidden print:flex items-center"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <LinkedinLogo size={24} className="mr-1" />
-                      {links.linkedin}
+                      {user.social.linkedin}
                     </a>
                   </>
                 )}
 
-                {links.behance && (
-                  <Button
-                    className="print:hidden"
-                    variant="outline"
-                    size={"icon"}
-                    asChild
-                  >
+                {user.social.behance && (
+                  <>
+                    <Button
+                      className="print:hidden"
+                      variant="outline"
+                      size={"icon"}
+                      asChild
+                    >
+                      <a
+                        href={user.social.behance}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Acessar Behance"
+                      >
+                        <BehanceLogo size={20} />
+                      </a>
+                    </Button>
                     <a
-                      href={links.behance}
+                      href={`${user.social.behance}`}
+                      className="hidden print:flex items-center"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Acessar Behance"
                     >
-                      <BehanceLogo size={20} />
+                      <BehanceLogo size={24} className="mr-1" />
+                      {user.social.behance}
                     </a>
-                  </Button>
+                  </>
                 )}
-                {links.medium && (
-                  <Button
-                    className="print:hidden"
-                    variant="outline"
-                    size={"icon"}
-                    asChild
-                  >
+                {user.social.medium && (
+                  <>
+                    <Button
+                      className="print:hidden"
+                      variant="outline"
+                      size={"icon"}
+                      asChild
+                    >
+                      <a
+                        href={user.social.medium}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Acessar Medium"
+                      >
+                        <MediumLogo size={20} />
+                      </a>
+                    </Button>
                     <a
-                      href={links.medium}
+                      href={`${user.social.medium}`}
+                      className="hidden print:flex items-center"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Acessar Medium"
                     >
-                      <MediumLogo size={20} />
+                      <MediumLogo size={24} className="mr-1" />
+                      {user.social.medium}
                     </a>
-                  </Button>
+                  </>
                 )}
               </div>
             </div>
             <Avatar className="size-32 rounded-lg mt-2">
               <AvatarImage
-                src="https://i.imgur.com/rkCtudG.jpg"
-                alt="Julian Silva da Cunha"
+                src={user.avatar}
+                alt={user.name}
                 className="rounded-lg"
               />
               <AvatarFallback className={"!rounded-lg font-bold text-xl"}>
-                JSC
+                {user.initials}
               </AvatarFallback>
             </Avatar>
           </div>
@@ -196,7 +227,7 @@ export default function Home() {
               intuito de me tornar um Desenvolvedor FullStack.
             </p>
           </article>
-          <article className="flex min-h-0 flex-col gap-y-1">
+          <article className="flex min-h-0 flex-col gap-y-1.5">
             <h2 className="text-2xl font-bold">Experiências</h2>
             {experiences.map((experience) => (
               <Card
@@ -226,16 +257,18 @@ export default function Home() {
                       {experience.description}
                     </p>
                   )}
-                  {experience.tags.length > 0 &&
-                    experience.tags.map((tag) => (
-                      <Badge
-                        key={tag}
-                        variant={"secondary"}
-                        className="rounded-md mr-1 print:bg-secondary"
-                      >
-                        {tag}
-                      </Badge>
-                    ))}
+                  <div className="flex flex-wrap gap-1">
+                    {experience.tags.length > 0 &&
+                      experience.tags.map((tag) => (
+                        <Badge
+                          key={tag}
+                          variant={"secondary"}
+                          className="rounded-md mr-1 print:bg-secondary"
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -244,14 +277,16 @@ export default function Home() {
             <h2 className="text-2xl font-bold">Habilidades</h2>
             <Card className="!border-none !shadow-none bg-transparent">
               <CardContent className="!px-0 !pb-2">
-                {techs.map((tech) => (
-                  <Badge
-                    key={tech.name}
-                    className="rounded-md print:text-dark-500 mr-1"
-                  >
-                    {tech.name}
-                  </Badge>
-                ))}
+                <div className="flex flex-wrap gap-1">
+                  {techs.map((tech) => (
+                    <Badge
+                      key={tech.name}
+                      className="rounded-md print:text-dark-500 mr-1"
+                    >
+                      {tech.name}
+                    </Badge>
+                  ))}
+                </div>
               </CardContent>
             </Card>
           </article>
